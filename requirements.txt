@@ -1,0 +1,7 @@
+# Core dependencies
+# Python 3.8+
+
+# Optional dependencies
+# matplotlib>=3.5.0  # For tag frequency charts
+# watchdog>=2.1.0    # For file monitoring
+# openai>=0.27.0     # For AI-powered summaries

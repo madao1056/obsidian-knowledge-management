@@ -1,0 +1,43 @@
+# OSファイル
+.DS_Store
+Thumbs.db
+
+# Obsidian設定
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# 一時ファイル
+.trash/
+*.tmp
+*.temp
+
+# バックアップ
+*.bak
+*~
+100_cursor/backup/
+
+# ログファイル
+*.log
+100_cursor/logs/
+
+# キャッシュ
+100_cursor/.cache/
+__pycache__/
+*.pyc
+
+# 個人設定
+.env
+.local
+
+# 大きなバイナリファイル
+*.mp4
+*.mov
+*.zip
+*.rar
+
+# レポート（一時的）
+100_cursor/reports/*.png
+100_cursor/reports/*.jpg

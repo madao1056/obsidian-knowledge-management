@@ -1,0 +1,22 @@
+# テキストファイル
+*.md text eol=lf
+*.txt text eol=lf
+
+# スクリプト
+*.py text eol=lf
+*.js text eol=lf
+*.sh text eol=lf
+
+# バイナリファイル
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.gif binary
+*.svg binary
+
+# LFS設定（大きなファイル用）
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.sketch filter=lfs diff=lfs merge=lfs -text
+*.fig filter=lfs diff=lfs merge=lfs -text
+attachments/videos/* filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(mkdir:*)",
+      "Bash(python3:*)",
+      "Bash(git init:*)",
+      "Bash(chmod:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
