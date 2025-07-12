@@ -156,8 +156,257 @@ sync_time: {datetime.now().isoformat()}
     
     return stats
 
+def get_recent_pages(token, account_name, limit=50):
+    """2025年に入ってから編集されたページを取得"""
+    print(f"📅 Getting 2025 pages for {account_name}...")
+    
+    headers = get_headers(token)
+    url = "https://api.notion.com/v1/search"
+    
+    # 2025年1月1日以降のページを取得
+    from datetime import datetime as dt
+    year_2025_start = "2025-01-01T00:00:00.000Z"
+    
+    all_recent_pages = []
+    has_more = True
+    start_cursor = None
+    
+    try:
+        while has_more and len(all_recent_pages) < 200:  # 最大200ページまで
+            payload = {
+                "filter": {"property": "object", "value": "page"},
+                "sort": {"direction": "descending", "timestamp": "last_edited_time"},
+                "page_size": 100
+            }
+            
+            if start_cursor:
+                payload["start_cursor"] = start_cursor
+            
+            response = requests.post(url, headers=headers, json=payload)
+            if response.status_code == 200:
+                data = response.json()
+                batch_pages = data.get("results", [])
+                
+                for page in batch_pages:
+                    last_edited = page.get("last_edited_time", "")
+                    
+                    # 2025年以降に編集されたかチェック
+                    if last_edited >= year_2025_start:
+                        page_info = {
+                            "id": page["id"],
+                            "title": get_page_title(page),
+                            "url": page.get("url", ""),
+                            "last_edited_time": last_edited,
+                            "created_time": page.get("created_time", "")
+                        }
+                        all_recent_pages.append(page_info)
+                    else:
+                        # 2025年より古いページに到達したら終了
+                        has_more = False
+                        break
+                
+                has_more = data.get("has_more", False) and has_more
+                start_cursor = data.get("next_cursor")
+                
+                if len(all_recent_pages) % 20 == 0:
+                    print(f"   📥 Found {len(all_recent_pages)} pages from 2025...")
+            else:
+                print(f"   ❌ Error: {response.status_code}")
+                break
+        
+        # 指定した制限数まで絞る
+        filtered_pages = all_recent_pages[:limit]
+        
+        print(f"   ✅ Found {len(filtered_pages)} pages from 2025 (total checked: {len(all_recent_pages)})")
+        return filtered_pages
+        
+    except Exception as e:
+        print(f"   ❌ Error: {str(e)}")
+        return []
+
+def sync_page_content(token, account_name, page_info, output_dir):
+    """個別ページの完全コンテンツ同期"""
+    page_id = page_info["id"]
+    title = page_info["title"]
+    
+    print(f"   🔄 Syncing: {title[:50]}...")
+    
+    headers = get_headers(token)
+    
+    try:
+        # ページ詳細情報を取得
+        page_url = f"https://api.notion.com/v1/pages/{page_id}"
+        page_response = requests.get(page_url, headers=headers)
+        
+        if page_response.status_code != 200:
+            return False, f"Failed to get page details: {page_response.status_code}"
+        
+        page_data = page_response.json()
+        
+        # ページコンテンツ（ブロック）を取得
+        blocks_url = f"https://api.notion.com/v1/blocks/{page_id}/children"
+        blocks_response = requests.get(blocks_url, headers=headers)
+        
+        if blocks_response.status_code != 200:
+            return False, f"Failed to get page blocks: {blocks_response.status_code}"
+        
+        blocks_data = blocks_response.json()
+        
+        # Markdownファイル作成
+        filename = f"{sanitize_filename(title)}.md"
+        filepath = os.path.join(output_dir, filename)
+        
+        # フロントマター作成
+        frontmatter = f"""---
+notion_id: {page_id}
+account: {account_name}
+title: {title}
+url: {page_info.get('url', '')}
+created_time: {page_info.get('created_time', '')}
+last_edited_time: {page_info.get('last_edited_time', '')}
+sync_status: full_content
+sync_time: {datetime.now().isoformat()}
+---
+
+# {title}
+
+"""
+        
+        # ブロックをMarkdownに変換
+        content = ""
+        for block in blocks_data.get("results", []):
+            block_content = convert_block_to_markdown(block)
+            if block_content:
+                content += block_content + "\n\n"
+        
+        # ファイルに書き込み
+        full_content = frontmatter + content + f"\n---\n\n*Synced from Notion {account_name} account at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n"
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(full_content)
+        
+        return True, "Success"
+        
+    except Exception as e:
+        return False, str(e)
+
+def convert_block_to_markdown(block):
+    """NotionブロックをMarkdownに変換"""
+    block_type = block.get("type", "")
+    
+    if block_type == "paragraph":
+        return convert_rich_text(block.get("paragraph", {}).get("rich_text", []))
+    elif block_type == "heading_1":
+        return "# " + convert_rich_text(block.get("heading_1", {}).get("rich_text", []))
+    elif block_type == "heading_2":
+        return "## " + convert_rich_text(block.get("heading_2", {}).get("rich_text", []))
+    elif block_type == "heading_3":
+        return "### " + convert_rich_text(block.get("heading_3", {}).get("rich_text", []))
+    elif block_type == "bulleted_list_item":
+        return "- " + convert_rich_text(block.get("bulleted_list_item", {}).get("rich_text", []))
+    elif block_type == "numbered_list_item":
+        return "1. " + convert_rich_text(block.get("numbered_list_item", {}).get("rich_text", []))
+    elif block_type == "code":
+        code_block = block.get("code", {})
+        language = code_block.get("language", "")
+        text = convert_rich_text(code_block.get("rich_text", []))
+        return f"```{language}\n{text}\n```"
+    else:
+        # その他のブロックタイプは簡単なテキスト変換
+        return f"*[{block_type}]*"
+
+def convert_rich_text(rich_text_array):
+    """リッチテキスト配列をプレーンテキストに変換"""
+    result = ""
+    for text_obj in rich_text_array:
+        text = text_obj.get("plain_text", "")
+        annotations = text_obj.get("annotations", {})
+        
+        if annotations.get("bold", False):
+            text = f"**{text}**"
+        if annotations.get("italic", False):
+            text = f"*{text}*"
+        if annotations.get("code", False):
+            text = f"`{text}`"
+        
+        result += text
+    
+    return result
+
+def sync_recent_pages_content(limit=30):
+    """2025年に編集されたページの完全コンテンツ同期"""
+    print("🔄 2025 Pages Content Sync")
+    print("=" * 60)
+    
+    all_synced = 0
+    all_errors = []
+    
+    for account_name, config in NOTION_ACCOUNTS.items():
+        print(f"\n📊 Syncing 2025 pages for {account_name}")
+        print("-" * 40)
+        
+        # 2025年に編集されたページを取得
+        recent_pages = get_recent_pages(config["token"], account_name, limit)
+        
+        if not recent_pages:
+            print(f"   ⚠️  No recent pages found for {account_name}")
+            continue
+        
+        # 各ページを同期
+        synced_count = 0
+        errors = []
+        
+        for page_info in recent_pages:
+            success, message = sync_page_content(
+                config["token"], 
+                account_name, 
+                page_info, 
+                config["output_dir"]
+            )
+            
+            if success:
+                synced_count += 1
+                print(f"     ✅ {page_info['title'][:30]}...")
+            else:
+                errors.append(f"{page_info['title']}: {message}")
+                print(f"     ❌ {page_info['title'][:30]}... - {message}")
+            
+            # API制限対策
+            time.sleep(0.5)
+        
+        all_synced += synced_count
+        all_errors.extend(errors)
+        
+        print(f"\n   📊 {account_name} Summary:")
+        print(f"   ✅ Synced: {synced_count}/{len(recent_pages)}")
+        if errors:
+            print(f"   ❌ Errors: {len(errors)}")
+    
+    # 結果サマリー
+    print("\n" + "=" * 60)
+    print("🎉 2025 CONTENT SYNC SUMMARY")
+    print("=" * 60)
+    print(f"✅ Total pages synced: {all_synced}")
+    print(f"❌ Total errors: {len(all_errors)}")
+    
+    if all_errors:
+        print(f"\n⚠️  Errors encountered:")
+        for error in all_errors[-5:]:  # 最新5個のエラーのみ表示
+            print(f"   • {error}")
+    
+    return all_synced, all_errors
+
 def main():
     """メイン処理"""
+    import sys
+    
+    if len(sys.argv) > 1 and sys.argv[1] == "content":
+        # Phase 2: 2025年に編集されたページのコンテンツ同期
+        limit = int(sys.argv[2]) if len(sys.argv) > 2 else 30
+        sync_recent_pages_content(limit)
+        return
+    
+    # Phase 1: プレースホルダー作成（既存のコード）
     print("🔄 Dual Notion Account Sync - Placeholder Creation")
     print("=" * 60)
     
@@ -215,9 +464,8 @@ def main():
     # 次のステップの提案
     print(f"\n🎯 NEXT STEPS:")
     print("1. Review created placeholder files in Obsidian")
-    print("2. Identify priority pages for full content sync") 
-    print("3. Run content sync for specific pages/folders")
-    print("4. Set up automated incremental sync")
+    print("2. Run: python3 dual_notion_sync.py content [limit]")
+    print("3. Set up automated incremental sync")
 
 if __name__ == "__main__":
     main()
