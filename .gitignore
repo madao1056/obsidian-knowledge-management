@@ -8,6 +8,10 @@ Thumbs.db
 .obsidian/graph.json
 .obsidian/cache
 .obsidian/plugins/*/data.json
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/manifest.json
+.obsidian/plugins/obsidian-git/obsidian_askpass.sh
 
 # 一時ファイル
 .trash/
@@ -41,3 +45,18 @@ __pycache__/
 # レポート（一時的）
 100_cursor/reports/*.png
 100_cursor/reports/*.jpg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Notion sync
+.notion-backup.json
+sync-notion.sh
+**/ntn_*

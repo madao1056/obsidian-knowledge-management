@@ -9,7 +9,23 @@
       "Bash(git init:*)",
       "Bash(chmod:*)",
       "Bash(gh repo create:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(rm:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(gh auth:*)",
+      "Bash(git config:*)",
+      "Bash(git rm:*)",
+      "Bash(pip3 install:*)",
+      "WebFetch(domain:x.com)",
+      "Bash(mv:*)",
+      "Bash(npm install:*)",
+      "Bash(notion-backup:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)"
     ],
     "deny": []
   }

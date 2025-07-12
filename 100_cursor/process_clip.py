@@ -71,28 +71,61 @@ class ClipProcessor:
             "タグ": ["#literature"]
         }
         
-        # URLパターンを検索
-        url_pattern = r'https?://[^\s]+'
-        urls = re.findall(url_pattern, content)
-        if urls:
-            metadata["ソース"] = urls[0]
+        # YAMLフロントマターをチェック
+        yaml_match = re.match(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+        if yaml_match:
+            yaml_content = yaml_match.group(1)
+            # タイトルを抽出
+            title_match = re.search(r'title:\s*"([^"]+)"', yaml_content)
+            if title_match:
+                metadata["タイトル"] = title_match.group(1)
             
-            # URLから著者情報を推測
-            if "youtube.com" in urls[0] or "youtu.be" in urls[0]:
-                metadata["オーナー"] = "YouTube Channel"
-                metadata["タグ"].append("#literature/video")
-            elif "twitter.com" in urls[0] or "x.com" in urls[0]:
-                metadata["オーナー"] = "Twitter User"
-                metadata["タグ"].append("#literature/sns")
-            elif "medium.com" in urls[0] or "blog" in urls[0]:
-                metadata["オーナー"] = "Blog Author"
-                metadata["タグ"].append("#literature/article")
+            # ソースを抽出
+            source_match = re.search(r'source:\s*"([^"]+)"', yaml_content)
+            if source_match:
+                metadata["ソース"] = source_match.group(1)
+            
+            # 著者を抽出
+            author_match = re.search(r'author:\s*\n\s*-\s*"([^"]+)"', yaml_content)
+            if author_match:
+                metadata["オーナー"] = author_match.group(1).replace('[[', '').replace(']]', '')
+            
+            # タグを抽出
+            tags_match = re.search(r'tags:\s*\n((?:\s*-\s*"[^"]+"\s*\n)+)', yaml_content)
+            if tags_match:
+                tag_lines = tags_match.group(1)
+                yaml_tags = re.findall(r'-\s*"([^"]+)"', tag_lines)
+                for tag in yaml_tags:
+                    if not tag.startswith('#'):
+                        tag = '#' + tag
+                    metadata["タグ"].append(tag)
+            
+            # コンテンツ本文を取得（YAMLフロントマター以降）
+            content = content[yaml_match.end():]
         
-        # 最初の行をタイトルとして使用
-        lines = content.split('\n')
-        if lines:
-            title = lines[0].strip('#').strip()
-            metadata["タイトル"] = title if title else "Untitled"
+        # URLパターンを検索（フォールバック）
+        if not metadata["ソース"]:
+            url_pattern = r'https?://[^\s]+'
+            urls = re.findall(url_pattern, content)
+            if urls:
+                metadata["ソース"] = urls[0]
+        
+        # タイトルが取得できなかった場合、最初の見出しを使用
+        if not metadata["タイトル"]:
+            heading_match = re.search(r'^#{1,6}\s+(.+)$', content, re.MULTILINE)
+            if heading_match:
+                metadata["タイトル"] = heading_match.group(1).strip()
+            else:
+                metadata["タイトル"] = "Untitled"
+        
+        # コンテンツタイプに基づいてタグを追加
+        if metadata["ソース"]:
+            if "youtube.com" in metadata["ソース"] or "youtu.be" in metadata["ソース"]:
+                metadata["タグ"].append("#literature/video")
+            elif "twitter.com" in metadata["ソース"] or "x.com" in metadata["ソース"]:
+                metadata["タグ"].append("#literature/sns")
+            elif "zenn.dev" in metadata["ソース"] or "medium.com" in metadata["ソース"] or "blog" in metadata["ソース"]:
+                metadata["タグ"].append("#literature/article")
         
         # 既存のタグを検索
         existing_tags = re.findall(r'#[\w/]+', content)
