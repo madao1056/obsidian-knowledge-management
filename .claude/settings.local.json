@@ -25,7 +25,9 @@
       "Bash(notion-backup:*)",
       "Bash(source:*)",
       "Bash(pip install:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(rg:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }
