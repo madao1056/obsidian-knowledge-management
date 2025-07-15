@@ -4,93 +4,59 @@
 クリップから記事まで完全自動化
 """
 
-import os
-import re
-import json
-import logging
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Tuple
-import subprocess
+from typing import Dict, List, Optional
 
-class AutoArticleGenerator:
-    def __init__(self, vault_path):
-        self.vault_path = Path(vault_path)
-        self.inbox_clip = self.vault_path / "00_Inbox" / "clip"
-        self.literature = self.vault_path / "20_Literature"
-        self.permanent = self.vault_path / "30_Permanent"
-        self.share = self.vault_path / "70_Share" / "78_Personal"
-        self.log_dir = self.vault_path / "100_cursor" / "logs"
-        
-        # ディレクトリを作成
-        self.log_dir.mkdir(exist_ok=True)
-        self.share.mkdir(exist_ok=True)
-        
-        # ロガーを設定
-        self.setup_logger()
-        
-    def setup_logger(self):
-        """ログシステムを設定"""
-        log_file = self.log_dir / f"auto_article_{datetime.now().strftime('%Y%m%d')}.log"
-        
-        self.logger = logging.getLogger('AutoArticleGenerator')
-        self.logger.setLevel(logging.INFO)
-        
-        # ファイルハンドラー
-        fh = logging.FileHandler(log_file, encoding='utf-8')
-        fh.setLevel(logging.INFO)
-        
-        # フォーマット
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        fh.setFormatter(formatter)
-        
-        self.logger.addHandler(fh)
+from base_processor import BaseProcessor
+from utils import (
+    extract_metadata_from_content,
+    extract_sections,
+    clean_filename,
+    determine_category,
+    run_python_script,
+    create_unique_filename
+)
+from config import VAULT_PATH, INSIGHT_KEYWORDS
+
+
+class AutoArticleGenerator(BaseProcessor):
+    def __init__(self, vault_path: str):
+        super().__init__(vault_path, 'auto_article_generator')
     
-    def process_clip_to_literature(self):
+    def process_clip_to_literature(self) -> List[Path]:
         """Step 1: ClipをLiteratureに処理"""
-        self.logger.info("Step 1: Processing clips to Literature")
+        self.log_info("Step 1: Processing clips to Literature")
         
         # process_clip.pyを実行
-        result = subprocess.run(
-            ['python3', str(self.vault_path / '100_cursor' / 'process_clip.py')],
-            capture_output=True,
-            text=True
-        )
+        script_path = self.cursor_dir / 'process_clip.py'
+        success, stdout, stderr = run_python_script(script_path, self.vault_path)
         
-        if result.returncode == 0:
-            self.logger.info("Clips processed successfully")
+        if success:
+            self.log_info("Clips processed successfully")
             # 処理されたファイルのリストを取得
-            return self._get_recent_literature_files()
+            return self.get_recent_files(self.literature)
         else:
-            self.logger.error(f"Failed to process clips: {result.stderr}")
+            self.log_error(f"Failed to process clips: {stderr}")
             return []
     
-    def _get_recent_literature_files(self, minutes=5):
-        """最近作成されたLiteratureファイルを取得"""
-        recent_files = []
-        cutoff_time = datetime.now().timestamp() - (minutes * 60)
-        
-        for file_path in self.literature.glob("**/*.md"):
-            if file_path.stat().st_mtime > cutoff_time:
-                recent_files.append(file_path)
-        
-        return recent_files
     
-    def extract_key_insights(self, file_path):
+    def extract_key_insights(self, file_path: Path) -> Dict[str, any]:
         """Step 2: Literatureから重要な洞察を抽出"""
-        self.logger.info(f"Step 2: Extracting insights from {file_path}")
+        self.log_info(f"Step 2: Extracting insights from {file_path}")
         
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+        content = self.read_file_safe(file_path)
+        if not content:
+            return None
         
         # メタデータを抽出
-        metadata = self._extract_metadata_from_content(content)
+        metadata = extract_metadata_from_content(content)
         
         # 主要ポイントを抽出
-        main_points = self._extract_main_points(content)
+        main_points = extract_sections(content, "主要ポイント")
         
         # 活用例を抽出
-        use_cases = self._extract_use_cases(content)
+        use_cases = extract_sections(content, "活用例")
         
         # 洞察を生成（実際の実装ではAI APIを使用推奨）
         insights = self._generate_insights(content, main_points, use_cases)
@@ -104,85 +70,14 @@ class AutoArticleGenerator:
             'original_content': content
         }
     
-    def _extract_metadata_from_content(self, content):
-        """コンテンツからメタデータを抽出"""
-        metadata = {}
-        
-        # 処理済みのLiteratureファイルの場合、メタデータセクションから抽出
-        # タイトルを抽出
-        title_match = re.search(r'^# (.+)$', content, re.MULTILINE)
-        if title_match:
-            metadata['title'] = title_match.group(1)
-        
-        # ソースを抽出
-        source_match = re.search(r'- \*\*ソース\*\*: (.+)$', content, re.MULTILINE)
-        if source_match:
-            metadata['source'] = source_match.group(1)
-        
-        # オーナーを抽出
-        owner_match = re.search(r'- \*\*オーナー\*\*: (.+)$', content, re.MULTILINE)
-        if owner_match:
-            metadata['owner'] = owner_match.group(1)
-        
-        # 日付を抽出
-        date_match = re.search(r'- \*\*日付\*\*: (.+)$', content, re.MULTILINE)
-        if date_match:
-            metadata['date'] = date_match.group(1)
-        
-        # タグを抽出
-        tags = re.findall(r'#[\w/]+', content)
-        metadata['tags'] = list(set(tags))
-        
-        # 記事の概要を抽出
-        summary_match = re.search(r'## 記事の概要\n(.+?)(?=\n##|\Z)', content, re.DOTALL)
-        if summary_match:
-            metadata['summary'] = summary_match.group(1).strip()
-        
-        return metadata
     
-    def _extract_main_points(self, content):
-        """主要ポイントを抽出"""
-        points = []
-        
-        # 主要ポイントセクションを探す
-        section_match = re.search(r'## 主要ポイント\n(.*?)(?=##|\Z)', content, re.DOTALL)
-        if section_match:
-            section_content = section_match.group(1)
-            # 箇条書きを抽出
-            points = re.findall(r'^- (.+)$', section_content, re.MULTILINE)
-        
-        return points
-    
-    def _extract_use_cases(self, content):
-        """活用例を抽出"""
-        use_cases = []
-        
-        # 活用例セクションを探す
-        section_match = re.search(r'## 活用例\n(.*?)(?=##|\Z)', content, re.DOTALL)
-        if section_match:
-            section_content = section_match.group(1)
-            # 箇条書きを抽出
-            use_cases = re.findall(r'^- (.+)$', section_content, re.MULTILINE)
-        
-        return use_cases
-    
-    def _generate_insights(self, content, main_points, use_cases):
+    def _generate_insights(self, content: str, main_points: List[str], use_cases: List[str]) -> List[str]:
         """洞察を生成（簡易版）"""
         insights = []
         
         # キーワードベースの簡易分析
-        keywords = {
-            '効率': '生産性向上の観点から重要',
-            'AI': '人工知能の活用による革新',
-            '自動化': 'プロセスの効率化に貢献',
-            '学習': '継続的な成長の機会',
-            'データ': 'データドリブンな意思決定',
-            'システム': 'システム思考の適用',
-            'ツール': '適切なツール選択の重要性'
-        }
-        
         content_lower = content.lower()
-        for keyword, insight_template in keywords.items():
+        for keyword, insight_template in INSIGHT_KEYWORDS.items():
             if keyword.lower() in content_lower:
                 insights.append(f"{insight_template}が示唆される")
         
@@ -196,60 +91,33 @@ class AutoArticleGenerator:
         
         return insights[:3]  # 上位3つの洞察
     
-    def create_permanent_note(self, literature_data):
+    def create_permanent_note(self, literature_data: Dict[str, any]) -> Tuple[Optional[Path], Optional[str]]:
         """Step 3: Permanentノートを作成"""
-        self.logger.info("Step 3: Creating Permanent note")
+        self.log_info("Step 3: Creating Permanent note")
         
         # カテゴリを決定
-        category = self._determine_category(literature_data)
+        category = determine_category(
+            literature_data['original_content'],
+            literature_data['metadata'].get('tags', [])
+        )
         
         # Permanentノートの内容を生成
         permanent_content = self._generate_permanent_content(literature_data)
         
         # ファイル名を生成
-        title_clean = re.sub(r'[^\w\s-]', '', literature_data['metadata'].get('title', 'Untitled'))[:30]
-        filename = f"{title_clean}_洞察.md"
-        file_path = self.permanent / category / filename
-        
-        # ディレクトリを作成
-        file_path.parent.mkdir(exist_ok=True)
+        title_clean = clean_filename(literature_data['metadata'].get('title', 'Untitled'))
+        base_filename = f"{title_clean}_洞察"
+        file_path = create_unique_filename(self.permanent / category, base_filename)
         
         # ファイルを保存
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(permanent_content)
-        
-        self.logger.info(f"Permanent note created: {file_path}")
-        
-        return file_path, permanent_content
-    
-    def _determine_category(self, literature_data):
-        """カテゴリを自動判定"""
-        content = literature_data['original_content'].lower()
-        tags = literature_data['metadata'].get('tags', [])
-        
-        # タグベースの判定
-        if any('tech' in tag for tag in tags):
-            return '32_Tech'
-        elif any('philosophy' in tag or '哲学' in tag for tag in tags):
-            return '31_Philosophy'
-        elif any('productivity' in tag or '生産性' in tag for tag in tags):
-            return '33_Productivity'
-        elif any('ai' in tag for tag in tags):
-            return '35_AI'
-        elif any('product' in tag for tag in tags):
-            return '34_Product'
-        
-        # キーワードベースの判定
-        if 'プログラ' in content or 'コード' in content or '開発' in content:
-            return '32_Tech'
-        elif '生産性' in content or '効率' in content:
-            return '33_Productivity'
-        elif 'ai' in content or '人工知能' in content:
-            return '35_AI'
+        if self.write_file_safe(file_path, permanent_content):
+            self.log_info(f"Permanent note created: {file_path}")
+            return file_path, permanent_content
         else:
-            return '32_Tech'  # デフォルト
+            return None, None
     
-    def _generate_permanent_content(self, literature_data):
+    
+    def _generate_permanent_content(self, literature_data: Dict[str, any]) -> str:
         """Permanentノートの内容を生成"""
         metadata = literature_data['metadata']
         insights = literature_data['insights']
@@ -286,36 +154,35 @@ class AutoArticleGenerator:
 
 ---
 
-**作成日**: {datetime.now().strftime('%Y-%m-%d')}  
+**作成日**: {self.format_timestamp('%Y-%m-%d')}  
 **タグ**: #permanent {' '.join(metadata.get('tags', []))}  
 **参考文献**: [[{Path(literature_data['file_path']).stem}]]
 """
         
         return content
     
-    def create_article(self, permanent_data, literature_data):
+    def create_article(self, permanent_data: Dict[str, any], literature_data: Dict[str, any]) -> Optional[Path]:
         """Step 4: 記事を生成"""
-        self.logger.info("Step 4: Creating article")
+        self.log_info("Step 4: Creating article")
         
         # 記事の内容を生成
         article_content = self._generate_article_content(permanent_data, literature_data)
         
         # ファイル名を生成
-        date_prefix = datetime.now().strftime('%Y%m%d')
+        date_prefix = self.format_timestamp('%Y%m%d')
         title = literature_data['metadata'].get('title', 'Untitled')
-        title_clean = re.sub(r'[^\w\s-]', '', title)[:30]
-        filename = f"{date_prefix}_{title_clean}_記事.md"
-        file_path = self.share / filename
+        title_clean = clean_filename(title)
+        base_filename = f"{date_prefix}_{title_clean}_記事"
+        file_path = create_unique_filename(self.share, base_filename)
         
         # ファイルを保存
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(article_content)
-        
-        self.logger.info(f"Article created: {file_path}")
-        
-        return file_path
+        if self.write_file_safe(file_path, article_content):
+            self.log_info(f"Article created: {file_path}")
+            return file_path
+        else:
+            return None
     
-    def _generate_article_content(self, permanent_data, literature_data):
+    def _generate_article_content(self, permanent_data: Dict[str, any], literature_data: Dict[str, any]) -> str:
         """記事の内容を生成"""
         metadata = literature_data['metadata']
         insights = literature_data['insights']
@@ -393,7 +260,7 @@ class AutoArticleGenerator:
 
 ---
 
-**公開日**: {datetime.now().strftime('%Y-%m-%d')}  
+**公開日**: {self.format_timestamp('%Y-%m-%d')}  
 **カテゴリ**: 学習ノート  
 **タグ**: #share/blog {' '.join(metadata.get('tags', []))}  
 **参考資料**: 
@@ -403,9 +270,9 @@ class AutoArticleGenerator:
         
         return content
     
-    def process_all_clips(self):
+    def process_all_clips(self) -> List[Dict[str, any]]:
         """すべてのクリップを処理して記事まで生成"""
-        self.logger.info("Starting full automation process")
+        self.log_info("Starting full automation process")
         print("🚀 Starting full automation: Clip → Literature → Permanent → Article")
         
         # Step 1: ClipをLiteratureに処理
@@ -423,9 +290,14 @@ class AutoArticleGenerator:
                 
                 # Step 2: 洞察を抽出
                 literature_data = self.extract_key_insights(lit_file)
+                if not literature_data:
+                    continue
                 
                 # Step 3: Permanentノート作成
                 permanent_path, permanent_content = self.create_permanent_note(literature_data)
+                if not permanent_path:
+                    continue
+                    
                 print(f"  ✓ Permanent note created: {permanent_path.name}")
                 
                 # Step 4: 記事生成
@@ -433,17 +305,18 @@ class AutoArticleGenerator:
                     {'path': permanent_path, 'content': permanent_content},
                     literature_data
                 )
-                print(f"  ✓ Article created: {article_path.name}")
-                
-                generated_articles.append({
-                    'literature': lit_file,
-                    'permanent': permanent_path,
-                    'article': article_path,
-                    'metadata': literature_data['metadata']
-                })
+                if article_path:
+                    print(f"  ✓ Article created: {article_path.name}")
+                    
+                    generated_articles.append({
+                        'literature': lit_file,
+                        'permanent': permanent_path,
+                        'article': article_path,
+                        'metadata': literature_data['metadata']
+                    })
                 
             except Exception as e:
-                self.logger.error(f"Error processing {lit_file}: {str(e)}")
+                self.log_error(f"Error processing {lit_file}", e)
                 print(f"  ✗ Error: {str(e)}")
         
         # 最終レポート
@@ -451,32 +324,36 @@ class AutoArticleGenerator:
         
         return generated_articles
     
-    def _generate_automation_report(self, generated_articles):
+    def _generate_automation_report(self, generated_articles: List[Dict[str, any]]) -> None:
         """自動化処理のレポートを生成"""
-        report_path = self.vault_path / "100_cursor" / "reports" / f"automation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
-        report_path.parent.mkdir(exist_ok=True)
+        report_path = self.generate_report_path("automation")
         
-        with open(report_path, 'w', encoding='utf-8') as f:
-            f.write(f"# Automation Report\n\n")
-            f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"**Articles Generated**: {len(generated_articles)}\n\n")
-            
-            if generated_articles:
-                f.write("## Generated Articles\n\n")
-                for item in generated_articles:
-                    f.write(f"### {item['metadata'].get('title', 'Untitled')}\n")
-                    f.write(f"- Literature: `{item['literature'].name}`\n")
-                    f.write(f"- Permanent: `{item['permanent'].name}`\n")
-                    f.write(f"- Article: `{item['article'].name}`\n")
-                    f.write(f"- Source: {item['metadata'].get('source', 'Unknown')}\n\n")
+        content = f"""# Automation Report
+
+**Date**: {self.format_timestamp()}
+**Articles Generated**: {len(generated_articles)}
+
+"""
         
-        print(f"\n📊 Report generated: {report_path.name}")
-        print(f"✅ Total articles generated: {len(generated_articles)}")
+        if generated_articles:
+            content += "## Generated Articles\n\n"
+            for item in generated_articles:
+                content += f"""### {item['metadata'].get('title', 'Untitled')}
+- Literature: `{item['literature'].name}`
+- Permanent: `{item['permanent'].name}`
+- Article: `{item['article'].name}`
+- Source: {item['metadata'].get('source', 'Unknown')}
+
+"""
+        
+        if self.write_file_safe(report_path, content):
+            print(f"\n📊 Report generated: {report_path.name}")
+            print(f"✅ Total articles generated: {len(generated_articles)}")
 
 
 def main():
     """メイン関数"""
-    vault_path = "/Users/hashiguchimasaki/project/obsidian"
+    vault_path = VAULT_PATH
     generator = AutoArticleGenerator(vault_path)
     
     # すべてのクリップを処理

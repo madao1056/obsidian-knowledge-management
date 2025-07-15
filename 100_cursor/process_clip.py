@@ -1,122 +1,59 @@
 #!/usr/bin/env python3
-import os
-import re
+"""
+クリップ処理システム
+InboxのクリップをLiteratureに整理
+"""
+
 import shutil
-import logging
 from datetime import datetime
 from pathlib import Path
-import json
+from typing import Dict, List, Optional, Tuple, Any
 
-class ClipProcessor:
-    def __init__(self, obsidian_root):
-        self.obsidian_root = Path(obsidian_root)
-        self.inbox_clip = self.obsidian_root / "00_Inbox" / "clip"
-        self.literature = self.obsidian_root / "20_Literature"
-        self.log_dir = self.obsidian_root / "100_cursor" / "logs"
-        self.backup_dir = self.obsidian_root / "100_cursor" / "backup"
-        
-        # ディレクトリを作成
-        self.log_dir.mkdir(exist_ok=True)
-        self.backup_dir.mkdir(exist_ok=True)
-        
-        # ロガーを設定
-        self.setup_logger()
+from base_processor import BaseProcessor
+from utils import (
+    extract_metadata_from_content,
+    clean_filename,
+    detect_content_type,
+    create_unique_filename
+)
+
+
+class ClipProcessor(BaseProcessor):
+    def __init__(self, obsidian_root: str):
+        super().__init__(obsidian_root, 'clip_processor')
     
-    def setup_logger(self):
-        """ログシステムを設定"""
-        log_file = self.log_dir / f"clip_processor_{datetime.now().strftime('%Y%m%d')}.log"
-        
-        self.logger = logging.getLogger('ClipProcessor')
-        self.logger.setLevel(logging.INFO)
-        
-        # ファイルハンドラー
-        fh = logging.FileHandler(log_file, encoding='utf-8')
-        fh.setLevel(logging.INFO)
-        
-        # フォーマット
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        fh.setFormatter(formatter)
-        
-        self.logger.addHandler(fh)
-    
-    def backup_file(self, file_path):
+    def backup_file(self, file_path: Path) -> Path:
         """操作前にファイルをバックアップ"""
-        backup_path = self.backup_dir / f"{file_path.stem}_{datetime.now().strftime('%Y%m%d_%H%M%S')}{file_path.suffix}"
-        shutil.copy2(file_path, backup_path)
-        self.logger.info(f"Backup created: {backup_path}")
-        return backup_path
+        timestamp = self.format_timestamp('%Y%m%d_%H%M%S')
+        backup_filename = f"{file_path.stem}_{timestamp}{file_path.suffix}"
+        backup_path = self.backup_dir / backup_filename
         
-    def detect_content_type(self, content):
-        """コンテンツタイプを判定"""
-        content_lower = content.lower()
+        try:
+            shutil.copy2(file_path, backup_path)
+            self.log_info(f"Backup created: {backup_path}")
+            return backup_path
+        except Exception as e:
+            self.log_error(f"Failed to create backup for {file_path}", e)
+            raise
         
-        if any(word in content_lower for word in ['book', '書籍', '本', 'isbn', '著者']):
-            return "21_Books"
-        elif any(word in content_lower for word in ['article', '記事', 'blog', 'ブログ', 'news']):
-            return "22_Articles"
-        elif any(word in content_lower for word in ['video', 'youtube', '動画', 'vimeo']):
-            return "23_Videos"
-        elif any(word in content_lower for word in ['twitter', 'x.com', 'facebook', 'instagram', 'sns']):
-            return "24_SNS"
-        else:
-            return "29_Other"
     
-    def extract_metadata(self, content):
-        """メタデータを抽出"""
+    def extract_metadata(self, content: str) -> Dict[str, Any]:
+        """メタデータを抽出（日本語形式）"""
+        # 共通関数で基本的なメタデータを抽出
+        base_metadata = extract_metadata_from_content(content)
+        
+        # 日本語形式に変換
         metadata = {
-            "タイトル": "",
-            "ソース": "",
-            "オーナー": "",
-            "日付": datetime.now().strftime("%Y-%m-%d"),
-            "タグ": ["#literature"]
+            "タイトル": base_metadata.get('title', 'Untitled'),
+            "ソース": base_metadata.get('source', ''),
+            "オーナー": base_metadata.get('owner', ''),
+            "日付": base_metadata.get('date', self.format_timestamp('%Y-%m-%d')),
+            "タグ": base_metadata.get('tags', [])
         }
         
-        # YAMLフロントマターをチェック
-        yaml_match = re.match(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
-        if yaml_match:
-            yaml_content = yaml_match.group(1)
-            # タイトルを抽出
-            title_match = re.search(r'title:\s*"([^"]+)"', yaml_content)
-            if title_match:
-                metadata["タイトル"] = title_match.group(1)
-            
-            # ソースを抽出
-            source_match = re.search(r'source:\s*"([^"]+)"', yaml_content)
-            if source_match:
-                metadata["ソース"] = source_match.group(1)
-            
-            # 著者を抽出
-            author_match = re.search(r'author:\s*\n\s*-\s*"([^"]+)"', yaml_content)
-            if author_match:
-                metadata["オーナー"] = author_match.group(1).replace('[[', '').replace(']]', '')
-            
-            # タグを抽出
-            tags_match = re.search(r'tags:\s*\n((?:\s*-\s*"[^"]+"\s*\n)+)', yaml_content)
-            if tags_match:
-                tag_lines = tags_match.group(1)
-                yaml_tags = re.findall(r'-\s*"([^"]+)"', tag_lines)
-                for tag in yaml_tags:
-                    if not tag.startswith('#'):
-                        tag = '#' + tag
-                    metadata["タグ"].append(tag)
-            
-            # コンテンツ本文を取得（YAMLフロントマター以降）
-            content = content[yaml_match.end():]
-        
-        # URLパターンを検索（フォールバック）
-        if not metadata["ソース"]:
-            url_pattern = r'https?://[^\s]+'
-            urls = re.findall(url_pattern, content)
-            if urls:
-                metadata["ソース"] = urls[0]
-        
-        # タイトルが取得できなかった場合、最初の見出しを使用
-        if not metadata["タイトル"]:
-            heading_match = re.search(r'^#{1,6}\s+(.+)$', content, re.MULTILINE)
-            if heading_match:
-                metadata["タイトル"] = heading_match.group(1).strip()
-            else:
-                metadata["タイトル"] = "Untitled"
+        # literature タグを追加
+        if "#literature" not in metadata["タグ"]:
+            metadata["タグ"].append("#literature")
         
         # コンテンツタイプに基づいてタグを追加
         if metadata["ソース"]:
@@ -124,19 +61,15 @@ class ClipProcessor:
                 metadata["タグ"].append("#literature/video")
             elif "twitter.com" in metadata["ソース"] or "x.com" in metadata["ソース"]:
                 metadata["タグ"].append("#literature/sns")
-            elif "zenn.dev" in metadata["ソース"] or "medium.com" in metadata["ソース"] or "blog" in metadata["ソース"]:
+            elif any(domain in metadata["ソース"] for domain in ["zenn.dev", "medium.com", "qiita.com"]) or "blog" in metadata["ソース"]:
                 metadata["タグ"].append("#literature/article")
-        
-        # 既存のタグを検索
-        existing_tags = re.findall(r'#[\w/]+', content)
-        metadata["タグ"].extend(existing_tags)
         
         # 重複を削除
         metadata["タグ"] = list(set(metadata["タグ"]))
         
         return metadata
     
-    def generate_summary(self, content):
+    def generate_summary(self, content: str) -> Dict[str, Any]:
         """コンテンツのサマリーを生成"""
         summary = {
             "記事の概要": "",
@@ -165,19 +98,21 @@ class ClipProcessor:
         
         return summary
     
-    def process_file(self, file_path):
+    def process_file(self, file_path: Path) -> Tuple[Optional[Path], Dict[str, Any], Dict[str, Any]]:
         """ファイルを処理して適切なフォルダに移動"""
-        self.logger.info(f"Processing file: {file_path}")
+        self.log_info(f"Processing file: {file_path}")
         
         try:
             # バックアップを作成
             self.backup_file(file_path)
             
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
+            # ファイルを読み込み
+            content = self.read_file_safe(file_path)
+            if not content:
+                raise ValueError(f"Failed to read file: {file_path}")
             
             # コンテンツタイプを判定
-            content_type = self.detect_content_type(content)
+            content_type = detect_content_type(content)
             target_folder = self.literature / content_type
             
             # メタデータを抽出
@@ -187,39 +122,30 @@ class ClipProcessor:
             summary = self.generate_summary(content)
             
             # 新しいファイル名を生成
-            date_prefix = datetime.now().strftime("%Y%m%d")
-            title_clean = re.sub(r'[^\w\s-]', '', metadata["タイトル"])[:50]
-            title_clean = title_clean.replace(' ', '_')
-            new_filename = f"{date_prefix}_{title_clean}.md"
-            
-            # 重複ファイル名の確認
-            counter = 1
-            original_filename = new_filename
-            while (target_folder / new_filename).exists():
-                name_part = original_filename.replace('.md', '')
-                new_filename = f"{name_part}_{counter}.md"
-                counter += 1
+            date_prefix = self.format_timestamp("%Y%m%d")
+            title_clean = clean_filename(metadata["タイトル"])
+            base_filename = f"{date_prefix}_{title_clean}"
+            target_path = create_unique_filename(target_folder, base_filename)
             
             # ファイルの内容を更新
             updated_content = self.format_content(content, metadata, summary)
             
-            # ファイルを移動
-            target_path = target_folder / new_filename
-            with open(target_path, 'w', encoding='utf-8') as f:
-                f.write(updated_content)
+            # ファイルを保存
+            if not self.write_file_safe(target_path, updated_content):
+                raise ValueError(f"Failed to write file: {target_path}")
             
-            self.logger.info(f"File processed successfully: {file_path} -> {target_path}")
+            self.log_info(f"File processed successfully: {file_path} -> {target_path}")
             
             # 元のファイルを削除
-            os.remove(file_path)
+            file_path.unlink()
             
             return target_path, metadata, summary
             
         except Exception as e:
-            self.logger.error(f"Error processing file {file_path}: {str(e)}")
+            self.log_error(f"Error processing file {file_path}", e)
             raise
     
-    def format_content(self, original_content, metadata, summary):
+    def format_content(self, original_content: str, metadata: Dict[str, Any], summary: Dict[str, Any]) -> str:
         """フォーマットされたコンテンツを生成"""
         formatted = f"""# {metadata['タイトル']}
 
@@ -253,20 +179,20 @@ class ClipProcessor:
         
         return formatted
     
-    def process_all_clips(self):
+    def process_all_clips(self) -> List[Dict[str, Any]]:
         """clipフォルダ内のすべてのファイルを処理"""
         if not self.inbox_clip.exists():
-            self.logger.warning(f"Clip folder not found: {self.inbox_clip}")
+            self.log_warning(f"Clip folder not found: {self.inbox_clip}")
             print(f"Clip folder not found: {self.inbox_clip}")
             return []
         
         clip_files = list(self.inbox_clip.glob("*.md"))
         if not clip_files:
-            self.logger.info("No clip files found to process")
+            self.log_info("No clip files found to process")
             print("No clip files found to process")
             return []
         
-        self.logger.info(f"Found {len(clip_files)} files to process")
+        self.log_info(f"Found {len(clip_files)} files to process")
         processed = []
         failed = []
         
@@ -285,7 +211,7 @@ class ClipProcessor:
                     "file": str(file_path),
                     "error": str(e)
                 })
-                self.logger.error(f"Error processing {file_path}: {e}")
+                self.log_error(f"Error processing {file_path}", e)
                 print(f"✗ Error processing {file_path.name}: {e}")
         
         # 処理結果をレポート
@@ -293,34 +219,39 @@ class ClipProcessor:
         
         return processed
     
-    def generate_report(self, processed, failed):
+    def generate_report(self, processed: List[Dict[str, Any]], failed: List[Dict[str, Any]]) -> None:
         """処理結果のレポートを生成"""
-        report_path = self.obsidian_root / "100_cursor" / "reports" / f"clip_processing_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
-        report_path.parent.mkdir(exist_ok=True)
+        report_path = self.generate_report_path("clip_processing")
         
-        with open(report_path, 'w', encoding='utf-8') as f:
-            f.write(f"# Clip Processing Report\n\n")
-            f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"**Processed**: {len(processed)} files\n")
-            f.write(f"**Failed**: {len(failed)} files\n\n")
-            
-            if processed:
-                f.write("## Successfully Processed\n\n")
-                for item in processed:
-                    f.write(f"- {Path(item['original']).name} → {Path(item['target']).parent.name}/{Path(item['target']).name}\n")
-                    f.write(f"  - Title: {item['metadata']['タイトル']}\n")
-                    f.write(f"  - Source: {item['metadata']['ソース']}\n\n")
-            
-            if failed:
-                f.write("## Failed to Process\n\n")
-                for item in failed:
-                    f.write(f"- {Path(item['file']).name}: {item['error']}\n")
+        content = f"""# Clip Processing Report
+
+**Date**: {self.format_timestamp()}
+**Processed**: {len(processed)} files
+**Failed**: {len(failed)} files
+
+"""
         
-        self.logger.info(f"Report generated: {report_path}")
-        print(f"Report generated: {report_path}")
+        if processed:
+            content += "## Successfully Processed\n\n"
+            for item in processed:
+                content += f"""- {Path(item['original']).name} → {Path(item['target']).parent.name}/{Path(item['target']).name}
+  - Title: {item['metadata']['タイトル']}
+  - Source: {item['metadata']['ソース']}
+
+"""
+        
+        if failed:
+            content += "## Failed to Process\n\n"
+            for item in failed:
+                content += f"- {Path(item['file']).name}: {item['error']}\n"
+        
+        if self.write_file_safe(report_path, content):
+            self.log_info(f"Report generated: {report_path}")
+            print(f"Report generated: {report_path}")
 
 
-if __name__ == "__main__":
+def main():
+    """メイン関数"""
     # Obsidianのルートディレクトリを指定
     obsidian_root = "/Users/hashiguchimasaki/project/obsidian"
     
@@ -331,3 +262,7 @@ if __name__ == "__main__":
         print(f"\nProcessed {len(processed_files)} files:")
         for file_info in processed_files:
             print(f"  - {file_info['metadata']['タイトル']} -> {Path(file_info['target']).parent.name}")
+
+
+if __name__ == "__main__":
+    main()

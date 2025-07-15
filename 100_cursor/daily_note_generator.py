@@ -4,44 +4,20 @@ Daily Note自動生成スクリプト
 毎日のDaily Noteを自動生成します。
 """
 
-import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from pathlib import Path
+from typing import List, Optional, Dict
 
-class DailyNoteGenerator:
-    def __init__(self, vault_path):
-        self.vault_path = Path(vault_path)
-        self.inbox_path = self.vault_path / "00_Inbox"
-        self.templates_path = self.vault_path / "100_cursor" / "templates"
-        self.log_dir = self.vault_path / "100_cursor" / "logs"
-        
-        # ディレクトリを作成
-        self.log_dir.mkdir(exist_ok=True)
-        self.templates_path.mkdir(exist_ok=True)
-        
-        # ロガーを設定
-        self.setup_logger()
-        
-    def setup_logger(self):
-        """ログシステムを設定"""
-        log_file = self.log_dir / f"daily_note_generator_{datetime.now().strftime('%Y%m%d')}.log"
-        
-        self.logger = logging.getLogger('DailyNoteGenerator')
-        self.logger.setLevel(logging.INFO)
-        
-        # ファイルハンドラー
-        fh = logging.FileHandler(log_file, encoding='utf-8')
-        fh.setLevel(logging.INFO)
-        
-        # フォーマット
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        fh.setFormatter(formatter)
-        
-        self.logger.addHandler(fh)
+from base_processor import BaseProcessor
+
+
+class DailyNoteGenerator(BaseProcessor):
+    def __init__(self, vault_path: str):
+        super().__init__(vault_path, 'daily_note_generator')
     
-    def get_daily_note_template(self):
+    def get_daily_note_template(self) -> str:
         """Daily Noteテンプレートを取得"""
-        template_path = self.templates_path / "daily_note_template.md"
+        template_path = self.templates_dir / "daily_note_template.md"
         
         # デフォルトテンプレート
         default_template = """# {{date}}
@@ -89,21 +65,18 @@ class DailyNoteGenerator:
 **タグ**: #daily #{{year}} #{{month}}
 """
         
-        try:
-            if template_path.exists():
-                with open(template_path, 'r', encoding='utf-8') as f:
-                    return f.read()
-            else:
-                # デフォルトテンプレートを保存
-                with open(template_path, 'w', encoding='utf-8') as f:
-                    f.write(default_template)
-                self.logger.info(f"Created default template: {template_path}")
-                return default_template
-        except Exception as e:
-            self.logger.error(f"Error loading template: {e}")
-            return default_template
+        if template_path.exists():
+            content = self.read_file_safe(template_path)
+            if content:
+                return content
+        
+        # デフォルトテンプレートを保存
+        if self.write_file_safe(template_path, default_template):
+            self.log_info(f"Created default template: {template_path}")
+        
+        return default_template
     
-    def create_daily_note(self, target_date=None):
+    def create_daily_note(self, target_date: Optional[date] = None) -> Optional[Path]:
         """Daily Noteを作成"""
         if target_date is None:
             target_date = datetime.now().date()
@@ -114,7 +87,7 @@ class DailyNoteGenerator:
         
         # 既に存在する場合はスキップ
         if file_path.exists():
-            self.logger.info(f"Daily note already exists: {filename}")
+            self.log_info(f"Daily note already exists: {filename}")
             print(f"Daily note already exists: {filename}")
             return file_path
         
@@ -128,47 +101,40 @@ class DailyNoteGenerator:
         content = template.replace('{{date}}', target_date.strftime('%Y-%m-%d'))
         content = content.replace('{{yesterday}}', yesterday.strftime('%Y%m%d_daily'))
         content = content.replace('{{tomorrow}}', tomorrow.strftime('%Y%m%d_daily'))
-        content = content.replace('{{datetime}}', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        content = content.replace('{{datetime}}', self.format_timestamp())
         content = content.replace('{{year}}', target_date.strftime('%Y'))
         content = content.replace('{{month}}', target_date.strftime('%m'))
         
         # ファイルを作成
-        try:
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(content)
-            
-            self.logger.info(f"Created daily note: {filename}")
+        if self.write_file_safe(file_path, content):
+            self.log_info(f"Created daily note: {filename}")
             print(f"✓ Created daily note: {filename}")
             return file_path
-            
-        except Exception as e:
-            self.logger.error(f"Error creating daily note: {e}")
-            print(f"✗ Error creating daily note: {e}")
-            raise
+        else:
+            print(f"✗ Error creating daily note: {filename}")
+            return None
     
-    def create_weekly_notes(self):
+    def create_weekly_notes(self) -> List[Path]:
         """今週のDaily Noteを一括作成"""
         today = datetime.now().date()
         
         # 今週の月曜日を取得
         monday = today - timedelta(days=today.weekday())
         
-        created_notes = []
+        created_notes: List[Path] = []
         for i in range(7):  # 月曜日から日曜日まで
-            date = monday + timedelta(days=i)
-            try:
-                note_path = self.create_daily_note(date)
+            target_date = monday + timedelta(days=i)
+            note_path = self.create_daily_note(target_date)
+            if note_path:
                 created_notes.append(note_path)
-            except Exception as e:
-                self.logger.error(f"Failed to create note for {date}: {e}")
         
         return created_notes
     
-    def get_daily_note_stats(self):
+    def get_daily_note_stats(self) -> Dict[str, int]:
         """Daily Noteの統計を取得"""
         daily_notes = list(self.inbox_path.glob("*_daily.md"))
         
-        stats = {
+        stats: Dict[str, int] = {
             'total_notes': len(daily_notes),
             'this_month': 0,
             'this_year': 0
@@ -186,7 +152,7 @@ class DailyNoteGenerator:
         return stats
 
 
-def main():
+def main() -> None:
     """メイン関数"""
     vault_path = "/Users/hashiguchimasaki/project/obsidian"
     generator = DailyNoteGenerator(vault_path)
@@ -197,7 +163,7 @@ def main():
     # 今日のDaily Noteを作成
     generator.create_daily_note()
     
-    # 統計を表示
+    # 統訨を表示
     stats = generator.get_daily_note_stats()
     print(f"\nDaily Note Statistics:")
     print(f"  - Total notes: {stats['total_notes']}")
