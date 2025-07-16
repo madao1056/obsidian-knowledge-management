@@ -99,7 +99,54 @@ claude
 - APIキーやパスワードは環境変数で管理
 - セキュリティベストプラクティスの遵守を指示
 
+## VS Code拡張機能
+
+### インストールと使用
+Claude CodeはVS Code、Cursor、Windsurfなどの主要なエディタで使用可能です。VS Code拡張機能をインストールすることで、エディタ内から直接起動できます。
+
+```bash
+# VS Code拡張機能から起動
+# 複数のインスタンスを並列実行可能（異なるプロジェクト部分で作業する場合）
+```
+
+## ターミナルUI機能
+
+### 基本操作
+- **@タグ**: ファイルを簡単に参照
+- **スラッシュコマンド**: `/clear`で履歴クリア、`/init`でプロジェクト初期化
+- **モデル選択**: Opus（高性能）とSonnet（効率的）を選択可能
+- **使用量管理**: 50%使用でOpusからSonnetに自動切り替え
+
+### キーボードショートカット（追加）
+- **Shift+Enter**: 新しい行（`/terminal-setup`で設定）
+- **Shift+ドラッグ**: ファイルを参照として追加
+- **Control+V**: 画像貼り付け（Command+Vではない）
+- **Escape**: Claude停止（Control+Cは完全終了）
+- **Escape×2**: 過去のメッセージ一覧表示
+
+### 危険なスキップオプション
+```bash
+# 毎回の権限確認をスキップ（自己責任）
+claude --dangerously-skip-permissions
+```
+**注意**: ファイル編集やコマンド実行の都度確認をスキップします。便利ですが、リスクを理解した上で使用してください。
+
 ## 高度な機能
+
+### GitHubインテグレーション
+```bash
+# GitHub連携アプリをインストール
+/install-github-app
+```
+
+PRレビューの自動化設定（`claude-code-review.yml`）：
+```yaml
+# 簡潔で重要な指摘のみに絞る設定例
+review_prompt: |
+  Focus on bugs and security vulnerabilities.
+  Be concise and skip minor style issues.
+  Only comment on critical problems.
+```
 
 ### メモリ管理（CLAUDE.md）
 プロジェクトルートに`CLAUDE.md`ファイルを作成することで、プロジェクト固有の情報を記憶させることができます：
@@ -118,11 +165,51 @@ claude
 - DIコンテナはTsyringe使用
 ```
 
+### カスタムフック（`.claude/hooks.mjs`）
+```javascript
+// 編集前に実行されるフック
+export async function preEdit({ filePath, oldContent, newContent }) {
+  // ファイルのフォーマットチェック
+  if (filePath.match(/\.(ts|tsx|js|jsx)$/)) {
+    execSync(`yarn prettier --check "${filePath}"`, { stdio: 'pipe' });
+  }
+  return { proceed: true };
+}
+
+// 編集後に実行されるフック
+export async function postEdit({ filePath, oldContent, newContent, success }) {
+  if (!success) return;
+  // TypeScriptの型チェック
+  if (filePath.match(/\.(ts|tsx)$/)) {
+    execSync(`npx tsc --noEmit --skipLibCheck "${filePath}"`, { stdio: 'pipe' });
+  }
+}
+```
+
+### カスタムスラッシュコマンド
+`.claude/commands/`ディレクトリに`.md`ファイルを作成：
+
+```bash
+# .claude/commands/test.md
+Generate comprehensive tests for $ARGUMENTS with the following requirements:
+- Use our testing framework conventions
+- Include edge cases
+- Mock external dependencies
+```
+
+使用例：`/test MyButton`
+
+### メモリシステム
+- **#記号**: 簡単にメモリ追加（例：`#always use MUI components`）
+- **階層的CLAUDE.md**: プロジェクトレベルとディレクトリレベルで設定可能
+- **グローバル/ローカル設定**: ユーザー全体または特定プロジェクトの設定
+
 ### ツール連携
 - Git操作の自動化
 - テスト実行とカバレッジ確認
 - デプロイスクリプトの実行
 - CI/CDパイプラインとの統合
+- Pull Requestへの自動コメント・修正
 
 ## トラブルシューティング
 
