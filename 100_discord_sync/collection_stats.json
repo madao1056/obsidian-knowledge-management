@@ -1,0 +1,77 @@
+{
+  "channels": {
+    "あなたのこと教えて": {
+      "total": 31,
+      "saved": 0
+    },
+    "お知らせ": {
+      "total": 11,
+      "saved": 0
+    },
+    "ようこそ": {
+      "total": 0,
+      "saved": 0
+    },
+    "質問（案件）": {
+      "total": 0,
+      "saved": 0
+    },
+    "質問（その他）": {
+      "total": 0,
+      "saved": 0
+    },
+    "雑談": {
+      "total": 6,
+      "saved": 0
+    },
+    "規則": {
+      "total": 0,
+      "saved": 0
+    },
+    "日報部屋": {
+      "total": 290,
+      "saved": 0
+    },
+    "最初にやること": {
+      "total": 2,
+      "saved": 0
+    },
+    "gpts更新": {
+      "total": 6,
+      "saved": 0
+    },
+    "嬉しかったこと": {
+      "total": 1,
+      "saved": 0
+    },
+    "月報部屋": {
+      "total": 31,
+      "saved": 1
+    },
+    "タスクメモ": {
+      "total": 4,
+      "saved": 0
+    },
+    "企画部屋（公式）": {
+      "total": 38,
+      "saved": 0
+    },
+    "企画部屋（お気軽）": {
+      "total": 56,
+      "saved": 0
+    },
+    "ai使用方法ナレッジ": {
+      "total": 22,
+      "saved": 0
+    },
+    "案件ナレッジ": {
+      "total": 2,
+      "saved": 0
+    }
+  },
+  "totalMessages": 500,
+  "totalSaved": 1,
+  "startTime": "2025-07-18T06:32:28.522Z",
+  "endTime": "2025-07-18T06:33:38.948Z",
+  "duration": 70
+}

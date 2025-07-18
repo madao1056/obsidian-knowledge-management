@@ -1,0 +1,14 @@
+{
+  "name": "discord-obsidian-sync",
+  "version": "1.0.0",
+  "description": "Discord to Obsidian sync bot",
+  "main": "discord_bot.js",
+  "scripts": {
+    "start": "node discord_bot.js",
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "axios": "^1.6.2"
+  }
+}

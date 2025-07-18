@@ -60,3 +60,17 @@ ENV/
 .notion-backup.json
 sync-notion.sh
 **/ntn_*
+
+# Discord連携システムの除外ファイル
+100_discord_sync/venv/
+100_discord_sync/node_modules/
+100_discord_sync/config.json
+100_discord_sync/*.pid
+100_discord_sync/*.log
+100_discord_sync/test_data.json
+100_discord_sync/processing_stats.json
+100_discord_sync/__pycache__/
+100_discord_sync/package-lock.json
+
+# プライバシー保護（Discord受信データ）
+00_Inbox/discord/
