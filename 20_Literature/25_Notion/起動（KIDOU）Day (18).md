@@ -5,7 +5,7 @@ last_edited_time: 2025-05-09T08:03:00.000Z
 url: https://www.notion.so/KIDOU-Day-18-1eeade4ad294800e8ccbf8fa9fc25d95
 parent_type: block_id
 archived: False
-sync_time: 2025-07-12T14:37:11.681014
+sync_time: 2025-07-19T12:50:05.526845
 ---
 
 # 起動（KIDOU）Day (18)

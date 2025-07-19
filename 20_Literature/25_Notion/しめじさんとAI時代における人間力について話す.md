@@ -5,7 +5,7 @@ last_edited_time: 2025-05-05T12:17:00.000Z
 url: https://www.notion.so/AI-1eaade4ad29481a7bd36ca3bc699a86d
 parent_type: database_id
 archived: False
-sync_time: 2025-07-12T14:37:32.129685
+sync_time: 2025-07-19T12:50:29.369191
 ---
 
 # しめじさんとAI時代における人間力について話す

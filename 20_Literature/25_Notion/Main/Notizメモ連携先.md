@@ -8,16 +8,7 @@ last_edited_time: 2025-07-12T05:14:00.000Z
 sync_status: full_content
 sync_time: 2025-07-12T15:11:02.213172
 ---
-
 # Notizメモ連携先
 
-*[bookmark]*
-
-*[bookmark]*
-
-*[child_database]*
-
-
----
-
-*Synced from Notion Main account at 2025-07-12 15:11:02*
+[Bookmark](https://www.youtube.com/watch?v=jzsaNW_aq7A)
+[Bookmark](https://note.com/hal_shu1626/n/n72e47588dcda#ff154ff2-eaa4-4391-a0d4-96f044a3aaa7)

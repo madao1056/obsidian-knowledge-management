@@ -5,7 +5,7 @@ last_edited_time: 2025-05-09T08:03:00.000Z
 url: https://www.notion.so/KIDOU-Day-10-1eeade4ad294806785e5e04167fa0a72
 parent_type: block_id
 archived: False
-sync_time: 2025-07-12T14:37:17.011024
+sync_time: 2025-07-19T12:50:09.585648
 ---
 
 # 起動（KIDOU）Day (10)

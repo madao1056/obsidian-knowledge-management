@@ -7,7 +7,6 @@ parent_type: database_id
 archived: False
 sync_time: 2025-07-12T14:40:53.553073
 ---
-
 # Plain Text
 
 ```plain text

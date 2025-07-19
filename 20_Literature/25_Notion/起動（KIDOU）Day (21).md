@@ -5,7 +5,7 @@ last_edited_time: 2025-05-09T08:03:00.000Z
 url: https://www.notion.so/KIDOU-Day-21-1eeade4ad2948098938fca9cd34c923d
 parent_type: block_id
 archived: False
-sync_time: 2025-07-12T14:37:09.210325
+sync_time: 2025-07-19T12:50:02.518870
 ---
 
 # 起動（KIDOU）Day (21)

@@ -5,7 +5,7 @@ last_edited_time: 2025-06-16T07:46:00.000Z
 url: https://www.notion.so/MakeCode-TypeScript-214ade4ad294804894b3f0f7e6921b78
 parent_type: page_id
 archived: False
-sync_time: 2025-07-12T14:35:41.369798
+sync_time: 2025-07-19T12:48:18.046088
 ---
 
 # MakeCode言語: ブロック、静的TypeScript
@@ -134,3 +134,13 @@ There are following differences currently, which should be fixed soon. They are 
 - x.foo, where x is class and foo is method cannot be currently used as a value; we could make it equivalent to JavaScript’s x.foo.bind(x)
 - Object.keys() is currently not implemented for classes; when it will be the order of fields will be static declaration order
 - how to validate types of C++ classes (Pin mostly)?
+
+## 🏷️ タグ
+#Web制作_技術
+
+## 🔗 関連ナレッジ
+- [[営業文改善の完全ガイド：ウェブ制作フリーランスのための実践戦略]] - カテゴリ: Web制作・技術 キーワード: ブロック, HTML, JavaScript
+- [[課題について]] - カテゴリ: Web制作・技術 キーワード: ブロック, JavaScript, TypeScript
+- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: Web制作・技術 キーワード: HTML, JavaScript
+- [[まさた_才能なしでもWeb制作で月収50万以上が可能な理由]] - カテゴリ: Web制作・技術 キーワード: HTML, JavaScript
+- [[まさた_Web制作は自分には向いてないと諦めかけた過去]] - カテゴリ: Web制作・技術 キーワード: HTML, JavaScript

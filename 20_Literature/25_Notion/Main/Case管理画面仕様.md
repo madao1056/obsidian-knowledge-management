@@ -8,17 +8,52 @@ last_edited_time: 2023-09-07T08:15:00.000Z
 sync_status: placeholder
 sync_time: 2025-07-12T15:01:15.090766
 ---
-
 # Case管理画面仕様
 
-*🔄 This is a placeholder file from Notion Main account.*
-
-**Original URL**: https://www.notion.so/Case-3b931fbabe8445f787fd5b0168897869
-
-**Status**: Content will be synced in a future update.
-
-**Page ID**: `3b931fba-be84-45f7-87fd-5b0168897869`
-
+**カスタムフィールド（一覧ページタブ）**
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/462ffd2e-ad20-4044-873f-f2a88cd54042/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SDPSOYBY%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBVEivSxQdYMnaINYgnc4hg0PhIAsv%2F3WDTpDyxkiVByAiBOCF%2Ff03e1QGzlIGI7Rfjh3syCt3GGPnPqUDrW0N5PXCqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtYZYEzHVtLVtCrTFKtwDD5G5ympjCIU%2B4Xeoe6X0aWNWkEroItFpsPcQOzCP5n22P3Ahm1dmrxmdLty1aog0G04YdVCgK7p7ezom9fM2%2BOzT3e7wP98QNZdI%2BJQijkbIo1TnHTddpARSmCLSHjOrU3wXAci5E5AcIAfGmYi4Tu6c2DnW6BqQ8sqQi9%2FOcWe9pqiWxNo08M03R6PlkXj2jweoGxaKHxnVUGX1%2B9qOXITAGV2j2XvHr%2F%2BFc1QmiFNDtgGVja5iMzWJBIYeRWim%2FcdX0csc5TkmlpFbglyPOJpvHBuyHcCH3IzR%2FBdobmWslzRSLfl5S1PnLXpA5JjKgmmwrIHxII%2FtB23SiPbeYKhuMiH1FXPkP0YCyuSdqf8CUkIzf5D8R3fJqwj0DBr9t4DcZ7d99C%2FyQ%2FATBIAZjrx2CX5a1pvDwjFm8%2BOEl8aTZC1kIVGfDxQc7b1MndGm8LfHncQU%2FH6HBvgnarhIjHGsLpSgmbgVQHh%2FXXh9JzrvDcmfayHuXr4RNGkRV0oz44CGxzNrd1Qc9PGjj5N5XPZtiO%2BVVNz1UmyYagq%2ByjBl7%2BXUKWm3pyOWVzxDTpT%2BAa3Qp%2ByNOmqOsEUvS8iJNpKlaPZ6xvvxo%2BrgMw8CCaoxucm%2BSItOlgkie0Yw0KrswwY6pgFDeS4hVVOrqwpIJsKdFCQJIWNGb42fATRaJweUWAHRiu%2FdwS%2Bzh2RzlDB5hwucOO5I%2FPRa6cIhUgN6IO3tXgryRTkQlDsKBrQUNfqnfsa0Hrdvs4vpSNJUJ7kevcWtGvQSsHHjMQbYufZLWdexyQX9btnt3T2xX64DkpxdoeE7d%2F6WzuhSnYX2aWgM0NOYQEPmgj7SyLR6ORCt6jfj2dDcqViifTQC&X-Amz-Signature=cff71ef4493af893ba771f2a1dfb6a1e1cc8a1230583a1a987304a8399f65645&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+**カスタムフィールド（詳細ページタブ）**
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/3a47fc62-b014-40c4-9fdd-d92c7edaabb9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SDPSOYBY%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBVEivSxQdYMnaINYgnc4hg0PhIAsv%2F3WDTpDyxkiVByAiBOCF%2Ff03e1QGzlIGI7Rfjh3syCt3GGPnPqUDrW0N5PXCqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtYZYEzHVtLVtCrTFKtwDD5G5ympjCIU%2B4Xeoe6X0aWNWkEroItFpsPcQOzCP5n22P3Ahm1dmrxmdLty1aog0G04YdVCgK7p7ezom9fM2%2BOzT3e7wP98QNZdI%2BJQijkbIo1TnHTddpARSmCLSHjOrU3wXAci5E5AcIAfGmYi4Tu6c2DnW6BqQ8sqQi9%2FOcWe9pqiWxNo08M03R6PlkXj2jweoGxaKHxnVUGX1%2B9qOXITAGV2j2XvHr%2F%2BFc1QmiFNDtgGVja5iMzWJBIYeRWim%2FcdX0csc5TkmlpFbglyPOJpvHBuyHcCH3IzR%2FBdobmWslzRSLfl5S1PnLXpA5JjKgmmwrIHxII%2FtB23SiPbeYKhuMiH1FXPkP0YCyuSdqf8CUkIzf5D8R3fJqwj0DBr9t4DcZ7d99C%2FyQ%2FATBIAZjrx2CX5a1pvDwjFm8%2BOEl8aTZC1kIVGfDxQc7b1MndGm8LfHncQU%2FH6HBvgnarhIjHGsLpSgmbgVQHh%2FXXh9JzrvDcmfayHuXr4RNGkRV0oz44CGxzNrd1Qc9PGjj5N5XPZtiO%2BVVNz1UmyYagq%2ByjBl7%2BXUKWm3pyOWVzxDTpT%2BAa3Qp%2ByNOmqOsEUvS8iJNpKlaPZ6xvvxo%2BrgMw8CCaoxucm%2BSItOlgkie0Yw0KrswwY6pgFDeS4hVVOrqwpIJsKdFCQJIWNGb42fATRaJweUWAHRiu%2FdwS%2Bzh2RzlDB5hwucOO5I%2FPRa6cIhUgN6IO3tXgryRTkQlDsKBrQUNfqnfsa0Hrdvs4vpSNJUJ7kevcWtGvQSsHHjMQbYufZLWdexyQX9btnt3T2xX64DkpxdoeE7d%2F6WzuhSnYX2aWgM0NOYQEPmgj7SyLR6ORCt6jfj2dDcqViifTQC&X-Amz-Signature=c324bc2704d7d69224fb57c6c3cec501c19fd6ed38da099212a0cd118e4802ec&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+# 【確認事項】
+### タイトル
+施設名称が入ります（”様”自動付与）
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/4bf5f440-c5a7-4de9-9253-61eaed3b58df/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SDPSOYBY%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBVEivSxQdYMnaINYgnc4hg0PhIAsv%2F3WDTpDyxkiVByAiBOCF%2Ff03e1QGzlIGI7Rfjh3syCt3GGPnPqUDrW0N5PXCqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtYZYEzHVtLVtCrTFKtwDD5G5ympjCIU%2B4Xeoe6X0aWNWkEroItFpsPcQOzCP5n22P3Ahm1dmrxmdLty1aog0G04YdVCgK7p7ezom9fM2%2BOzT3e7wP98QNZdI%2BJQijkbIo1TnHTddpARSmCLSHjOrU3wXAci5E5AcIAfGmYi4Tu6c2DnW6BqQ8sqQi9%2FOcWe9pqiWxNo08M03R6PlkXj2jweoGxaKHxnVUGX1%2B9qOXITAGV2j2XvHr%2F%2BFc1QmiFNDtgGVja5iMzWJBIYeRWim%2FcdX0csc5TkmlpFbglyPOJpvHBuyHcCH3IzR%2FBdobmWslzRSLfl5S1PnLXpA5JjKgmmwrIHxII%2FtB23SiPbeYKhuMiH1FXPkP0YCyuSdqf8CUkIzf5D8R3fJqwj0DBr9t4DcZ7d99C%2FyQ%2FATBIAZjrx2CX5a1pvDwjFm8%2BOEl8aTZC1kIVGfDxQc7b1MndGm8LfHncQU%2FH6HBvgnarhIjHGsLpSgmbgVQHh%2FXXh9JzrvDcmfayHuXr4RNGkRV0oz44CGxzNrd1Qc9PGjj5N5XPZtiO%2BVVNz1UmyYagq%2ByjBl7%2BXUKWm3pyOWVzxDTpT%2BAa3Qp%2ByNOmqOsEUvS8iJNpKlaPZ6xvvxo%2BrgMw8CCaoxucm%2BSItOlgkie0Yw0KrswwY6pgFDeS4hVVOrqwpIJsKdFCQJIWNGb42fATRaJweUWAHRiu%2FdwS%2Bzh2RzlDB5hwucOO5I%2FPRa6cIhUgN6IO3tXgryRTkQlDsKBrQUNfqnfsa0Hrdvs4vpSNJUJ7kevcWtGvQSsHHjMQbYufZLWdexyQX9btnt3T2xX64DkpxdoeE7d%2F6WzuhSnYX2aWgM0NOYQEPmgj7SyLR6ORCt6jfj2dDcqViifTQC&X-Amz-Signature=1008e87192eca646c5b6ebb94e8569d711df274670f71b951e93a660722d4134&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/9e7ab486-fda1-4734-82ec-aac8cf98a5c1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SDPSOYBY%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBVEivSxQdYMnaINYgnc4hg0PhIAsv%2F3WDTpDyxkiVByAiBOCF%2Ff03e1QGzlIGI7Rfjh3syCt3GGPnPqUDrW0N5PXCqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtYZYEzHVtLVtCrTFKtwDD5G5ympjCIU%2B4Xeoe6X0aWNWkEroItFpsPcQOzCP5n22P3Ahm1dmrxmdLty1aog0G04YdVCgK7p7ezom9fM2%2BOzT3e7wP98QNZdI%2BJQijkbIo1TnHTddpARSmCLSHjOrU3wXAci5E5AcIAfGmYi4Tu6c2DnW6BqQ8sqQi9%2FOcWe9pqiWxNo08M03R6PlkXj2jweoGxaKHxnVUGX1%2B9qOXITAGV2j2XvHr%2F%2BFc1QmiFNDtgGVja5iMzWJBIYeRWim%2FcdX0csc5TkmlpFbglyPOJpvHBuyHcCH3IzR%2FBdobmWslzRSLfl5S1PnLXpA5JjKgmmwrIHxII%2FtB23SiPbeYKhuMiH1FXPkP0YCyuSdqf8CUkIzf5D8R3fJqwj0DBr9t4DcZ7d99C%2FyQ%2FATBIAZjrx2CX5a1pvDwjFm8%2BOEl8aTZC1kIVGfDxQc7b1MndGm8LfHncQU%2FH6HBvgnarhIjHGsLpSgmbgVQHh%2FXXh9JzrvDcmfayHuXr4RNGkRV0oz44CGxzNrd1Qc9PGjj5N5XPZtiO%2BVVNz1UmyYagq%2ByjBl7%2BXUKWm3pyOWVzxDTpT%2BAa3Qp%2ByNOmqOsEUvS8iJNpKlaPZ6xvvxo%2BrgMw8CCaoxucm%2BSItOlgkie0Yw0KrswwY6pgFDeS4hVVOrqwpIJsKdFCQJIWNGb42fATRaJweUWAHRiu%2FdwS%2Bzh2RzlDB5hwucOO5I%2FPRa6cIhUgN6IO3tXgryRTkQlDsKBrQUNfqnfsa0Hrdvs4vpSNJUJ7kevcWtGvQSsHHjMQbYufZLWdexyQX9btnt3T2xX64DkpxdoeE7d%2F6WzuhSnYX2aWgM0NOYQEPmgj7SyLR6ORCt6jfj2dDcqViifTQC&X-Amz-Signature=177192bda86114899a45db8f1df8b679bd152e2b7738902703c7d3f3e5edefff&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 ---
+### 投稿表示制限（プラグイン対応）
+アイキャッチ画像の下にある設定項目でリミットを設定→期限になったら下書きに更新されます
+- [x] 検証済み
+### 一覧ページ反映テキストについて
+カスタムフィールドで実装しています
+- テキストのみ（チェック→リンクなし）
+- 分類（テキスト）
+- 受託開始年月（カレンダー入力）
+- 都道府県・市区町村（テキスト）
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/f5b1b1d1-f2a0-47b2-94f9-b7175b2149da/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SDPSOYBY%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBVEivSxQdYMnaINYgnc4hg0PhIAsv%2F3WDTpDyxkiVByAiBOCF%2Ff03e1QGzlIGI7Rfjh3syCt3GGPnPqUDrW0N5PXCqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtYZYEzHVtLVtCrTFKtwDD5G5ympjCIU%2B4Xeoe6X0aWNWkEroItFpsPcQOzCP5n22P3Ahm1dmrxmdLty1aog0G04YdVCgK7p7ezom9fM2%2BOzT3e7wP98QNZdI%2BJQijkbIo1TnHTddpARSmCLSHjOrU3wXAci5E5AcIAfGmYi4Tu6c2DnW6BqQ8sqQi9%2FOcWe9pqiWxNo08M03R6PlkXj2jweoGxaKHxnVUGX1%2B9qOXITAGV2j2XvHr%2F%2BFc1QmiFNDtgGVja5iMzWJBIYeRWim%2FcdX0csc5TkmlpFbglyPOJpvHBuyHcCH3IzR%2FBdobmWslzRSLfl5S1PnLXpA5JjKgmmwrIHxII%2FtB23SiPbeYKhuMiH1FXPkP0YCyuSdqf8CUkIzf5D8R3fJqwj0DBr9t4DcZ7d99C%2FyQ%2FATBIAZjrx2CX5a1pvDwjFm8%2BOEl8aTZC1kIVGfDxQc7b1MndGm8LfHncQU%2FH6HBvgnarhIjHGsLpSgmbgVQHh%2FXXh9JzrvDcmfayHuXr4RNGkRV0oz44CGxzNrd1Qc9PGjj5N5XPZtiO%2BVVNz1UmyYagq%2ByjBl7%2BXUKWm3pyOWVzxDTpT%2BAa3Qp%2ByNOmqOsEUvS8iJNpKlaPZ6xvvxo%2BrgMw8CCaoxucm%2BSItOlgkie0Yw0KrswwY6pgFDeS4hVVOrqwpIJsKdFCQJIWNGb42fATRaJweUWAHRiu%2FdwS%2Bzh2RzlDB5hwucOO5I%2FPRa6cIhUgN6IO3tXgryRTkQlDsKBrQUNfqnfsa0Hrdvs4vpSNJUJ7kevcWtGvQSsHHjMQbYufZLWdexyQX9btnt3T2xX64DkpxdoeE7d%2F6WzuhSnYX2aWgM0NOYQEPmgj7SyLR6ORCt6jfj2dDcqViifTQC&X-Amz-Signature=51ffb4b2d866288025dac8455be1202c1a499508f5f7c45be85bd46a499f835a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+---
+### 詳細ページ反映テキストについて
+- 画像左右2枚（必須）
+- 所在地（なければ非表示）
+- 事業内容（なければ非表示）
+- 食堂利用者数（なければ非表示）
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/e2367251-460e-4770-ace6-a41fe3a37198/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SDPSOYBY%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIBVEivSxQdYMnaINYgnc4hg0PhIAsv%2F3WDTpDyxkiVByAiBOCF%2Ff03e1QGzlIGI7Rfjh3syCt3GGPnPqUDrW0N5PXCqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMtYZYEzHVtLVtCrTFKtwDD5G5ympjCIU%2B4Xeoe6X0aWNWkEroItFpsPcQOzCP5n22P3Ahm1dmrxmdLty1aog0G04YdVCgK7p7ezom9fM2%2BOzT3e7wP98QNZdI%2BJQijkbIo1TnHTddpARSmCLSHjOrU3wXAci5E5AcIAfGmYi4Tu6c2DnW6BqQ8sqQi9%2FOcWe9pqiWxNo08M03R6PlkXj2jweoGxaKHxnVUGX1%2B9qOXITAGV2j2XvHr%2F%2BFc1QmiFNDtgGVja5iMzWJBIYeRWim%2FcdX0csc5TkmlpFbglyPOJpvHBuyHcCH3IzR%2FBdobmWslzRSLfl5S1PnLXpA5JjKgmmwrIHxII%2FtB23SiPbeYKhuMiH1FXPkP0YCyuSdqf8CUkIzf5D8R3fJqwj0DBr9t4DcZ7d99C%2FyQ%2FATBIAZjrx2CX5a1pvDwjFm8%2BOEl8aTZC1kIVGfDxQc7b1MndGm8LfHncQU%2FH6HBvgnarhIjHGsLpSgmbgVQHh%2FXXh9JzrvDcmfayHuXr4RNGkRV0oz44CGxzNrd1Qc9PGjj5N5XPZtiO%2BVVNz1UmyYagq%2ByjBl7%2BXUKWm3pyOWVzxDTpT%2BAa3Qp%2ByNOmqOsEUvS8iJNpKlaPZ6xvvxo%2BrgMw8CCaoxucm%2BSItOlgkie0Yw0KrswwY6pgFDeS4hVVOrqwpIJsKdFCQJIWNGb42fATRaJweUWAHRiu%2FdwS%2Bzh2RzlDB5hwucOO5I%2FPRa6cIhUgN6IO3tXgryRTkQlDsKBrQUNfqnfsa0Hrdvs4vpSNJUJ7kevcWtGvQSsHHjMQbYufZLWdexyQX9btnt3T2xX64DkpxdoeE7d%2F6WzuhSnYX2aWgM0NOYQEPmgj7SyLR6ORCt6jfj2dDcqViifTQC&X-Amz-Signature=4c855169459d71ee04f4222f57e52e1548c883452fb238c72a9092e41912e7e9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+---
+### 投稿テキストについて（見出し）
+見出しタグh2、h3、h4の若干サイズを変えてます！（Newsも同じく）
+- h2
+  - PC：24px
+  - SP：20px
+- h3
+  - PC：20px
+  - SP：18px
+- h4
+  - PC：18px
+  - SP：16px
+---
+### メタ情報について
+- description設定→All in one SEOにて個別指定可能
+- OGP画像も個別指定可能
+# 【回答】
+```plain text
 
-*Generated by Obsidian-Notion sync at 2025-07-12 15:01:15*
+```
