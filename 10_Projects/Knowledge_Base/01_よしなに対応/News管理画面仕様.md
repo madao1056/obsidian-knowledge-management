@@ -1,0 +1,44 @@
+---
+notion_id: 7d4a6c96-db94-4afe-a76e-4b32ee1c3901
+account: Main
+title: News管理画面仕様
+url: https://www.notion.so/News-7d4a6c96db944afea76e4b32ee1c3901
+created_time: 2023-08-31T03:19:00.000Z
+last_edited_time: 2023-09-07T08:15:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.090869
+---
+# News管理画面仕様
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/1beeff82-64da-4cc4-8742-b03b91295a2c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Y3PGOLCW%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042510Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGuKsF7JkeE6kBcZO%2FKqL8BiNYesnQVtlWVDtcEmmDuOAiA0EwcYyVCV7J%2BbKMf0xUSFiC6BJTDLEnV%2FP9Mj2tV8LyqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM9G45MxXJ%2Fi%2BablUOKtwDCpzi30o48XUh07xJpjXfM7kBr1yRvDG5Ygo%2FC3Ymxe6hZLvAQiRYt%2FBjRFuwyrQfwIyhwmpfjb4LGS%2Bm7icHN0PcWa4aI0TYfbJ%2BJxQmL90U6c91oSnbbJ%2BLK73JLOpBz%2BHkQcT%2BAIxQYbNzfRxxHxNlFyiPVkAyrbRppavUHyldXvioA5Zs%2BJu4DT00Ma6pbNIySK23tuHZ89GvpKpeHz9g7OdKWbE%2FtvU160ARXgFvY0fU3FXTAt07MQxvX3Rairp6mgGvIHkt4Zjw5s5FdsrxyQkED4pKhlmKpeNlT5gvbaBjeeSuI9jF5cOMGI6rA0GEDYYZjKAua7%2B1dz33Y%2FrllHPzEZoH2RuWN4Ey4WadEVes0vMaxqzyQe04CdSnkAAYQOB4oySpRvWGjYRk4RkNzKkTmAWhbMVdGVRvgZc9uyWkVcnOXu8yKqnlspf6Z7AtlrUykAayLrtoMe3bwCqGOsBjfe7PXGJDtSaMsrEUy0ISq4AqczutKCJhDyZ0Qix5%2BxCi42pXNV74oL0jtxntv%2FxZDrkGXCLOITQLOAPgkdHII182Pd9swubzSLVvRkF1YIQmAoDtd2a2pcWVd08UEkI7JTK2nOEJPDgeET57ga9oP6hYuisTOwowm6rswwY6pgFvJxhRnE4L0C69jMjwiYhUtTR3lUTCN1j2AOGK0I2vgWne0SaC1mSnuonUP9IqWauR9woGrdod2n2JtPy872mY59u4p43FlVX5By473Z3r7iEzy5f9g1BLajMk4FTegcp5WlgN02jtXgWtaGScMp%2FPskKwrpbmWLoOcXb1yM9L%2BlclaLv7ThCcVJhG5je%2FjUEhqFhvsyS78NDYVnPCsIn7KKaegeaH&X-Amz-Signature=2e038a946a18c23298980ed983dff34067c3481179f1f4b30890f56a551df919&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+# 【確認事項】
+### 投稿表示制限（プラグイン対応）
+アイキャッチ画像の下にある設定項目でリミットを設定→期限になったら下書きに更新されます
+### タグについて
+カスタムフィールドで実装しています
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/e87e01d8-1b68-4664-8493-6afa22566930/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Y3PGOLCW%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042510Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGuKsF7JkeE6kBcZO%2FKqL8BiNYesnQVtlWVDtcEmmDuOAiA0EwcYyVCV7J%2BbKMf0xUSFiC6BJTDLEnV%2FP9Mj2tV8LyqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM9G45MxXJ%2Fi%2BablUOKtwDCpzi30o48XUh07xJpjXfM7kBr1yRvDG5Ygo%2FC3Ymxe6hZLvAQiRYt%2FBjRFuwyrQfwIyhwmpfjb4LGS%2Bm7icHN0PcWa4aI0TYfbJ%2BJxQmL90U6c91oSnbbJ%2BLK73JLOpBz%2BHkQcT%2BAIxQYbNzfRxxHxNlFyiPVkAyrbRppavUHyldXvioA5Zs%2BJu4DT00Ma6pbNIySK23tuHZ89GvpKpeHz9g7OdKWbE%2FtvU160ARXgFvY0fU3FXTAt07MQxvX3Rairp6mgGvIHkt4Zjw5s5FdsrxyQkED4pKhlmKpeNlT5gvbaBjeeSuI9jF5cOMGI6rA0GEDYYZjKAua7%2B1dz33Y%2FrllHPzEZoH2RuWN4Ey4WadEVes0vMaxqzyQe04CdSnkAAYQOB4oySpRvWGjYRk4RkNzKkTmAWhbMVdGVRvgZc9uyWkVcnOXu8yKqnlspf6Z7AtlrUykAayLrtoMe3bwCqGOsBjfe7PXGJDtSaMsrEUy0ISq4AqczutKCJhDyZ0Qix5%2BxCi42pXNV74oL0jtxntv%2FxZDrkGXCLOITQLOAPgkdHII182Pd9swubzSLVvRkF1YIQmAoDtd2a2pcWVd08UEkI7JTK2nOEJPDgeET57ga9oP6hYuisTOwowm6rswwY6pgFvJxhRnE4L0C69jMjwiYhUtTR3lUTCN1j2AOGK0I2vgWne0SaC1mSnuonUP9IqWauR9woGrdod2n2JtPy872mY59u4p43FlVX5By473Z3r7iEzy5f9g1BLajMk4FTegcp5WlgN02jtXgWtaGScMp%2FPskKwrpbmWLoOcXb1yM9L%2BlclaLv7ThCcVJhG5je%2FjUEhqFhvsyS78NDYVnPCsIn7KKaegeaH&X-Amz-Signature=36fc1ddc5d8a864a0618a2767ae1157708cf7cbc5b4b07e099b256c42009932e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+---
+### カラーコードについて
+３色をラジオボタンで選択できるようにしています（初期状態：レッド）
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/957f2628-5bd8-4ce5-8576-18aee7f22336/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Y3PGOLCW%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042510Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGuKsF7JkeE6kBcZO%2FKqL8BiNYesnQVtlWVDtcEmmDuOAiA0EwcYyVCV7J%2BbKMf0xUSFiC6BJTDLEnV%2FP9Mj2tV8LyqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM9G45MxXJ%2Fi%2BablUOKtwDCpzi30o48XUh07xJpjXfM7kBr1yRvDG5Ygo%2FC3Ymxe6hZLvAQiRYt%2FBjRFuwyrQfwIyhwmpfjb4LGS%2Bm7icHN0PcWa4aI0TYfbJ%2BJxQmL90U6c91oSnbbJ%2BLK73JLOpBz%2BHkQcT%2BAIxQYbNzfRxxHxNlFyiPVkAyrbRppavUHyldXvioA5Zs%2BJu4DT00Ma6pbNIySK23tuHZ89GvpKpeHz9g7OdKWbE%2FtvU160ARXgFvY0fU3FXTAt07MQxvX3Rairp6mgGvIHkt4Zjw5s5FdsrxyQkED4pKhlmKpeNlT5gvbaBjeeSuI9jF5cOMGI6rA0GEDYYZjKAua7%2B1dz33Y%2FrllHPzEZoH2RuWN4Ey4WadEVes0vMaxqzyQe04CdSnkAAYQOB4oySpRvWGjYRk4RkNzKkTmAWhbMVdGVRvgZc9uyWkVcnOXu8yKqnlspf6Z7AtlrUykAayLrtoMe3bwCqGOsBjfe7PXGJDtSaMsrEUy0ISq4AqczutKCJhDyZ0Qix5%2BxCi42pXNV74oL0jtxntv%2FxZDrkGXCLOITQLOAPgkdHII182Pd9swubzSLVvRkF1YIQmAoDtd2a2pcWVd08UEkI7JTK2nOEJPDgeET57ga9oP6hYuisTOwowm6rswwY6pgFvJxhRnE4L0C69jMjwiYhUtTR3lUTCN1j2AOGK0I2vgWne0SaC1mSnuonUP9IqWauR9woGrdod2n2JtPy872mY59u4p43FlVX5By473Z3r7iEzy5f9g1BLajMk4FTegcp5WlgN02jtXgWtaGScMp%2FPskKwrpbmWLoOcXb1yM9L%2BlclaLv7ThCcVJhG5je%2FjUEhqFhvsyS78NDYVnPCsIn7KKaegeaH&X-Amz-Signature=b6c3e9960a078b8023f5664dd3e0e319ba4c21c34d9ab11fdb4dc9a875c8290e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+---
+### リンクについて
+複数入力があった際には、以下の優先順位で表示されます！（if文での実装のため）
+テキストのみ ＞ PDF ＞ 外部リンク ＞ 画像リンク
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/951ca974-855d-42ca-b31e-25d9991a5f14/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Y3PGOLCW%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042510Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGuKsF7JkeE6kBcZO%2FKqL8BiNYesnQVtlWVDtcEmmDuOAiA0EwcYyVCV7J%2BbKMf0xUSFiC6BJTDLEnV%2FP9Mj2tV8LyqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM9G45MxXJ%2Fi%2BablUOKtwDCpzi30o48XUh07xJpjXfM7kBr1yRvDG5Ygo%2FC3Ymxe6hZLvAQiRYt%2FBjRFuwyrQfwIyhwmpfjb4LGS%2Bm7icHN0PcWa4aI0TYfbJ%2BJxQmL90U6c91oSnbbJ%2BLK73JLOpBz%2BHkQcT%2BAIxQYbNzfRxxHxNlFyiPVkAyrbRppavUHyldXvioA5Zs%2BJu4DT00Ma6pbNIySK23tuHZ89GvpKpeHz9g7OdKWbE%2FtvU160ARXgFvY0fU3FXTAt07MQxvX3Rairp6mgGvIHkt4Zjw5s5FdsrxyQkED4pKhlmKpeNlT5gvbaBjeeSuI9jF5cOMGI6rA0GEDYYZjKAua7%2B1dz33Y%2FrllHPzEZoH2RuWN4Ey4WadEVes0vMaxqzyQe04CdSnkAAYQOB4oySpRvWGjYRk4RkNzKkTmAWhbMVdGVRvgZc9uyWkVcnOXu8yKqnlspf6Z7AtlrUykAayLrtoMe3bwCqGOsBjfe7PXGJDtSaMsrEUy0ISq4AqczutKCJhDyZ0Qix5%2BxCi42pXNV74oL0jtxntv%2FxZDrkGXCLOITQLOAPgkdHII182Pd9swubzSLVvRkF1YIQmAoDtd2a2pcWVd08UEkI7JTK2nOEJPDgeET57ga9oP6hYuisTOwowm6rswwY6pgFvJxhRnE4L0C69jMjwiYhUtTR3lUTCN1j2AOGK0I2vgWne0SaC1mSnuonUP9IqWauR9woGrdod2n2JtPy872mY59u4p43FlVX5By473Z3r7iEzy5f9g1BLajMk4FTegcp5WlgN02jtXgWtaGScMp%2FPskKwrpbmWLoOcXb1yM9L%2BlclaLv7ThCcVJhG5je%2FjUEhqFhvsyS78NDYVnPCsIn7KKaegeaH&X-Amz-Signature=725ee30033509bade0dbc47ad377fd0dcf61f1871efdc413d8846ebf2db99d7c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+# 【回答】
+```plain text
+
+```
+
+## タグ
+
+#よしなに対応 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/AI.md|AI]]
+- [[../01_よしなに対応/Case管理画面仕様.md|Case管理画面仕様]]
+- [[../01_よしなに対応/壁打ち議事録.md|壁打ち議事録]]
+- [[../01_よしなに対応/ぐっさん依頼内容.md|ぐっさん依頼内容]]
+- [[../01_よしなに対応/グルコン3回目.md|グルコン3回目]]
