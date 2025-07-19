@@ -1,13 +1,13 @@
 ---
 notion_id: 1a5ade4a-d294-80bc-a6b5-df6b10a3d277
+account: Main
+title: まさた_Web制作は自分には向いてないと諦めかけた過去
+url: https://www.notion.so/_Web-1a5ade4ad29480bca6b5df6b10a3d277
 created_time: 2025-02-25T13:54:00.000Z
 last_edited_time: 2025-03-17T01:32:00.000Z
-url: https://www.notion.so/_Web-1a5ade4ad29480bca6b5df6b10a3d277
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:41.566809
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.005941
 ---
-
 # まさた_Web制作は自分には向いてないと諦めかけた過去
 
 こんにちは、まさたです。
@@ -233,13 +233,13 @@ Web制作を始める動機はそれぞれですが、
 をお送りしますのでお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -250,19 +250,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/rDQf3s6iRrLO
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/rDQf3s6iRrLO](https://utage-system.com/r/e1hijKCLRUJN/cancel/rDQf3s6iRrLO)
 
-## 🏷️ タグ
-#営業_ビジネス #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 1人, 営業, Web
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 1人, 営業, Web
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, コース
-- [[まさた_なぜ他じゃなくWeb制作をゴリ押しするのか]] - カテゴリ: マインドセット, Web制作・技術, スキル・能力, 営業・ビジネス キーワード: 1人, 営業, Web
-- [[なお_はじめまして、月収176万円を達成した”なお”です。]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, 10万, メルマガ
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/グルコン3回目.md|グルコン3回目]]
+- [[../01_よしなに対応/としさん無料プレゼント.md|としさん無料プレゼント]]
+- [[../01_よしなに対応/グッサポ動画文字起こしまとめ.md|グッサポ動画文字起こしまとめ]]
+- [[../01_よしなに対応/【無料プレゼント企画】高単価案件受注の提案文実例.md|【無料プレゼント企画】高単価案件受注の提案文実例]]
+- [[../01_よしなに対応/グルコン.md|グルコン]]

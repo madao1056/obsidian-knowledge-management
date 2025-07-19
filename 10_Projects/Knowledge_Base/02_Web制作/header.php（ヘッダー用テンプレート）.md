@@ -23,3 +23,15 @@ sync_time: 2025-07-12T15:01:47.506902
   <header class="header">
   </header>
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/header.php.md|header.php]]
+- [[../99_その他/scale.md|scale]]
+- [[../99_その他/header.md|header]]
+- [[../99_その他/y.md|y]]
+- [[../99_その他/テンプレート.md|テンプレート]]

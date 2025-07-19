@@ -1,0 +1,29 @@
+---
+notion_id: 63b544bb-107f-42f5-a4d3-b420c2240ae6
+account: Main
+title: TOPに戻るボタンについて
+url: https://www.notion.so/TOP-63b544bb107f42f5a4d3b420c2240ae6
+created_time: 2023-05-16T09:13:00.000Z
+last_edited_time: 2023-06-09T04:37:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.107939
+---
+# TOPに戻るボタンについて
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/0ed42e1d-4b46-4196-92fb-a11e487f29bc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UHESEP5H%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T043414Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIA7%2B2fUTB1JQQovSInv0MhyeLApb4VggN9%2Fhk8lB414yAiAC2Kvjx4UGfl4SjOp3S1ieobo2Wc%2BhC9d8gmjo49n1RiqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMVGfLoRT4BwAnYyfZKtwDlGV14o%2BdT3qKo%2FwVwQpfcVljKVOdLfTkd54a0Ro33AxFt6Al0Ny7OskcUF2zCp2B7u1mgAdANGQP6uVnSqYWWZv1X6WGs%2FyVvxBBtBP75Smzi7UHWmVpAUkAnD9ktrukZCSm0XXtOwVKbRFDV%2FwjySK4CBrDjOf%2FgOjUbVlh6N8j0dimexQ6%2B2ltVRWEJkA0JWZc72bhXyJAA9A9DTDCXbFGFygm66GMxN8Fdjymfkb0jW5QOeJk0FBX38lTPIabrIkWsj8AV3YMU4mp98Eyzc5o58SG4lHZzeVv2M%2Bc2C7jttcOEsJgt8cHeokdRtl9LmyTYfGxF0H%2BEc9txPYcULarJ5q83FrNlVPIbVcRV2Ppj5xF35J68g%2FdI4Rr1MO42KUT8eekJdnQTdWhNAE%2FZJm3Odo4TF7nw7ODGDycb%2B%2FfRV148ERJfvHXdMCkue6TjqXJ%2Bb894NJJH3vuMHVgetyn4cZMiEtD%2B3L0IMI5SkWn3%2FZ0uLQJKRlIXyr6fG2SFQH0kI%2BruAQVBx8xkcS8hcpM6fIaSUlO7xwQF98HdrygVGRt3IbzSDMMGBI7ntLt47NwXYcZp6gK%2B1fyBUjp6tCKQ5Qz2yu87T%2FIDQfW6Or6HShN%2FwxA5KTeqlkwlarswwY6pgF7lnUcxXn%2FPzuE9UBLmh0XWt7j%2BS%2B4Ryp7r77HhkedDDd8DVG10HL4ziJc0RpNwF5nghjGy44zIgccohTJ4wBel1H7wNHoZpEFajFbs8ggKhqq1veuSp6LfkQzVMlRXD7YsnoMnZTYh1wCXK%2FtY15mVdZLFOOD1c0w1PPHCNw7zl2kfLwpODMRcZgdHymJKqjiG4AVsEYjqHQuk5uK31GHIPcNmg8W&X-Amz-Signature=498a7dfb88f73aa539f1b4e714717b43d9a06ad701f19c24f47ef63761ef93c7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+青丸部分のデザイン反映がされていないようです。
+5/19追記
+スマホ画面で見ると変な位置に表示されてしまっているため、修正をお願い致します。
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/28a311d3-6204-492f-aa6c-8c9f24cb59b7/IMG_8746.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UHESEP5H%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T043414Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIA7%2B2fUTB1JQQovSInv0MhyeLApb4VggN9%2Fhk8lB414yAiAC2Kvjx4UGfl4SjOp3S1ieobo2Wc%2BhC9d8gmjo49n1RiqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMVGfLoRT4BwAnYyfZKtwDlGV14o%2BdT3qKo%2FwVwQpfcVljKVOdLfTkd54a0Ro33AxFt6Al0Ny7OskcUF2zCp2B7u1mgAdANGQP6uVnSqYWWZv1X6WGs%2FyVvxBBtBP75Smzi7UHWmVpAUkAnD9ktrukZCSm0XXtOwVKbRFDV%2FwjySK4CBrDjOf%2FgOjUbVlh6N8j0dimexQ6%2B2ltVRWEJkA0JWZc72bhXyJAA9A9DTDCXbFGFygm66GMxN8Fdjymfkb0jW5QOeJk0FBX38lTPIabrIkWsj8AV3YMU4mp98Eyzc5o58SG4lHZzeVv2M%2Bc2C7jttcOEsJgt8cHeokdRtl9LmyTYfGxF0H%2BEc9txPYcULarJ5q83FrNlVPIbVcRV2Ppj5xF35J68g%2FdI4Rr1MO42KUT8eekJdnQTdWhNAE%2FZJm3Odo4TF7nw7ODGDycb%2B%2FfRV148ERJfvHXdMCkue6TjqXJ%2Bb894NJJH3vuMHVgetyn4cZMiEtD%2B3L0IMI5SkWn3%2FZ0uLQJKRlIXyr6fG2SFQH0kI%2BruAQVBx8xkcS8hcpM6fIaSUlO7xwQF98HdrygVGRt3IbzSDMMGBI7ntLt47NwXYcZp6gK%2B1fyBUjp6tCKQ5Qz2yu87T%2FIDQfW6Or6HShN%2FwxA5KTeqlkwlarswwY6pgF7lnUcxXn%2FPzuE9UBLmh0XWt7j%2BS%2B4Ryp7r77HhkedDDd8DVG10HL4ziJc0RpNwF5nghjGy44zIgccohTJ4wBel1H7wNHoZpEFajFbs8ggKhqq1veuSp6LfkQzVMlRXD7YsnoMnZTYh1wCXK%2FtY15mVdZLFOOD1c0w1PPHCNw7zl2kfLwpODMRcZgdHymJKqjiG4AVsEYjqHQuk5uK31GHIPcNmg8W&X-Amz-Signature=ce4fe29c9102ae3dd521f0939c7aa63bdbcd707b11efd8996a706ff3576e8b0d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/デザイン.md|デザイン]]
+- [[../99_その他/Untitled.md|Untitled]]
+- [[../99_その他/Untitled.md|Untitled]]
+- [[../99_その他/ボタン.md|ボタン]]
+- [[../99_その他/x.md|x]]

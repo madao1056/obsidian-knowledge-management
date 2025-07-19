@@ -1,13 +1,13 @@
 ---
 notion_id: 1abade4a-d294-8088-8c04-c08f743afec8
+account: Main
+title: 3ヶ月でWeb制作学習を終えるための思考
+url: https://www.notion.so/3-Web-1abade4ad29480888c04c08f743afec8
 created_time: 2025-03-03T08:54:00.000Z
 last_edited_time: 2025-03-17T01:33:00.000Z
-url: https://www.notion.so/3-Web-1abade4ad29480888c04c08f743afec8
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:25.761289
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.004308
 ---
-
 # 3ヶ月でWeb制作学習を終えるための思考
 
 どうも、まさたです。
@@ -115,13 +115,13 @@ WordPressサイトも
 次回のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -132,43 +132,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/ht1StPRj3Zs9
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/ht1StPRj3Zs9](https://utage-system.com/r/e1hijKCLRUJN/cancel/ht1StPRj3Zs9)
 
----
+## タグ
 
-## 関連記事
+#Web制作 
 
-### 学習を効率化する
-- [[隙間時間を活用したWeb制作学習法]] - 時間を有効活用する方法
-- [[初心者向けのコーディングの手順]] - 基礎から学ぶステップ
-- [[PHPの文法学習はこれだけでOKです]] - WordPress学習の準備
+## 関連ドキュメント
 
-### 学習後の実践
-- [[Web制作で真の自由を手にするロードマップ]] - 学習後の成功への道筋
-- [[営業活動前の不安を消すための準備]] - 実務に向けた準備
-- [[営業〜納品までの流れ 11ステップ]] - 実務の全体像を理解
-
-### 継続案件への道
-- [[クライアント対応に必須『質問力』＆『設計力』〜AI時代でもこれだけは変わらない〜]] - 技術以外の重要スキル
-- [[スキルがある人 vs 継続される人]] - 学習後に必要な視点
-- [[営業ゼロ。月20万以上を継続中のPさんの話。]] - 学習から成功への実例
-
-### マインドセット
-- [[Web制作学習期の自己分析のしすぎは危険]] - 学習中の心構え
-- [[なぜか継続される人の共通点。]] - 成功者の思考法
-- [[6ヶ月で＋500万を稼ぐためにやること]] - 高い目標設定の重要性
-
-## 🏷️ タグ
-#営業_ビジネス #AI_自動化 #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
-
-## 🔗 関連ナレッジ
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 目標
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, クライアント
-- [[営業文改善の完全ガイド：ウェブ制作フリーランスのための実践戦略]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, クライアント
-- [[Web制作で真の自由を手にするロードマップ]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, クライアント
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, コース
+- [[../01_よしなに対応/グルコン3回目.md|グルコン3回目]]
+- [[../01_よしなに対応/としさん無料プレゼント.md|としさん無料プレゼント]]
+- [[../01_よしなに対応/グッサポ動画文字起こしまとめ.md|グッサポ動画文字起こしまとめ]]
+- [[../01_よしなに対応/【無料プレゼント企画】高単価案件受注の提案文実例.md|【無料プレゼント企画】高単価案件受注の提案文実例]]
+- [[../01_よしなに対応/グルコン.md|グルコン]]

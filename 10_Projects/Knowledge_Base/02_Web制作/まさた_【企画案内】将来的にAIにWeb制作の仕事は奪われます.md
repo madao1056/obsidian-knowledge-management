@@ -1,13 +1,13 @@
 ---
 notion_id: 1a6ade4a-d294-8005-82cc-ed1cf81ff836
+account: Main
+title: まさた_【企画案内】将来的にAIにWeb制作の仕事は奪われます
+url: https://www.notion.so/_-AI-Web-1a6ade4ad294800582cced1cf81ff836
 created_time: 2025-02-26T14:36:00.000Z
 last_edited_time: 2025-03-17T01:32:00.000Z
-url: https://www.notion.so/_-AI-Web-1a6ade4ad294800582cced1cf81ff836
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:36.322740
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.005534
 ---
-
 # まさた_【企画案内】将来的にAIにWeb制作の仕事は奪われます
 
 どうも、まさたです。
@@ -17,7 +17,7 @@ sync_time: 2025-07-12T14:41:36.322740
 まだ予約していない方は
 こちらからぜひ！
 ▼静的コーディング最適化セミナーを予約
-https://web.masata-blog.com/line/open/eKFLkIblU5Tl
+[https://web.masata-blog.com/line/open/eKFLkIblU5Tl](https://web.masata-blog.com/line/open/eKFLkIblU5Tl)
 さて、今回はちょっと衝撃的な
 タイトルになってしまいましたが、
 端的にいうと、
@@ -164,16 +164,16 @@ P.S.
 を無料配布しています。
 まだ受け取りの予約をしていない方は
 以下のURLからぜひ↓
-https://web.masata-blog.com/line/open/eKFLkIblU5Tl
+[https://web.masata-blog.com/line/open/eKFLkIblU5Tl](https://web.masata-blog.com/line/open/eKFLkIblU5Tl)
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -184,19 +184,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/vhUfDqce6bNw
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/vhUfDqce6bNw](https://utage-system.com/r/e1hijKCLRUJN/cancel/vhUfDqce6bNw)
 
-## 🏷️ タグ
-#教育_コーチング #営業_ビジネス #AI_自動化 #スキル_能力 #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[まさた_なぜ他じゃなくWeb制作をゴリ押しするのか]] - カテゴリ: スキル・能力, 教育・コーチング, AI・自動化, 営業・ビジネス, Web制作・技術 キーワード: Web, ユーザー, コース
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: Web制作・技術, スキル・能力, 営業・ビジネス, 教育・コーチング キーワード: Web, コース, メルマガ
-- [[営業文改善の完全ガイド：ウェブ制作フリーランスのための実践戦略]] - カテゴリ: スキル・能力, 教育・コーチング, AI・自動化, 営業・ビジネス, Web制作・技術 キーワード: Web, コーダー, WordPress
-- [[3ヶ月でWeb制作学習を終えるための思考]] - カテゴリ: AI・自動化, Web制作・技術, スキル・能力, 営業・ビジネス キーワード: Web, コース, メルマガ
-- [[コミュニティ]] - カテゴリ: スキル・能力, 教育・コーチング, AI・自動化, 営業・ビジネス, Web制作・技術 キーワード: セミナー, Web, メルマガ
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/3ヶ月でWeb制作学習を終えるための思考.md|3ヶ月でWeb制作学習を終えるための思考]]
+- [[../02_Web制作/制作実績一覧（公開OK）.md|制作実績一覧（公開OK）]]
+- [[../02_Web制作/社会福祉法人 悠々会様.md|社会福祉法人 悠々会様]]
+- [[../02_Web制作/株式会社season2様コーポレートサイト.md|株式会社season2様コーポレートサイト]]
+- [[../02_Web制作/営業文添削用.md|営業文添削用]]

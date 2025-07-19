@@ -1,13 +1,13 @@
 ---
 notion_id: 1a7ade4a-d294-8098-9667-dea1fa4df701
+account: Main
+title: まさた_実務レベルのJavaScriptスキルを身につける学習法
+url: https://www.notion.so/_-JavaScript-1a7ade4ad29480989667dea1fa4df701
 created_time: 2025-02-27T14:52:00.000Z
 last_edited_time: 2025-03-17T01:32:00.000Z
-url: https://www.notion.so/_-JavaScript-1a7ade4ad29480989667dea1fa4df701
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:29.812824
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.005009
 ---
-
 # まさた_実務レベルのJavaScriptスキルを身につける学習法
 
 どうも、まさたです。
@@ -148,13 +148,13 @@ JavaScriptの実装って
 次回のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -165,19 +165,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/dgYsF3XcsaI6
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/dgYsF3XcsaI6](https://utage-system.com/r/e1hijKCLRUJN/cancel/dgYsF3XcsaI6)
 
-## 🏷️ タグ
-#教育_コーチング #AI_自動化 #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, AI・自動化, マインドセット, Web制作・技術 キーワード: Web, ページ, ポイント
-- [[営業文改善の完全ガイド：ウェブ制作フリーランスのための実践戦略]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, AI・自動化, マインドセット, Web制作・技術 キーワード: Web, ページ, コーダー
-- [[まさた_【企画案内ラスト】僕はコーディングが大嫌いでした]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, マインドセット, Web制作・技術 キーワード: Web, コーダー, コース
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, AI・自動化, マインドセット, Web制作・技術 キーワード: レベル, Web, ポイント
-- [[なお_ビジネスの一発屋にならずに、安定して稼ぐための着眼点]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, AI・自動化, マインドセット, Web制作・技術 キーワード: レベル, Web, ページ
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/メルマガ.md|メルマガ]]
+- [[../01_よしなに対応/「.md|「]]
+- [[../01_よしなに対応/AI.md|AI]]
+- [[../02_Web制作/DDD.md|DDD]]
+- [[../02_Web制作/FISHREPPLE.md|FISHREPPLE]]

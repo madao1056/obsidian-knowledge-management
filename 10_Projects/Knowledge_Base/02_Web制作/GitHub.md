@@ -1,16 +1,16 @@
 ---
 notion_id: 214ade4a-d294-80f3-82a8-c7b8f4cdd79b
+account: Main
+title: GitHub
+url: https://www.notion.so/GitHub-214ade4ad29480f382a8c7b8f4cdd79b
 created_time: 2025-06-16T07:47:00.000Z
 last_edited_time: 2025-06-16T07:56:00.000Z
-url: https://www.notion.so/GitHub-214ade4ad29480f382a8c7b8f4cdd79b
-parent_type: page_id
-archived: False
-sync_time: 2025-07-19T12:48:13.432441
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:14.957891
 ---
-
 # GitHub
 
-https://github.com/microsoft/pxt/tree/master/common-docs/javascript
+[https://github.com/microsoft/pxt/tree/master/common-docs/javascript](https://github.com/microsoft/pxt/tree/master/common-docs/javascript)
 # Classes
 Traditional JavaScript focuses on functions and prototype-based inheritance as the basic means of building up reusable components,
 but this may feel a bit awkward to programmers more comfortable with an object-oriented approach, where classes inherit functionality
@@ -32,11 +32,11 @@ class Greeter {
 let greeter = new Greeter("world");
 
 ```
-We declare a new class Greeter. This class has three members: a property called greeting, a constructor, and a method greet.
-You'll notice that in the class when we refer to one of the members of the class we prepend this..
+We declare a new class `Greeter`. This class has three members: a property called `greeting`, a constructor, and a method `greet`.
+You'll notice that in the class when we refer to one of the members of the class we prepend `this.`.
 This denotes that it's a member access.
-In the last line we construct an instance of the Greeter class using new.
-This calls into the constructor we defined earlier, creating a new object with the Greeter shape, and running the constructor to initialize it.
+In the last line we construct an instance of the `Greeter` class using `new`.
+This calls into the constructor we defined earlier, creating a new object with the `Greeter` shape, and running the constructor to initialize it.
 ## Inheritance
 In TypeScript, we can use common object-oriented patterns.
 Of course, one of the most fundamental patterns in class-based programming is being able to extend existing classes to create new ones using inheritance.
@@ -74,12 +74,12 @@ tom.move(34);
 
 ```
 This example covers quite a few of the inheritance features in TypeScript that are common to other languages.
-Here we see the extends keywords used to create a subclass.
-You can see this where Horse and Snake subclass the base class Animal and gain access to its features.
-Derived classes that contain constructor functions must call super() which will execute the constructor function on the base class.
+Here we see the `extends` keywords used to create a subclass.
+You can see this where `Horse` and `Snake` subclass the base class `Animal` and gain access to its features.
+Derived classes that contain constructor functions must call `super()` which will execute the constructor function on the base class.
 The example also shows how to override methods in the base class with methods that are specialized for the subclass.
-Here both Snake and Horse create a move method that overrides the move from Animal, giving it functionality specific to each class.
-Note that even though tom is declared as an Animal, since its value is a Horse, when tom.move(34) calls the overriding method in Horse:
+Here both `Snake` and `Horse` create a `move` method that overrides the `move` from `Animal`, giving it functionality specific to each class.
+Note that even though `tom` is declared as an `Animal`, since its value is a `Horse`, when `tom.move(34)` calls the overriding method in `Horse`:
 ```plain text
 Slithering...
 Sammy the Python moved 5m.
@@ -91,11 +91,11 @@ Tommy the Palomino moved 34m.
 ### Public by default
 In our examples, we've been able to freely access the members that we declared throughout our programs.
 If you're familiar with classes in other languages, you may have noticed in the above examples
-we haven't had to use the word public to accomplish this; for instance,
-C# requires that each member be explicitly labeled public to be visible.
-In TypeScript, each member is public by default.
-You may still mark a member public explicitly.
-We could have written the Animal class from the previous section in the following way:
+we haven't had to use the word `public` to accomplish this; for instance,
+C# requires that each member be explicitly labeled `public` to be visible.
+In TypeScript, each member is `public` by default.
+You may still mark a member `public` explicitly.
+We could have written the `Animal` class from the previous section in the following way:
 ```typescript
 class Animal {
     public name: string;
@@ -106,8 +106,8 @@ class Animal {
 }
 
 ```
-### Understanding private
-When a member is marked private, it cannot be accessed from outside of its containing class. For example:
+### Understanding `private`
+When a member is marked `private`, it cannot be accessed from outside of its containing class. For example:
 ```typescript
 class Animal {
     private name: string;
@@ -119,10 +119,10 @@ new Animal("Cat").name; // Error: 'name' is private;
 ```
 TypeScript is a structural type system.
 When we compare two different types, regardless of where they came from, if the types of all members are compatible, then we say the types themselves are compatible.
-However, when comparing types that have private and protected members, we treat these types differently.
-For two types to be considered compatible, if one of them has a private member,
-then the other must have a private member that originated in the same declaration.
-The same applies to protected members.
+However, when comparing types that have `private` and `protected` members, we treat these types differently.
+For two types to be considered compatible, if one of them has a `private` member,
+then the other must have a `private` member that originated in the same declaration.
+The same applies to `protected` members.
 Let's look at an example to better see how this plays out in practice:
 ```typescript
 class Animal {
@@ -147,16 +147,16 @@ animal = rhino;
 animal = employee; // Error: 'Animal' and 'Employee' are not compatible
 
 ```
-In this example, we have an Animal and a Rhino, with Rhino being a subclass of Animal.
-We also have a new class Employee that looks identical to Animal in terms of shape.
+In this example, we have an `Animal` and a `Rhino`, with `Rhino` being a subclass of `Animal`.
+We also have a new class `Employee` that looks identical to `Animal` in terms of shape.
 We create some instances of these classes and then try to assign them to each other to see what will happen.
-Because Animal and Rhino share the private side of their shape from the same declaration of
-private name: string in Animal, they are compatible. However, this is not the case for Employee.
-When we try to assign from an Employee to Animal we get an error that these types are not compatible.
-Even though Employee also has a private member called name, it's not the one we declared in Animal.
-### Understanding protected
-The protected modifier acts much like the private modifier with the exception that members
-declared protected can also be accessed by instances of deriving classes. For example,
+Because `Animal` and `Rhino` share the `private` side of their shape from the same declaration of
+`private name: string` in `Animal`, they are compatible. However, this is not the case for `Employee`.
+When we try to assign from an `Employee` to `Animal` we get an error that these types are not compatible.
+Even though `Employee` also has a `private` member called `name`, it's not the one we declared in `Animal`.
+### Understanding `protected`
+The `protected` modifier acts much like the `private` modifier with the exception that members
+declared `protected` can also be accessed by instances of deriving classes. For example,
 ```typescript
 class Person {
     protected name: string;
@@ -181,8 +181,8 @@ console.log(howard.getElevatorPitch());
 console.log(howard.name); // error
 
 ```
-Notice that while we can't use name from outside of Person,
-we can still use it from within an instance method of Employee because Employee derives from Person.
+Notice that while we can't use `name` from outside of `Person`,
+we can still use it from within an instance method of `Employee` because `Employee` derives from `Person`.
 ---
 # Functions
 Functions are the fundamental building block of programs. Here is the simplest
@@ -198,10 +198,10 @@ let sum = add(1, 2);
 ```
 ### ~ hint
 ### Parameter types
-You must specify a type for each function parameter.
+You must specify a [type](https://www.notion.so/javascript/types) for each function parameter.
 ### ~
 Functions can refer to variables outside of the function body.
-When they do so, they're said to capture these variables.
+When they do so, they're said to `capture` these variables.
 ```typescript
 let z = 100;
 
@@ -233,8 +233,8 @@ let result3 = buildName("Bob", "Adams");         // ah, just right
 
 ```
 In JavaScript, every parameter is optional, and users may leave them off as they see fit.
-When they do, their value is undefined.
-We can get this functionality in TypeScript by adding a ? to the end of parameters we want to be optional.
+When they do, their value is `undefined`.
+We can get this functionality in TypeScript by adding a `?` to the end of parameters we want to be optional.
 For example, let's say we want the last name parameter from above to be optional:
 ```typescript
 function buildName(firstName: string, lastName?: string) {
@@ -251,9 +251,9 @@ let result3 = buildName("Bob", "Adams");         // ah, just right
 ```
 Any optional parameters must follow required parameters.
 Had we wanted to make the first name optional rather than the last name, we would need to change the order of parameters in the function, putting the first name last in the list.
-In TypeScript, we can also set a value that a parameter will be assigned if the user does not provide one, or if the user passes undefined in its place.
+In TypeScript, we can also set a value that a parameter will be assigned if the user does not provide one, or if the user passes `undefined` in its place.
 These are called default-initialized parameters.
-Let's take the previous example and default the last name to "Smith".
+Let's take the previous example and default the last name to `"Smith"`.
 ```typescript
 function buildName(firstName: string, lastName = "Smith") {
     return firstName + " " + lastName;
@@ -280,11 +280,11 @@ function buildName(firstName: string, lastName = "Smith") {
 }
 
 ```
-share the same type (firstName: string, lastName?: string) => string.
-The default value of lastName disappears in the type, only leaving behind the fact that the parameter is optional.
-Unlike plain optional parameters, default-initialized parameters don't need to occur after required parameters.
-If a default-initialized parameter comes before a required parameter, users need to explicitly pass undefined to get the default initialized value.
-For example, we could write our last example with only a default initializer on firstName:
+share the same type `(firstName: string, lastName?: string) => string`.
+The default value of `lastName` disappears in the type, only leaving behind the fact that the parameter is optional.
+Unlike plain optional parameters, default-initialized parameters don't *need* to occur after required parameters.
+If a default-initialized parameter comes before a required parameter, users need to explicitly pass `undefined` to get the default initialized value.
+For example, we could write our last example with only a default initializer on `firstName`:
 ```typescript
 function buildName(firstName = "Will", lastName: string) {
     return firstName + " " + lastName;
@@ -297,7 +297,7 @@ let result4 = buildName(undefined, "Adams");     // okay and returns "Will Adams
 
 ```
 ## Arrow Functions
-Arrow functions, also known as lambda functions, provide a lightweight syntax for functions. Arrow functions are used extensively to provide event handlers for many APIs. For example:
+Arrow functions, also known as *lambda* functions, provide a lightweight syntax for functions. Arrow functions are used extensively to provide event handlers for many APIs. For example:
 ```typescript
 function foo(handler: Action) {
     // call handler ...
@@ -308,11 +308,11 @@ foo(() => { // arrow function!
 })
 
 ```
-Often, a function like foo() will save the arrow function handler in a variable to run the code inside the function later when a certain condition occurs. Arrow functions serve as a kind of shortcut to provide extra code to run without having to write a separate formal function for that purpose. In this way arrow, or lambda, functions are thought of as "anonymous" functions.
-Read more about arrow functions...
+Often, a function like `foo()` will save the arrow function `handler` in a variable to run the code inside the function later when a certain condition occurs. Arrow functions serve as a kind of shortcut to provide extra code to run without having to write a separate formal function for that purpose. In this way arrow, or lambda, functions are thought of as "anonymous" functions.
+[Read more about arrow functions...](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 ## Anonymous Functions
-Anonymous functions are used just like arrow functions. They're called "anonymous" because the function doesn't have a name and isn't called using a name. The function is remembered by it's reference. This means that a variable is used to remember the function or the function is used directly ("inline").
-Here's an example similar to the one shown for arrow functions but this time the foo() function uses an anonymous function directly:
+Anonymous functions are used just like arrow functions. They're called "anonymous" because the function doesn't have a name and isn't called using a name. The function is remembered by it's *reference*. This means that a variable is used to remember the function or the function is used directly ("inline").
+Here's an example similar to the one shown for arrow functions but this time the `foo()` function uses an anonymous function directly:
 ```typescript
 function foo(handler: Action) {
     // call handler ...
@@ -338,12 +338,14 @@ foo(anon)
 ```
 ---
 
-## 🏷️ タグ
-#Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[MakeCode言語: ブロック、静的TypeScript]] - カテゴリ: Web制作・技術 キーワード: JavaScript, TypeScript
-- [[課題について]] - カテゴリ: Web制作・技術 キーワード: JavaScript, TypeScript
-- [[まさた_実務レベルのJavaScriptスキルを身につける学習法]] - カテゴリ: Web制作・技術 キーワード: JavaScript
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: Web制作・技術 キーワード: JavaScript
-- [[まさた_才能なしでもWeb制作で月収50万以上が可能な理由]] - カテゴリ: Web制作・技術 キーワード: JavaScript
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/案件一覧.md|案件一覧]]
+- [[../02_Web制作/制作実績一覧（公開OK）.md|制作実績一覧（公開OK）]]
+- [[../02_Web制作/営業文添削用.md|営業文添削用]]
+- [[../02_Web制作/20220930_ぐっさん営業文.md|20220930_ぐっさん営業文]]
+- [[../01_よしなに対応/Shopify CLI  環境構築.md|Shopify CLI  環境構築]]

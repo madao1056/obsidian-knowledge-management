@@ -44,3 +44,15 @@ mail:chinshoen@gmail.com
 ---
 [http://chinshoen.jp/wp/wp-admin/](http://chinshoen.jp/wp/wp-admin/)
 ---
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/TAKUMIKUMO VILLAGE.md|TAKUMIKUMO VILLAGE]]
+- [[../02_Web制作/index.php.md|index.php]]
+- [[../99_その他/お問い合わせ.md|お問い合わせ]]
+- [[../99_その他/フォント.md|フォント]]
+- [[../99_その他/Untitled.md|Untitled]]

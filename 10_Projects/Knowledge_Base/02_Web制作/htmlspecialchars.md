@@ -16,3 +16,15 @@ sync_time: 2025-07-12T15:01:47.513757
 //例 
  $_SESSION['user-name'] = htmlspecialchars($_POST['user-name'], ENT_QUOTES);
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/PHP Contact Form.md|PHP Contact Form]]
+- [[../02_Web制作/ページ遷移なしの絞り込み検索(Ajax).md|ページ遷移なしの絞り込み検索(Ajax)]]
+- [[../99_その他/Untitled.md|Untitled]]
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]

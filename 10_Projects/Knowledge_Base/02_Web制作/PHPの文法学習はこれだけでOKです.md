@@ -1,13 +1,13 @@
 ---
 notion_id: 1b2ade4a-d294-8064-8b0d-d7cad957d31a
+account: Main
+title: PHPの文法学習はこれだけでOKです
+url: https://www.notion.so/PHP-OK-1b2ade4ad29480648b0dd7cad957d31a
 created_time: 2025-03-10T14:08:00.000Z
 last_edited_time: 2025-03-17T01:33:00.000Z
-url: https://www.notion.so/PHP-OK-1b2ade4ad29480648b0dd7cad957d31a
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:06.064763
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.003610
 ---
-
 # PHPの文法学習はこれだけでOKです
 
 どうも、まさたです。
@@ -100,7 +100,7 @@ PHP学習としては
 無料公開しています。
 以下のURLから学ぶことが
 できますので、ぜひご活用ください！
-https://masata-blog.com/wordpress-php/
+[https://masata-blog.com/wordpress-php/](https://masata-blog.com/wordpress-php/)
 本講座は全7カリキュラムで
 WordPressオリジナルテーマ制作のために
 必要となるPHPの文法を網羅的に
@@ -114,13 +114,13 @@ PHPのコードを何となく
 次回のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -131,19 +131,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/Uzwjr6B4FHmn
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/Uzwjr6B4FHmn](https://utage-system.com/r/e1hijKCLRUJN/cancel/Uzwjr6B4FHmn)
 
-## 🏷️ タグ
-#教育_コーチング #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[まさた_実務レベルのJavaScriptスキルを身につける学習法]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, マインドセット, Web制作・技術 キーワード: コード, Web, クラス
-- [[まさた_【企画案内ラスト】僕はコーディングが大嫌いでした]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, マインドセット, Web制作・技術 キーワード: 3日, コード, Web
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, マインドセット, Web制作・技術 キーワード: メソッド, Web, コーディング
-- [[まさた_自分に向いてるかどうかは後で考えればいい]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, マインドセット, Web制作・技術 キーワード: Web, サイト, コーディング
-- [[まさた_なぜ他じゃなくWeb制作をゴリ押しするのか]] - カテゴリ: マインドセット, Web制作・技術, スキル・能力, 教育・コーチング キーワード: 3日, コード, Web
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/新屋敷津田歯科こども歯科.md|新屋敷津田歯科こども歯科]]
+- [[../02_Web制作/まさた_才能なしでもWeb制作で月収50万以上が可能な理由.md|まさた_才能なしでもWeb制作で月収50万以上が可能な理由]]
+- [[../02_Web制作/まさた_Web制作は自分には向いてないと諦めかけた過去.md|まさた_Web制作は自分には向いてないと諦めかけた過去]]
+- [[../02_Web制作/伊藤さん共有.md|伊藤さん共有]]
+- [[../02_Web制作/ぐっさん：「ぐっさん」と呼ばれたい.md|ぐっさん：「ぐっさん」と呼ばれたい]]

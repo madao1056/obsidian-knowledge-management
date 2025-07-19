@@ -1,13 +1,13 @@
 ---
 notion_id: 1acade4a-d294-80b5-a3a0-d6c17491afc8
+account: Main
+title: Sassは学ばなくてもいい？
+url: https://www.notion.so/Sass-1acade4ad29480b5a3a0d6c17491afc8
 created_time: 2025-03-04T13:15:00.000Z
 last_edited_time: 2025-03-17T01:33:00.000Z
-url: https://www.notion.so/Sass-1acade4ad29480b5a3a0d6c17491afc8
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:23.920325
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.004005
 ---
-
 # Sassは学ばなくてもいい？
 
 どうも、まさたです。
@@ -95,13 +95,13 @@ CSSが書けなくなるわけでは
 次回のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -112,19 +112,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/fnY8RJBWUqar
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/fnY8RJBWUqar](https://utage-system.com/r/e1hijKCLRUJN/cancel/fnY8RJBWUqar)
 
-## 🏷️ タグ
-#Web制作_技術 #スキル_能力
+## タグ
 
-## 🔗 関連ナレッジ
-- [[まさた_なぜ他じゃなくWeb制作をゴリ押しするのか]] - カテゴリ: Web制作・技術, スキル・能力 キーワード: コード, テーマ, コーディング
-- [[隙間時間を活用したWeb制作学習法]] - カテゴリ: Web制作・技術, スキル・能力 キーワード: コード, テーマ, コーディング
-- [[まさた_【企画案内】将来的にAIにWeb制作の仕事は奪われます]] - カテゴリ: Web制作・技術, スキル・能力 キーワード: コード, コーディング, タイトル
-- [[3ヶ月でWeb制作学習を終えるための思考]] - カテゴリ: Web制作・技術, スキル・能力 キーワード: コード, コーディング, 技術
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: Web制作・技術, スキル・能力 キーワード: コーディング, タイトル, 技術
+#○○○など）や #Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/お問い合わせ.md|お問い合わせ]]
+- [[../05_学習・成長/勉強.md|勉強]]
+- [[../99_その他/フォント.md|フォント]]
+- [[../99_その他/ブログ.md|ブログ]]
+- [[../99_その他/タイトル.md|タイトル]]

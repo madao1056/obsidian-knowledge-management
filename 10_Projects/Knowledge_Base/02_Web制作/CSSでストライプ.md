@@ -11,3 +11,11 @@ sync_time: 2025-07-12T15:01:47.501366
 # CSSでストライプ
 
 [Bookmark](https://css-stripe-generator.firebaseapp.com/)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/y.md|y]]

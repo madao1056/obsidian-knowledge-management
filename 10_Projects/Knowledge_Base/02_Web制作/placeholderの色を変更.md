@@ -15,3 +15,11 @@ input::placeholder {
   color: red;
 }
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/y.md|y]]

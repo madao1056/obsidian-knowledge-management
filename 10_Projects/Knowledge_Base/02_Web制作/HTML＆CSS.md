@@ -24,3 +24,15 @@ sync_time: 2025-07-12T15:01:47.437093
 - 中央を基準にして調整する
   - position: absolute;
 left: calc(50% - #{rem(528)});
+
+## タグ
+
+#Web制作 #{rem(528)}); 
+
+## 関連ドキュメント
+
+- [[../99_その他/padding.md|padding]]
+- [[../99_その他/left.md|left]]
+- [[../99_その他/height.md|height]]
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]

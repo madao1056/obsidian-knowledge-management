@@ -51,3 +51,15 @@ PW：dl
 ダークモード実装が仕様追加となりました！
 イメージ的には下記サイトで問題ないかなと！
 [https://goworkship.com/magazine/snippets-dark-light-mode/](https://goworkship.com/magazine/snippets-dark-light-mode/)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/デザイン.md|デザイン]]
+- [[../02_Web制作/質疑・情報共有等.md|質疑・情報共有等]]
+- [[../02_Web制作/✅テンポス_インフルエンサー紹介LP.md|✅テンポス_インフルエンサー紹介LP]]
+- [[../02_Web制作/✅ご確認事項5_17.md|✅ご確認事項5_17]]
+- [[../02_Web制作/お問い合わせページSPバナーについて.md|お問い合わせページSPバナーについて]]

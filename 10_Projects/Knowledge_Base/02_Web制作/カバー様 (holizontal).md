@@ -47,3 +47,15 @@ sync_time: 2025-07-12T15:01:15.098000
   - images/top/kv_about.webp
   - images/top/kv_about_hover.webp
 [https://docs.google.com/spreadsheets/d/1OcWXfjcujSLqvnQcc_B9xasT48I1LRIStAlu7w94k30/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1OcWXfjcujSLqvnQcc_B9xasT48I1LRIStAlu7w94k30/edit?usp=sharing)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/確認事項.md|確認事項]]
+- [[../02_Web制作/基本情報.md|基本情報]]
+- [[../02_Web制作/header.php.md|header.php]]
+- [[../99_その他/固定ページ.md|固定ページ]]
+- [[../99_その他/画像.md|画像]]

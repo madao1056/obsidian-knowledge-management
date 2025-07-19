@@ -14,3 +14,15 @@ sync_time: 2025-07-12T15:01:47.449964
 ```php
 $front_page_id = get_option( 'page_on_front' ); // IDのみが取得される
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/y.md|y]]
+- [[../02_Web制作/Code Snippet.md|Code Snippet]]
+- [[../02_Web制作/WordPress外部ファイル読み込み.md|WordPress外部ファイル読み込み]]
+- [[../02_Web制作/chouetteria シュエッテリア様.md|chouetteria シュエッテリア様]]
+- [[../02_Web制作/WordPressのインポート時間を増やす.md|WordPressのインポート時間を増やす]]

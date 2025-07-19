@@ -36,3 +36,15 @@ sync_time: 2025-07-12T15:01:47.490375
   object-position: center;
 }
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/padding.md|padding]]
+- [[../99_その他/left.md|left]]
+- [[../99_その他/height.md|height]]
+- [[../99_その他/top.md|top]]
+- [[../99_その他/y.md|y]]

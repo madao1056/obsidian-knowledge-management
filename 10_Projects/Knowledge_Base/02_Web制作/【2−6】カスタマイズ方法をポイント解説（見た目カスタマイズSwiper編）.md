@@ -47,3 +47,15 @@ new Swiper('#mv_slider', {
 [Bookmark](https://swiperjs.com/swiper-api#parameters)
 ■参考（日本語で解説）
 [Bookmark](https://pengi-n.co.jp/blog/library-swiper/)
+
+## タグ
+
+#parameters) #Web制作 #mv_slider', 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/デザイン.md|デザイン]]
+- [[../02_Web制作/ページネーション.md|ページネーション]]
+- [[../04_ビジネス/テンプレート.md|テンプレート]]
+- [[../99_その他/目次.md|目次]]
+- [[../99_その他/Swiper.md|Swiper]]

@@ -19,3 +19,12 @@ sync_time: 2025-07-12T15:01:47.512711
 </a>
 ```
 [Bookmark](https://wpdocs.osdn.jp/%E6%9D%A1%E4%BB%B6%E5%88%86%E5%B2%90%E3%82%BF%E3%82%B0)
+
+## タグ
+
+#about<?php #Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/footer.php.md|footer.php]]
+- [[../99_その他/y.md|y]]

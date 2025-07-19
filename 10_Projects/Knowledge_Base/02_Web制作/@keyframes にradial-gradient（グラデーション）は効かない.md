@@ -28,3 +28,12 @@ sync_time: 2025-07-12T15:01:47.448413
 ```php
 <a href="<?php echo $login ?>" class="c-loginBtn">ログアウト<span class="c-loginBtn__icon"></span></a>
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]

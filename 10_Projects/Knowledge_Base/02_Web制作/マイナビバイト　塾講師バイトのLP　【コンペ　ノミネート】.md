@@ -1,0 +1,32 @@
+---
+notion_id: 1bad0c30-9401-81d7-8871-e78d1680807c
+account: Secondary
+title: マイナビバイト　塾講師バイトのLP　【コンペ　ノミネート】
+url: https://www.notion.so/LP-1bad0c30940181d78871e78d1680807c
+created_time: 2025-03-18T04:06:00.000Z
+last_edited_time: 2025-05-26T15:24:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:47.362837
+---
+# マイナビバイト　塾講師バイトのLP　【コンペ　ノミネート】
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/d1a710b9-4077-45cc-a529-a846cc84482a/%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A_148.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665LAG42OO%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T064230Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDTcYrJd8KIcGQeU9AUJG6S3XJP1WcLNfNVxWPxpdztxAIgEhtm2GhkyvQw5xL1R4jVNpxDmZI0Cs5t%2BDkhAlHbYf0qiAQInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCQjQg3dxj8G2uAPeCrcA8hQp1dG5Q%2BDMbEog%2Bpo7HH2CZuwmfy5gRzVW9iaywy9h1NhMYiAGcpu2oZOG4vvoXA9AyDFPzOxFZrk4RP9N7aJi0xuZprx%2BeCMpQxFuFJqVZrb851mC69fq8L9AcQXaYwbUyfWVtEudYQFiKbtqc0MOJJMAdoTBYCSo9gTLLN5ktbsFBFKuU5OWjrE6HrGgRaGuRvYvFzQ8xG2cj1pyTm2B81a5TUsPdDpHdXjpHfa8r2vqAIpuMRGiTWJtQW227%2F%2BaFJ4VFR6Oz1zMTAEs1Exvfwa9GVOzIPm7W9DXlPhmZt1PYEydvy54duwonC3%2F7qMnWgYH%2FiIBfMvUo%2FGEYzgnJiaNe%2F9ByMKq%2BVqtFfPRarcpt1V%2FInVFR2vzugZ42ur%2FmImoXlzwRO%2BU6TWRJtUzJIImX1lgoSTebB5TlDguOsvh1SRMM8y5aE0mRY4Kx%2BdEb5saMQTNAwzwQKDrUwAsesQ9zHSTP%2BbqNVLkkoiLiqhZXNicvknhmUYi%2BoZ6cPk7%2FhIlm4Vlp5xxwU2l0Kl0hCu99VSqJCuVDrf9d7qifUke4FEhhvabvut2dACaxOYb3M1syAYLwkqQmr0vVJ8blpTbEamdyGqW73ytcFY5zJZXoxNEEsIad2fMNLF7MMGOqUBV17CBaFWg0kyaZnr74C0DizM2sxZMjR9LfqEgxM82zogveZtRiepBFmsAgIf4k87JGS0DPmx1f17mxI%2FIvmJdYe7uLTz7fR3LsPtKt6oZSllGqBZHqkiXrxrCrbDt8tRRKVVE16cAyDlwGIlD%2BuIuVmNed0ZbCguGw3KWp66qEWQ44vICoepVvmWd347%2FDLcubD0O9ZVkACWWePhigtWDdR1%2B%2FzF&X-Amz-Signature=9a687d3f07fa4d42e519043adbb23469752999d113bdd9f84caeff61d7b1dbdc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+### 【要件定義】
+・SHElikesでのマイナビバイトの塾の求人LPのコンペに応募したものです。パッと見て女性向けだとわかるデザインで、学習感を感じさせるようなデザインという指定がありました。
+### 【デザインで工夫したところ】
+・塾講師のメリットを伝えるLPでしたので、比較がわかりやすいように色分けをしていることと、ターゲットが大学生なので、ノートを可愛くまとめるのが好きな女子大生というペルソナを設定して、デザインをしました。
+学習感を出すために赤マルでまとめ文章を囲ったところが工夫したところです。
+コンペは不採用でしたが、最後まで悩んだ作品としてノミネートをいただきました。
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/6c7eb918-7cae-4934-9077-dc6c51ddbbe9/%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%92%E3%82%99%E3%83%8F%E3%82%99%E3%82%A4%E3%83%88PC.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665LAG42OO%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T064230Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDTcYrJd8KIcGQeU9AUJG6S3XJP1WcLNfNVxWPxpdztxAIgEhtm2GhkyvQw5xL1R4jVNpxDmZI0Cs5t%2BDkhAlHbYf0qiAQInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCQjQg3dxj8G2uAPeCrcA8hQp1dG5Q%2BDMbEog%2Bpo7HH2CZuwmfy5gRzVW9iaywy9h1NhMYiAGcpu2oZOG4vvoXA9AyDFPzOxFZrk4RP9N7aJi0xuZprx%2BeCMpQxFuFJqVZrb851mC69fq8L9AcQXaYwbUyfWVtEudYQFiKbtqc0MOJJMAdoTBYCSo9gTLLN5ktbsFBFKuU5OWjrE6HrGgRaGuRvYvFzQ8xG2cj1pyTm2B81a5TUsPdDpHdXjpHfa8r2vqAIpuMRGiTWJtQW227%2F%2BaFJ4VFR6Oz1zMTAEs1Exvfwa9GVOzIPm7W9DXlPhmZt1PYEydvy54duwonC3%2F7qMnWgYH%2FiIBfMvUo%2FGEYzgnJiaNe%2F9ByMKq%2BVqtFfPRarcpt1V%2FInVFR2vzugZ42ur%2FmImoXlzwRO%2BU6TWRJtUzJIImX1lgoSTebB5TlDguOsvh1SRMM8y5aE0mRY4Kx%2BdEb5saMQTNAwzwQKDrUwAsesQ9zHSTP%2BbqNVLkkoiLiqhZXNicvknhmUYi%2BoZ6cPk7%2FhIlm4Vlp5xxwU2l0Kl0hCu99VSqJCuVDrf9d7qifUke4FEhhvabvut2dACaxOYb3M1syAYLwkqQmr0vVJ8blpTbEamdyGqW73ytcFY5zJZXoxNEEsIad2fMNLF7MMGOqUBV17CBaFWg0kyaZnr74C0DizM2sxZMjR9LfqEgxM82zogveZtRiepBFmsAgIf4k87JGS0DPmx1f17mxI%2FIvmJdYe7uLTz7fR3LsPtKt6oZSllGqBZHqkiXrxrCrbDt8tRRKVVE16cAyDlwGIlD%2BuIuVmNed0ZbCguGw3KWp66qEWQ44vICoepVvmWd347%2FDLcubD0O9ZVkACWWePhigtWDdR1%2B%2FzF&X-Amz-Signature=347a73ae1bb3173b9d71c27d7a130495b7f48bb8c926e76531667d48691869dd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/デザイン.md|デザイン]]
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]
+- [[../02_Web制作/片側が画面幅いっぱいのスライダー.md|片側が画面幅いっぱいのスライダー]]
+- [[../02_Web制作/テストコーディング_リニューアル（WP化案件）.md|テストコーディング_リニューアル（WP化案件）]]

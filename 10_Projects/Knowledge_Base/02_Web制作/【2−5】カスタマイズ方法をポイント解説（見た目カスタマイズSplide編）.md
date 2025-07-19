@@ -45,3 +45,15 @@ new Splide('#mv_slider',
 ■参考（公式ページ）
 [Bookmark](https://ja.splidejs.com/guides/options/)
 [Bookmark](https://ja.splidejs.com/guides/)
+
+## タグ
+
+#Web制作 #mv_slider', 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/デザイン.md|デザイン]]
+- [[../02_Web制作/【2−2】スライダーテンプレート使い方を簡単解説（Splide編）.md|【2−2】スライダーテンプレート使い方を簡単解説（Splide編）]]
+- [[../99_その他/画像.md|画像]]
+- [[../04_ビジネス/テンプレート.md|テンプレート]]
+- [[../99_その他/目次.md|目次]]

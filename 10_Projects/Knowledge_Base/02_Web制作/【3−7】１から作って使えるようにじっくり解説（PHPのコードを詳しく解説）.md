@@ -157,3 +157,15 @@ new Splide('#post',
 2.front-page.phpの解説
 3.p-top-post.phpの解説
 4.p-splide-post.phpの解説
+
+## タグ
+
+#parameters) #post', #Web制作 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/「.md|「]]
+- [[../01_よしなに対応/slick.md|slick]]
+- [[../02_Web制作/swiper.md|swiper]]
+- [[../02_Web制作/サブループ.md|サブループ]]
+- [[../02_Web制作/front-page.php.md|front-page.php]]

@@ -11,3 +11,12 @@ sync_time: 2025-07-12T15:01:47.502132
 # CSSでドット柄
 
 [Bookmark](https://webparts.cman.jp/box/dot/)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]

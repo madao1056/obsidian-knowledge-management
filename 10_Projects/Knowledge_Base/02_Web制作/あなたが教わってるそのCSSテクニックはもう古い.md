@@ -11,3 +11,12 @@ sync_time: 2025-07-12T15:01:15.032562
 # あなたが教わってるそのCSSテクニックはもう古い
 
 [Bookmark](https://www.tak-dcxi.com/article/that-css-technique-you-learned-is-outdated/)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]

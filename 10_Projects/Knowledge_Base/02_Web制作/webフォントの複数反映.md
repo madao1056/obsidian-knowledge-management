@@ -27,3 +27,12 @@ wp_enqueue_style( 'googleFonts');( 'googleFonts',
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/フォント.md|フォント]]
+- [[../99_その他/y.md|y]]

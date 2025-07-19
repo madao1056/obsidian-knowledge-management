@@ -86,3 +86,15 @@ Breadcrumb NavXT [https://www.javadrive.jp/wordpress/plugin-list/index16.html](h
 例：「現在実績〇〇件」をいった最新の情報を取得して表示してほしい、といった要望の際に使える
 参考：
 WordPress 投稿数の取得・表示方法 - by Takumi Hirashima [https://hirashimatakumi.com/blog/1455.html](https://hirashimatakumi.com/blog/1455.html)
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/chouetteria シュエッテリア様.md|chouetteria シュエッテリア様]]
+- [[../02_Web制作/三友運輸株式会社様 コーポレートサイト.md|三友運輸株式会社様 コーポレートサイト]]
+- [[../02_Web制作/コーポレートサイト部分WP化.md|コーポレートサイト部分WP化]]
+- [[../01_よしなに対応/【無料プレゼント企画】高単価案件受注の提案文実例.md|【無料プレゼント企画】高単価案件受注の提案文実例]]
+- [[../01_よしなに対応/オリジナル営業文.md|オリジナル営業文]]

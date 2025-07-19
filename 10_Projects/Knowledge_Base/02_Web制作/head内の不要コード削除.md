@@ -69,3 +69,15 @@ add_action('wp_enqueue_scripts', 'dequeue_plugins_style', 9999);
 //<meta charset="utf-8">canonicalタグの削除
 remove_action('wp_head', 'rel_canonical');
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/Clipy.md|Clipy]]
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]
+- [[../02_Web制作/WordPress構築（歯科医院コーポレートサイト）.md|WordPress構築（歯科医院コーポレートサイト）]]
+- [[../02_Web制作/CodeUps：WordPress化メモ.md|CodeUps：WordPress化メモ]]

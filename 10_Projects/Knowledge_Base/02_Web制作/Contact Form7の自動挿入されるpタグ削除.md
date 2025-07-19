@@ -18,3 +18,13 @@ functions.phpに以下のコードを追記
     return false;
   }
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/functions.php.md|functions.php]]
+- [[../99_その他/top.md|top]]
+- [[../99_その他/y.md|y]]

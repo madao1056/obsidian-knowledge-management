@@ -1,13 +1,13 @@
 ---
 notion_id: 1a5ade4a-d294-80ea-a23c-e4a6e1626555
+account: Main
+title: まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話
+url: https://www.notion.so/_2-3-Web-1a5ade4ad29480eaa23ce4a6e1626555
 created_time: 2025-02-25T14:36:00.000Z
 last_edited_time: 2025-03-17T01:32:00.000Z
-url: https://www.notion.so/_2-3-Web-1a5ade4ad29480eaa23ce4a6e1626555
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:40.591260
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.005834
 ---
-
 # まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話
 
 どうも、まさたです。
@@ -187,13 +187,13 @@ Web制作の学習進捗は
 明日のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -204,19 +204,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/DVZqsm6fCFi4
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/DVZqsm6fCFi4](https://utage-system.com/r/e1hijKCLRUJN/cancel/DVZqsm6fCFi4)
 
-## 🏷️ タグ
-#教育_コーチング #営業_ビジネス #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 教育
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 教育
-- [[まさた_才能なしでもWeb制作で月収50万以上が可能な理由]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 教育
-- [[まさた_Web制作は自分には向いてないと諦めかけた過去]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, コース
-- [[営業文改善の完全ガイド：ウェブ制作フリーランスのための実践戦略]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, デザインカンプ
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/新屋敷津田歯科こども歯科.md|新屋敷津田歯科こども歯科]]
+- [[../02_Web制作/伊藤さん共有.md|伊藤さん共有]]
+- [[../02_Web制作/ハラポンさん案件.md|ハラポンさん案件]]
+- [[../02_Web制作/YouTube文字起こし（営業文について、濃縮還元）.md|YouTube文字起こし（営業文について、濃縮還元）]]
+- [[../02_Web制作/案件一覧.md|案件一覧]]

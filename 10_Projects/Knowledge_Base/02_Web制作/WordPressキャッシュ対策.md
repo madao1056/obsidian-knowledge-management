@@ -40,3 +40,15 @@ wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/styles.css', 
 //After
 wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/styles.css', array(), **date("ymdHis", filemtime(get_stylesheet_directory() . '/assets/css/styles.css'))**, 'all');
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/菱田さま　先方FB修正.md|菱田さま　先方FB修正]]
+- [[../02_Web制作/株式会社season2様コーポレートサイト.md|株式会社season2様コーポレートサイト]]
+- [[../02_Web制作/営業文添削用.md|営業文添削用]]
+- [[../02_Web制作/Brain購入特典.md|Brain購入特典]]
+- [[../02_Web制作/管理画面の「投稿」名を変更したり、使わないカテゴリーやタグを非表示にする.md|管理画面の「投稿」名を変更したり、使わないカテゴリーやタグを非表示にする]]

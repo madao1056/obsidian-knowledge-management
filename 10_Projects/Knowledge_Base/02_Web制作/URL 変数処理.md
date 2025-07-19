@@ -22,3 +22,12 @@ $contact = esc_url( home_url( '/contact/' ) );
 
 <a href="<?php echo $about ?>" class="c-btn">read more</a>
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/top.md|top]]
+- [[../99_その他/y.md|y]]

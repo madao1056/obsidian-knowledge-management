@@ -19,3 +19,11 @@ function my_site_icon_url( $url ) {
   return get_theme_file_uri ( 'img/favicon.png' );
 }
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/y.md|y]]

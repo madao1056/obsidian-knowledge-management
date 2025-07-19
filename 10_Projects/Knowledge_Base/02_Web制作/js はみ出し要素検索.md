@@ -15,3 +15,11 @@ sync_time: 2025-07-12T15:01:47.489573
         document.querySelectorAll('*').forEach(el => el.clientWidth > document.body.clientWidth ? console.log(el) : null);
     </script>
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/y.md|y]]

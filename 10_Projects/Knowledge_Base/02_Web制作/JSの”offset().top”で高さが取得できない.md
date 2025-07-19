@@ -19,3 +19,13 @@ if ($('.sample').length) {
   var sampleSet = $('.sample').offset().top;
 }
 ```
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../99_その他/scale.md|scale]]
+- [[../99_その他/top.md|top]]
+- [[../99_その他/y.md|y]]

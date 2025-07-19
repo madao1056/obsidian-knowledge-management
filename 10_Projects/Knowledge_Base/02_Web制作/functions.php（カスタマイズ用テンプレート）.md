@@ -9,3 +9,14 @@ sync_status: placeholder
 sync_time: 2025-07-12T15:01:47.505982
 ---
 # functions.php（カスタマイズ用テンプレート）
+
+
+## タグ
+
+#Web制作 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/functions.php.md|functions.php]]
+- [[../99_その他/y.md|y]]
+- [[../99_その他/テンプレート.md|テンプレート]]
