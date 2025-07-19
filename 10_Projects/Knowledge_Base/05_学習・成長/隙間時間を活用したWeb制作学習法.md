@@ -1,13 +1,13 @@
 ---
 notion_id: 1abade4a-d294-8054-9a52-fd42ac9dac62
+account: Main
+title: 隙間時間を活用したWeb制作学習法
+url: https://www.notion.so/Web-1abade4ad29480549a52fd42ac9dac62
 created_time: 2025-03-03T12:28:00.000Z
 last_edited_time: 2025-03-17T01:33:00.000Z
-url: https://www.notion.so/Web-1abade4ad29480549a52fd42ac9dac62
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:24.395045
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.004100
 ---
-
 # 隙間時間を活用したWeb制作学習法
 
 どうも、まさたです。
@@ -112,7 +112,7 @@ CSSの使い方
 ライブコーディング動画となっているので
 まだ、見たことない方は
 以下のURLから学んでみてください！
-https://masata-blog.com/excitecode/
+[https://masata-blog.com/excitecode/](https://masata-blog.com/excitecode/)
 そして今日から
 ライブコーディング動画を使って
 隙間時間をフル活用していきましょう。
@@ -120,13 +120,13 @@ https://masata-blog.com/excitecode/
 次回のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -137,19 +137,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/7DhtaeWEgjGk
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/7DhtaeWEgjGk](https://utage-system.com/r/e1hijKCLRUJN/cancel/7DhtaeWEgjGk)
 
-## 🏷️ タグ
-#コミュニケーション #Web制作_技術 #スキル_能力
+## タグ
 
-## 🔗 関連ナレッジ
-- [[3ヶ月でWeb制作学習を終えるための思考]] - カテゴリ: Web制作・技術, コミュニケーション, スキル・能力 キーワード: Web, コース, メルマガ
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: Web制作・技術, コミュニケーション, スキル・能力 キーワード: Web, サイト, コーディング
-- [[まさた_Web制作は自分には向いてないと諦めかけた過去]] - カテゴリ: Web制作・技術, コミュニケーション, スキル・能力 キーワード: 1人, Web, サイト
-- [[まさた_初心者が知っておくべきコーディングの手順]] - カテゴリ: Web制作・技術, コミュニケーション, スキル・能力 キーワード: Web, サイト, 改善
-- [[まさた_才能なしでもWeb制作で月収50万以上が可能な理由]] - カテゴリ: Web制作・技術, コミュニケーション, スキル・能力 キーワード: Web, サイト, コーディング
+#学習・成長 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/20230226_ぐっさん.md|20230226_ぐっさん]]
+- [[../02_Web制作/✅フードサーチサイト.md|✅フードサーチサイト]]
+- [[../02_Web制作/まさた_【企画案内あり】時給を50倍にするためにやったこと.md|まさた_【企画案内あり】時給を50倍にするためにやったこと]]
+- [[../02_Web制作/3ヶ月でWeb制作学習を終えるための思考.md|3ヶ月でWeb制作学習を終えるための思考]]
+- [[../07_プロジェクト/まさた_Web制作を始めて消えていった人たち。.md|まさた_Web制作を始めて消えていった人たち。]]
