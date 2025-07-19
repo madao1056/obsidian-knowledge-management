@@ -1,24 +1,35 @@
 ---
-notion_id: ccc36497-69e5-4c36-8b48-3171939a6543
 account: Secondary
+created_time: 2023-08-02 10:33:00+00:00
+last_edited_time: '2023-08-02T14:18:00.000Z'
+notion_id: ccc36497-69e5-4c36-8b48-3171939a6543
+sync_status: synced
+sync_time: '2025-07-19T23:02:44.013225'
 title: 菱田さま　先方FB修正
 url: https://www.notion.so/FB-ccc3649769e54c368b483171939a6543
-created_time: 2023-08-02T10:33:00.000Z
-last_edited_time: 2023-08-02T14:18:00.000Z
-sync_status: placeholder
-sync_time: 2025-07-12T15:01:47.430311
 ---
 
 # 菱田さま　先方FB修正
 
-*🔄 This is a placeholder file from Notion Secondary account.*
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/846a7706-5d8b-44bf-8b49-a0eb6615d26f/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-08-02_19.33.16.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WTUSD3YX%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T140244Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCvwsA5cR%2F%2Bf2B%2F1Xx0IVNc4F5xTh1AzkTyH%2FGW9oyrGQIga8GAeVmZ1oPqTpxACHFlcegt%2Fo8Tskj%2Bltvce2f6GFMqiAQIpv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJ%2BK%2FT73jjHpi97MUCrcA78%2FdDcAbqKC7Ggs6YDmfohCzIGSRxYEZf5dlEPXvdeEtpZOHjlQit4ZVY69w97WTJPk4iwKG%2BEnD%2BdspTA1dpuHGiySJzRgpQfuY0s52HE5DPbPd3WBujYOL6%2FATxjjPgEJ21jXA9f7BIoS5Yx5AWb7hLv2Wxb01dfohKT%2B5V%2FNom2YdWZfXGenWZBGvvr63Fc5J5lcIn%2BlsHzrZK1%2BTd3BZhCkOYiBvTZUpplJWcar7hk29OCwSOPLF%2F1ZTc8sym8wDjhZ%2BxI937Gx9982iLTReKlvZbJ%2BGghNgO3qxw0SsjCnodJA8ST3YLLKh%2FLPUMIgPaHIeWQOgPQq4jishGjyk44s3xDlhM7v1sVEc7lumSiFlhgfuvwD4IfrEl5tkUgHwTIK4hfWx%2Fdpq2YNmLFUBcYBstBPskbRZIidf7LD%2FllIr5QtFTd9Tr5KaQcmzQabFGKnf5QOlqq1RAAjYYKpPg8Af%2B1kZeVCCGIuV0SMfAmF5ZeMcwdUgjFBfb5j82%2BYk%2BDOj%2B%2BHkKz18IcKHR9%2FVifMRq62vrdseIhWfKt6bz6UezpsJjZb2hQY%2FeCi9o5ytsTMSAjsNbPVmBFse2%2FBZwXFwv4GdBcJTcEqeoD8K2kfV1%2FHBnF4Z0fIMIy47sMGOqUBgZ0I4U%2FZUgpjyYNmP6l7tLG0YViW8A3kDRwjbLfVMCrwoqu4VZQ0Xyj%2BiFvDv6iIFzKgE00bQaZqz8%2BpLftuUx9LSVymuvB4m1tn9RerOwuOLnv8830OBcmwNLuQJH0QiCnciSVykOffLg8sREgth3t9Ixh6B3oA5U%2FB5mH%2FDqVtXf8dY38hF2DHHygxPCbp7t3%2B5Bq0xA8D34TFZezwpWf7XZJO&X-Amz-Signature=f722950ac505d544ed626b45333bd0ecab9bc2bf235b6a1f3cf13cde16b813a6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
-**Original URL**: https://www.notion.so/FB-ccc3649769e54c368b483171939a6543
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/94b43f66-5692-4aa6-9e98-f67d5d788fe0/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-08-02_19.33.25.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WTUSD3YX%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T140244Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCvwsA5cR%2F%2Bf2B%2F1Xx0IVNc4F5xTh1AzkTyH%2FGW9oyrGQIga8GAeVmZ1oPqTpxACHFlcegt%2Fo8Tskj%2Bltvce2f6GFMqiAQIpv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJ%2BK%2FT73jjHpi97MUCrcA78%2FdDcAbqKC7Ggs6YDmfohCzIGSRxYEZf5dlEPXvdeEtpZOHjlQit4ZVY69w97WTJPk4iwKG%2BEnD%2BdspTA1dpuHGiySJzRgpQfuY0s52HE5DPbPd3WBujYOL6%2FATxjjPgEJ21jXA9f7BIoS5Yx5AWb7hLv2Wxb01dfohKT%2B5V%2FNom2YdWZfXGenWZBGvvr63Fc5J5lcIn%2BlsHzrZK1%2BTd3BZhCkOYiBvTZUpplJWcar7hk29OCwSOPLF%2F1ZTc8sym8wDjhZ%2BxI937Gx9982iLTReKlvZbJ%2BGghNgO3qxw0SsjCnodJA8ST3YLLKh%2FLPUMIgPaHIeWQOgPQq4jishGjyk44s3xDlhM7v1sVEc7lumSiFlhgfuvwD4IfrEl5tkUgHwTIK4hfWx%2Fdpq2YNmLFUBcYBstBPskbRZIidf7LD%2FllIr5QtFTd9Tr5KaQcmzQabFGKnf5QOlqq1RAAjYYKpPg8Af%2B1kZeVCCGIuV0SMfAmF5ZeMcwdUgjFBfb5j82%2BYk%2BDOj%2B%2BHkKz18IcKHR9%2FVifMRq62vrdseIhWfKt6bz6UezpsJjZb2hQY%2FeCi9o5ytsTMSAjsNbPVmBFse2%2FBZwXFwv4GdBcJTcEqeoD8K2kfV1%2FHBnF4Z0fIMIy47sMGOqUBgZ0I4U%2FZUgpjyYNmP6l7tLG0YViW8A3kDRwjbLfVMCrwoqu4VZQ0Xyj%2BiFvDv6iIFzKgE00bQaZqz8%2BpLftuUx9LSVymuvB4m1tn9RerOwuOLnv8830OBcmwNLuQJH0QiCnciSVykOffLg8sREgth3t9Ixh6B3oA5U%2FB5mH%2FDqVtXf8dY38hF2DHHygxPCbp7t3%2B5Bq0xA8D34TFZezwpWf7XZJO&X-Amz-Signature=6d60e6d8725a5b6cc2f6d7bddbcfeafcff83d28e1d77796178901b1924452403&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
-**Status**: Content will be synced in a future update.
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/2535173e-f164-495c-9ae9-618fd3e30279/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-08-02_19.33.41.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WTUSD3YX%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T140244Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCvwsA5cR%2F%2Bf2B%2F1Xx0IVNc4F5xTh1AzkTyH%2FGW9oyrGQIga8GAeVmZ1oPqTpxACHFlcegt%2Fo8Tskj%2Bltvce2f6GFMqiAQIpv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJ%2BK%2FT73jjHpi97MUCrcA78%2FdDcAbqKC7Ggs6YDmfohCzIGSRxYEZf5dlEPXvdeEtpZOHjlQit4ZVY69w97WTJPk4iwKG%2BEnD%2BdspTA1dpuHGiySJzRgpQfuY0s52HE5DPbPd3WBujYOL6%2FATxjjPgEJ21jXA9f7BIoS5Yx5AWb7hLv2Wxb01dfohKT%2B5V%2FNom2YdWZfXGenWZBGvvr63Fc5J5lcIn%2BlsHzrZK1%2BTd3BZhCkOYiBvTZUpplJWcar7hk29OCwSOPLF%2F1ZTc8sym8wDjhZ%2BxI937Gx9982iLTReKlvZbJ%2BGghNgO3qxw0SsjCnodJA8ST3YLLKh%2FLPUMIgPaHIeWQOgPQq4jishGjyk44s3xDlhM7v1sVEc7lumSiFlhgfuvwD4IfrEl5tkUgHwTIK4hfWx%2Fdpq2YNmLFUBcYBstBPskbRZIidf7LD%2FllIr5QtFTd9Tr5KaQcmzQabFGKnf5QOlqq1RAAjYYKpPg8Af%2B1kZeVCCGIuV0SMfAmF5ZeMcwdUgjFBfb5j82%2BYk%2BDOj%2B%2BHkKz18IcKHR9%2FVifMRq62vrdseIhWfKt6bz6UezpsJjZb2hQY%2FeCi9o5ytsTMSAjsNbPVmBFse2%2FBZwXFwv4GdBcJTcEqeoD8K2kfV1%2FHBnF4Z0fIMIy47sMGOqUBgZ0I4U%2FZUgpjyYNmP6l7tLG0YViW8A3kDRwjbLfVMCrwoqu4VZQ0Xyj%2BiFvDv6iIFzKgE00bQaZqz8%2BpLftuUx9LSVymuvB4m1tn9RerOwuOLnv8830OBcmwNLuQJH0QiCnciSVykOffLg8sREgth3t9Ixh6B3oA5U%2FB5mH%2FDqVtXf8dY38hF2DHHygxPCbp7t3%2B5Bq0xA8D34TFZezwpWf7XZJO&X-Amz-Signature=a59941af1c0f8157a4168b708fd95fb3a22a93d3df035d760fbf2b8eee2f8347&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
-**Page ID**: `ccc36497-69e5-4c36-8b48-3171939a6543`
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/c7fbdebc-478d-4250-ab40-15b99f5b440c/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-08-02_19.33.50.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WTUSD3YX%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T140244Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCvwsA5cR%2F%2Bf2B%2F1Xx0IVNc4F5xTh1AzkTyH%2FGW9oyrGQIga8GAeVmZ1oPqTpxACHFlcegt%2Fo8Tskj%2Bltvce2f6GFMqiAQIpv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJ%2BK%2FT73jjHpi97MUCrcA78%2FdDcAbqKC7Ggs6YDmfohCzIGSRxYEZf5dlEPXvdeEtpZOHjlQit4ZVY69w97WTJPk4iwKG%2BEnD%2BdspTA1dpuHGiySJzRgpQfuY0s52HE5DPbPd3WBujYOL6%2FATxjjPgEJ21jXA9f7BIoS5Yx5AWb7hLv2Wxb01dfohKT%2B5V%2FNom2YdWZfXGenWZBGvvr63Fc5J5lcIn%2BlsHzrZK1%2BTd3BZhCkOYiBvTZUpplJWcar7hk29OCwSOPLF%2F1ZTc8sym8wDjhZ%2BxI937Gx9982iLTReKlvZbJ%2BGghNgO3qxw0SsjCnodJA8ST3YLLKh%2FLPUMIgPaHIeWQOgPQq4jishGjyk44s3xDlhM7v1sVEc7lumSiFlhgfuvwD4IfrEl5tkUgHwTIK4hfWx%2Fdpq2YNmLFUBcYBstBPskbRZIidf7LD%2FllIr5QtFTd9Tr5KaQcmzQabFGKnf5QOlqq1RAAjYYKpPg8Af%2B1kZeVCCGIuV0SMfAmF5ZeMcwdUgjFBfb5j82%2BYk%2BDOj%2B%2BHkKz18IcKHR9%2FVifMRq62vrdseIhWfKt6bz6UezpsJjZb2hQY%2FeCi9o5ytsTMSAjsNbPVmBFse2%2FBZwXFwv4GdBcJTcEqeoD8K2kfV1%2FHBnF4Z0fIMIy47sMGOqUBgZ0I4U%2FZUgpjyYNmP6l7tLG0YViW8A3kDRwjbLfVMCrwoqu4VZQ0Xyj%2BiFvDv6iIFzKgE00bQaZqz8%2BpLftuUx9LSVymuvB4m1tn9RerOwuOLnv8830OBcmwNLuQJH0QiCnciSVykOffLg8sREgth3t9Ixh6B3oA5U%2FB5mH%2FDqVtXf8dY38hF2DHHygxPCbp7t3%2B5Bq0xA8D34TFZezwpWf7XZJO&X-Amz-Signature=ef2dc0398cb553fa15da3150cb48cfc4ecb0997b9c504fc120b18275fe86c35f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
----
+## WordPressキャッシュ対策
 
-*Generated by Obsidian-Notion sync at 2025-07-12 15:01:47*
+functions.phpのcssファイルなど読み込み部分に適用
+
+```php
+//年〜秒までの日付を数字で取得（パス[/style.css]は実装時に合わせる）
+date("ymdHis", filemtime( get_stylesheet_directory().'/style.css'))
+
+//使用前(バージョン管理の部分→'1.0.1'を書き換える)
+wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0.1', 'all');
+
+//使用後
+wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/styles.css', array(), date("ymdHis", filemtime(get_stylesheet_directory() . '/assets/css/styles.css')), 'all');
+```
