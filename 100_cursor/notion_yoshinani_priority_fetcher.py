@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Notionプレースホルダーファイルの内容をバッチで取得して更新するスクリプト（v2）
-Mainフォルダも含めて処理
+「よしなに対応」関連のNotionプレースホルダーファイルを優先的に取得するスクリプト
 """
 import os
 import json
@@ -34,8 +33,24 @@ TARGET_DIRS = [
     "/Users/hashiguchimasaki/project/obsidian/20_Literature/25_Notion/Secondary"
 ]
 
-BATCH_SIZE = 20  # 一度に処理するファイル数を増やす
-STATE_FILE = "/Users/hashiguchimasaki/project/obsidian/100_cursor/.batch_fetch_state_v2.json"
+# よしなに関連キーワード（優先度順）
+YOSHINANI_KEYWORDS = [
+    "よしなに",
+    "ヨシナニ",
+    "よしなに対応",
+    "よしなに力",
+    "判断",
+    "先回り",
+    "適切に",
+    "自動化",
+    "思考コスト",
+    "気遣い",
+    "対応",
+    "選択肢"
+]
+
+BATCH_SIZE = 20
+STATE_FILE = "/Users/hashiguchimasaki/project/obsidian/100_cursor/.yoshinani_fetch_state.json"
 
 def load_state():
     """前回の処理状態を読み込む"""
@@ -96,6 +111,18 @@ def extract_notion_id(filepath):
     except:
         pass
     return None
+
+def calculate_yoshinani_score(filename):
+    """ファイル名から「よしなに」関連度スコアを計算"""
+    score = 0
+    filename_lower = filename.lower()
+    
+    for i, keyword in enumerate(YOSHINANI_KEYWORDS):
+        if keyword.lower() in filename_lower:
+            # 優先度の高いキーワードほど高得点
+            score += (len(YOSHINANI_KEYWORDS) - i) * 10
+    
+    return score
 
 def get_page_content_with_retry(page_id, max_retries=3):
     """ページ内容を取得（リトライ付き）"""
@@ -258,7 +285,7 @@ def update_file_content(filepath, notion_id):
 def main():
     """メイン処理"""
     print("=" * 60)
-    print("Notion Batch Content Fetcher v2")
+    print("Notion Yoshinani Priority Content Fetcher")
     print("=" * 60)
     
     # 状態を読み込む
@@ -288,7 +315,9 @@ def main():
                 if is_placeholder_file(filepath):
                     notion_id = extract_notion_id(filepath)
                     if notion_id:
-                        all_files.append((filepath, notion_id))
+                        # よしなに関連度スコアを計算
+                        score = calculate_yoshinani_score(filename)
+                        all_files.append((filepath, notion_id, score, filename))
                         dir_count += 1
         
         print(f"  Found {dir_count} placeholder files")
@@ -302,7 +331,14 @@ def main():
             print("Run with --reset to clear processing history.")
         return
     
+    # よしなに関連度でソート（スコアが高い順）
+    all_files.sort(key=lambda x: x[2], reverse=True)
+    
     print(f"\nTotal placeholder files to process: {len(all_files)}")
+    
+    # よしなに関連ファイルの数を表示
+    yoshinani_files = [f for f in all_files if f[2] > 0]
+    print(f"Yoshinani-related files: {len(yoshinani_files)}")
     
     # バッチで処理
     batch_files = all_files[:BATCH_SIZE]
@@ -312,11 +348,13 @@ def main():
     batch_success = 0
     batch_failed = 0
     
-    for i, (filepath, notion_id) in enumerate(batch_files):
-        filename = os.path.basename(filepath)
+    for i, (filepath, notion_id, score, filename) in enumerate(batch_files):
         dir_name = os.path.basename(os.path.dirname(filepath))
         
-        print(f"\n[{i+1}/{len(batch_files)}] {dir_name}/{filename}")
+        if score > 0:
+            print(f"\n[{i+1}/{len(batch_files)}] {dir_name}/{filename} 🎯 (Score: {score})")
+        else:
+            print(f"\n[{i+1}/{len(batch_files)}] {dir_name}/{filename}")
         
         success, message = update_file_content(filepath, notion_id)
         
