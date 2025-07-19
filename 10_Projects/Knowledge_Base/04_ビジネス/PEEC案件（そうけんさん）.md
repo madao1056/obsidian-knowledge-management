@@ -29,3 +29,15 @@ blockとして画像を3点変更できるセクションだと嬉しいです�
 [https://peec.co.jp/pages/about](https://peec.co.jp/pages/about)
 ■ デザイン
 [https://www.figma.com/file/YEkSs0jB2wIVRciOPsUaMb/peec?type=design&node-id=7%3A165&t=mx4eWJHtkK4AllMP-1](https://www.figma.com/file/YEkSs0jB2wIVRciOPsUaMb/peec?type=design&node-id=7%3A165&t=mx4eWJHtkK4AllMP-1)
+
+## タグ
+
+#ビジネス #よしなに対応 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/よしなに対応を構造化.md|よしなに対応を構造化]]
+- [[../01_よしなに対応/にこさん『よしなに対応』ぶち上げ企画.md|にこさん『よしなに対応』ぶち上げ企画]]
+- [[../01_よしなに対応/よしなにチェックシート.md|よしなにチェックシート]]
+- [[../01_よしなに対応/実案件のよしなに対応例（提案と報告書）.md|実案件のよしなに対応例（提案と報告書）]]
+- [[../01_よしなに対応/グルコン5回目.md|グルコン5回目]]
