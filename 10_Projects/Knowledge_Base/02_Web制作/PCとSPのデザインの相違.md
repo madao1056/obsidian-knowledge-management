@@ -1,0 +1,28 @@
+---
+notion_id: 3496a0ef-ac19-40c0-9305-8220d48fafc7
+account: Main
+title: PCとSPのデザインの相違
+url: https://www.notion.so/PC-SP-3496a0efac1940c093058220d48fafc7
+created_time: 2023-05-24T04:11:00.000Z
+last_edited_time: 2023-05-24T04:14:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.109349
+---
+# PCとSPのデザインの相違
+
+※**お願い：**確認しましたら、上記ステータスを変更してください。
+下記をご確認いただき、ご回答記入欄（ページ下部）にコメントの記載をお願いします。
+# 【ご提案】
+スマホとPCでタイトルのデザインが違う箇所がありました。
+こちらPCのデザインを踏襲して実装しております。
+認識が違いましたら、お手数ですがご支持願います！
+
+- PC
+  ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/2890c1be-f042-4899-88ae-40860eff4bf4/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QTKLKXIM%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042544Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCfFC%2FsZYtqrOxwjJp4YTst3wgASJOD8ug%2B34ZvE9wBPwIhAI6lwSBF5AnifGhANkXk8TsIlP3jGVe90779nXaA2%2FstKogECJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgybGXN9rYaLhztpCooq3AN37ZH1sNwdNG7OzIA4FvrT%2FFByXgZ9ZV98dZzwoQo2j64TghFRzgtk%2BrQxhMobdHXIkiso5xZfXCfTux59GjNaFWx2vXEn8sh4rE%2BYPMIRc4ZT7ZRb0nJ6uFsLzhg7J6mPBeylrKYI%2FPx2e6WsCwjsIxvcv4I9ncB997kbsXYeikdN6O3lYTULyKoXg1bApK5Jh4nK3Wbxn1oimIeiyDI4M3C2RzTIQ0h8cOv9za8cUUBrthrwhtrspeG%2FKiZx%2BZx5grMIVjSwkb3eo0gWo5qO6R1mtoHrCWFQluyEY3I2jEjSlTa%2B%2FBDY9ADjdsIxbY1KTD3cAMSeUHQwdIosWKRsc5IwF5aeKGv0n0FTd4Yg%2Bb%2FM8zfyEBZdMX4WywghKWUrMupDNmMk%2Buno%2Fpw4hCJXICwhEnNME2hC3%2FgqEI2q4esm8GZ3z7GoV7eVdNPMSF9cEBDLV%2FgaQY%2BI%2BapxoB9zVwJBCp8TnDEDIQniO3LWg%2Fw5VsBI5TMIWGsJiFzGlWuPpndXcvieJfGT6o8E%2BV3t1VqW2%2BVkERpKisg86TFYcZ5SPXVPLGYrWeCjoXlOXlbEzrUXoiV8zHq9of5ugg1xsDfbUsbwf%2FpvjUV8AfgQIrog0oTLslikoZgOgTCqquzDBjqkAREMUtCVpbm5WMd2ARFj7RuKJOJL5Y3p73CPyA7nrfXRxk9Wbpo6pnvK03f%2BbNiZli6hKFjSJDKO7ojQaBpQnTNpfhJPk3lRxr9iXbydGjm3GsbdW3f5Ag3AylEEF7EMQ6%2B5GaeTlsUvsvxADFUJyZVjtTqJdXyj0%2FPGJ%2BHi9aE4vrY4d9N53HaMrvGfRYduymk1SIa9N1MllvmdS2MIekiiCAnb&X-Amz-Signature=764978462923f9823df0018ff49ce79088b0fd16c5efd1cbb3e9b0aa6deb49a0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+- SP
+  ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/006eb1fe-d44e-4dd5-8733-ea9b860a09fe/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663VYBK7YJ%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042545Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDyrhzyxFiBdV%2Bo0QfdbuQQ3N9IY28GyMEvseez25FHjwIhAOaTgz4OPpIk9pmi9DgPHVZWjWc%2FwSb0%2Bij1y%2BiBC31iKogECJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igy86go6GPyqhX7obX0q3APB5qEKQbJ49Qt6GP31VCIB92JYNy45Bo7Z3XgAUmI00Y255FnRzs2GaQzMfgN4n5KfduJpDbQyY9%2Bx9NAqQUeTlCKU9B3JfTJi9PmmZ%2BIpok5rTWBjLHSQvF9JMqbU86vwWBPm%2FFFXYUNx4%2BcbjUIynsgryrIIQ8rWZXCXrXidOHbjls8Can%2FeVvu4ngqy1icZuxwypm31azwh7OQjkUQLY4nmlzYoKmrXS0WAEhWFPpkr799mDRRZpRhdZUJGhtQQHg3aHXO520VdhqpnNcV3%2BMM6t2yzqzJM3sy0FrhLDAS4IIQGeIKtMIdpt6FLpPqJ%2FcdS8LahOaN2fYYu3iGrSnTnlLQ1mjC%2BXVzriL5M91GqQMqh%2BB27oKa1zm470QLX9mSXom5QaWMUp8rW3HRv%2BjOn1ieJlPWEwAgXNUOM1yHh0u034nxbra%2FzfLhJSWMr9FbUZ%2BtiN22iKEbB2GSr4cYc9p4ieyFTqTVvB8WotI7PzRjpfFL0jhBFho2VUmB39ZSpOPcfOnusLFLUpREePXZe%2B1LmX0165LymUFTEX1xdI5lmlQygdZyMmvXoeuQ174w1P%2BFQY5H137NYVUjHizVew1WdEQd2p9JZ6no7uQvfsbhIa%2FgQUSZ5QDDvquzDBjqkAdnJvpTCHB8tIFQStWNrj7Q%2BiDHp4r2sALqfOtEWj0gfmaBod3s2el5fPbTvFfhz3BlslOdcE%2FCUp%2B9n7SdDQtjAgk4bsaTUid0QxUHKUfVixEhUoY%2BV942kRi6wq7NICgomUrK1kHZFyVY0c%2FynTfrNcx1cMDw1QfXqE%2FWd1c7Nr7vLf3D%2FutdZRIeb%2Fvq64WjuagBslUs2HaosOjnffiQlDXrl&X-Amz-Signature=2d07b8d8f0466ead64736bee2a828be6657e43e52965f23acaadb2b4d433a965&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+---
+# 【ご回答記入欄】
+```plain text
+コメント欄
+```

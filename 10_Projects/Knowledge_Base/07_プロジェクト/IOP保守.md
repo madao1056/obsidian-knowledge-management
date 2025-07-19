@@ -1,0 +1,17 @@
+---
+notion_id: 97a95e2b-94b7-4684-8958-35b27ffb1f19
+account: Secondary
+title: IOP保守
+url: https://www.notion.so/IOP-97a95e2b94b74684895835b27ffb1f19
+created_time: 2023-12-14T14:53:00.000Z
+last_edited_time: 2024-02-01T17:15:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:47.403509
+---
+# IOP保守
+
+¥2,000：ごうだ保育園情報修正
+¥15,000：こせきWEB予約導入、ボタン設置
+¥1,000：「インプラント」ページ　セクションタイトル、テキスト変更
+¥4,000：「インプラント」ページ「矯正歯科・部分矯正」ページ　へLINE相談バナー設置
+¥6,000：矯正の価格変更
