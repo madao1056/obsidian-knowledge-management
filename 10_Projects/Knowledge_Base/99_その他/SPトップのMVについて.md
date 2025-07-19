@@ -1,0 +1,26 @@
+---
+notion_id: 8fe07839-9267-4ed5-86be-900f295f24ce
+account: Main
+title: SPトップのMVについて
+url: https://www.notion.so/SP-MV-8fe0783992674ed586be900f295f24ce
+created_time: 2023-05-16T09:15:00.000Z
+last_edited_time: 2023-05-19T07:02:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.110500
+---
+# SPトップのMVについて
+
+iPhone11で閲覧したところ、フォントが違うものになっている？かと思います。
+こちらはPCと合わせることは難しいでしょうか？
+また検索窓の箇所、「キーワードから探す」にプルダウンの▼は削除でお願いします。
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/4b13ce3f-1b79-4827-b0dd-55fe290801c4/IMG_8468.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X2WPA3BK%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T043340Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFcnZQGH2d2zt4RaxEQiCZ%2Br7m%2FyllzSnYD7mLX8rOpXAiAZnMe8lyeFO%2FSJ0%2F7W7q0NpjJH%2FwtG9%2Fe4NCOd62tfeSqIBAid%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMq28txFiNJlUeaZjTKtwDv3YnrSFsBtA2ERSH0KYRi7bIuhGVBo7Etv1c%2F8zuWX745sVi6ArB%2F%2B6N2hFy1Dbo%2B%2FKz1ccKilXvbjwIPs9ZOMxugh5xOGvwzoIPwCJy9v9ZXHJuDS6q%2F0NhiQZfGTsiwWbItL3gBxGB2OcRrnthPQngAZsrSjtPTqnvKEP2QCcS3mvQYMvsV1pEg%2BCsIVT5QT5Cb9Ug%2BvrrAQpiV3HRWZL0huxvG1URTCXgOyM8%2BJXj7NCKviVbIzuZ4HnK6dc2q4INbBhOELeZFou7Rg6EOmq2zQhuERdZGKo0ik4J7t4R%2FpZFru3xm8vRgP8P0stKRQ3FS8Kge3U4xfBcbw5ZWwRd94oabvr2sPsR0yu2NcRi5Ln%2B7%2FPPGOJfNUnwB9RMWA123ZJnVwHXg%2FJHD5QpXjbjkFvZHZFbhYX1iwOGN%2F9kevXSSCBamCMlbKQLKBdboV8q1kHRxLDtGh7fXaFnq3SHOpF8XYzQ8zK70RBjnxsosiqC9ufJzDGbRuUnw4%2F0%2Fi9pRo2Cs1K4Lot%2FCuOrR6CTUI%2BUEmKfK7ju%2FYUcsZAq5vdK%2FSBhWYXRQwsRlDfH1V%2FZEn6Fzmxw5XOWih64QQRQUulVPY5mG1ThamHBKya5iYUChMaE%2FzKSkX8wmqrswwY6pgHtiz3vzllk3XSk1t85Iuxk9DeAnjIWrgEAJCpAZiyLIjmP%2BWeA7Bp5l0uvw53e2ru%2BwXmpd8qk7BUYID6r18vncnWb7AkWVFR5re5ZYmlOoZVfs97G8cwIs9y1dCf%2FWFy%2BvHoQ4tZ2E%2Fi5DKrZnwED9nzC0EWLRRejYZIon8oHl1Lm3uDKW10G8kV2c2v6fbCgGN1UUc7x0qz9OjlTOE0UH32QLnzl&X-Amz-Signature=67ce8a834d6c529cae91b43be3c8acdf0d95a3d6f480e8b169c927a868c4291d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+## タグ
+
+#その他 
+
+## 関連ドキュメント
+
+- [[../99_その他/フォント.md|フォント]]
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]

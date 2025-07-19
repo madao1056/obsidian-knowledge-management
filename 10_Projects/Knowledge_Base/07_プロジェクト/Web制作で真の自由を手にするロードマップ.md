@@ -1,13 +1,13 @@
 ---
 notion_id: 1b5ade4a-d294-800c-afbb-d1d7d783edfe
+account: Main
+title: Web制作で真の自由を手にするロードマップ
+url: https://www.notion.so/Web-1b5ade4ad294800cafbbd1d7d783edfe
 created_time: 2025-03-13T17:24:00.000Z
 last_edited_time: 2025-03-17T01:33:00.000Z
-url: https://www.notion.so/Web-1b5ade4ad294800cafbbd1d7d783edfe
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:05.510721
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.003511
 ---
-
 # Web制作で真の自由を手にするロードマップ
 
 どうも、まさたです
@@ -39,7 +39,7 @@ sync_time: 2025-07-12T14:41:05.510721
 なので、あなたがそうならないように
 ぜひ今回の動画を最後まで
 見てみてください↓
-https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0
+[https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0](https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0)
 ※1.5〜2倍速で見ることをおすすめします。
 音声を聞くだけでもOKです。
 【内容】
@@ -50,19 +50,19 @@ https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0
 ・Web制作で真の自由を
 　手にする3ステップ
 ▼動画はこちらから
-https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0
+[https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0](https://youtu.be/XXkze8y1hTU?si=kz5zXeay9F4yapc0)
 P.S.
 動画を最後まで見たらぜひ感想を
 送っていただけると嬉しいです！
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -73,39 +73,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/qrcpi6r6zvyQ
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/qrcpi6r6zvyQ](https://utage-system.com/r/e1hijKCLRUJN/cancel/qrcpi6r6zvyQ)
 
----
+## タグ
 
-## 関連記事
+#プロジェクト 
 
-### クライアント対応・継続案件について
-- [[クライアント対応に必須『質問力』＆『設計力』〜AI時代でもこれだけは変わらない〜]] - AI時代でも変わらない本質的なスキル
-- [[営業力ではなく"継続力"の時代]] - 継続案件で収入を安定させる方法
-- [[なぜか継続される人の共通点。]] - 選択肢を先に出せる人の強み
-- [[SNSでも話題！『技術よりもやり取り』が継続案件を生む理由]] - やり取りの重要性
+## 関連ドキュメント
 
-### マインドセット・考え方
-- [[3ヶ月でWeb制作学習を終えるための思考]] - 効率的な学習の進め方
-- [[スキルがある人 vs 継続される人]] - スキルだけでは足りない理由
-- [[同じクオリティでも継続される人 vs 単発で終わる人]] - 違いを生む要因
-
-### 実践的なノウハウ
-- [[クライアントとの初回挨拶文テンプレ]] - 具体的な対応方法
-- [[営業ゼロ。月20万以上を継続中のPさんの話。]] - 実際の成功事例
-- [[社会人経験ゼロ→継続案件月20万の裏側]] - 未経験からの成功事例
-
-## 🏷️ タグ
-#営業_ビジネス #AI_自動化 #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
-
-## 🔗 関連ナレッジ
-- [[3ヶ月でWeb制作学習を終えるための思考]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, クライアント
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 質問, 営業, Web
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 質問, 営業, Web
-- [[【未認知層向け】テンプレート化（PDF構成）]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 質問, 営業, やり取り
-- [[営業文改善の完全ガイド：ウェブ制作フリーランスのための実践戦略]] - カテゴリ: スキル・能力, コミュニケーション, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, やり取り
+- [[../99_その他/ブログ.md|ブログ]]
+- [[../99_その他/やりたいこと.md|やりたいこと]]
+- [[../99_その他/x.md|x]]
+- [[../99_その他/y.md|y]]
+- [[../99_その他/お問い合わせ.md|お問い合わせ]]

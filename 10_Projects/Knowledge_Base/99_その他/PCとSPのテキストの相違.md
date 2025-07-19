@@ -1,0 +1,40 @@
+---
+notion_id: 97bb568c-f9b8-4dce-9b30-2bef370413ac
+account: Main
+title: PCとSPのテキストの相違
+url: https://www.notion.so/PC-SP-97bb568cf9b84dce9b302bef370413ac
+created_time: 2023-05-24T04:11:00.000Z
+last_edited_time: 2023-05-24T04:16:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.109174
+---
+# PCとSPのテキストの相違
+
+※**お願い：**確認しましたら、上記ステータスを変更してください。
+下記をご確認いただき、ご回答記入欄（ページ下部）にコメントの記載をお願いします。
+# 【質問事項】
+- スクショ部分の文言がPCとSPで異なっていますが、**現状SPに合わせています**。
+認識違いましたら、ご支持願います！
+- PC
+  ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/de729248-5b2b-4cda-ae40-9b18d1479bca/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664WKBC5N5%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042541Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDXlC1lIlcBCIonzh0na0m1hNcLG47BHITFpn%2ByJoFPegIhAM9a%2FZljt7qzwJ7TzDMQ0vp1YgI61Dh1QAIm1F65Vq%2FVKogECJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwvI9NKzclltzkqQMIq3APL868z%2B2j3ULr23VaZCN8WJE04a6a%2F7GsH%2BfrYpB4rM03yh%2F%2Bpdp7e%2Fn88BBsiVXylXnb6dfKRiRMT771H1dojc1Yrjn9E3vPHR1V%2F3MzkON%2BtjZzWFLuZhpD20EyQInxIeS2kbiy2T1021dsCQo0hSU1DQi6dPB51iTkrbZTSoh4FQL6YdhyjmVFccUNrEaE9EVQ6KqOJoHeX%2FDcy5u6OBWzLupJHK%2BTJPszEn%2B0BvMlPtepw0LLSah4fdn6QlYCjs2rtSrKk6MOza9EgWqa0bD5tXWsOyFtH1rzCbHGewhqzVu1vtg27LgqX3yX4pKoHmLyeB3A7RmzARc23KqkvrwChbb4a5n5bVhdtsYmTzbtz8%2BEn95MyrmcMsfJfym%2FUcv8z6rI1MiAd0ukO2uedSylMnVD%2F0q14DR9cvWiZEhMZsBW1rJmC81pCrQ8E0RNm%2BWpB2oh97dV0p%2B%2BIB9Y6snuetSfW6y4icv5X9nXiUA5xP2hUQUWQusjA8prH2IJ3WAjOkoIZptPy4dLnndz2OnmsVjIYc%2FA6W%2BR8Fj2i6I933C0Bn4%2FyXMaijlku%2FX2YEV8tcRaX%2FZOqY9nn3sE88zn7FyAnYOo1nKaAPbrm%2FCd%2Bx6b0ZKPjEkDhwDCkquzDBjqkAbCp65SviHVCa1nsO2B1EN%2Bcz6aN8sL0X4RMaj9Q%2FNRf2iyjogwDBDi0kS3WRbnEPFG6ZPe1o9ySfjGaEnSUo1b7Mz4y%2B7EBjOc67UWycNBGcmsEsrvvH0leA5GqxxVucjSvX7eKwysvEVEhVyorxMLuP4tgIr5pctQ%2BmVVg7JPm8vO6ILsbUPzdFUKIATsj6HfGssECq0EffBptLvvNPSsDGy6R&X-Amz-Signature=41d60a638a80fbbd9ed93e3da73a7d1ddc3700843514b084c96976ba64675f43&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+- SP（タイトルと01の項目のテキスト）
+  ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/4a6d72b9-d4f9-4975-b441-961c386ca6e1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665QJ6WAOJ%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042542Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCOC%2BXNDxi6EWuKdVrv9EiQ1yk6QR1bKJWodf2hAd%2BBoQIhAN%2Bqltclq3zItS9tEomYv%2B5CO6Lbtl1ONzjlnw7I4D0jKogECJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igxv70PtqVCICKXdZdAq3AOXAGXkfKcjCNIsmHyTBY6WyexWSSRxDZvP7FzD10YjctW4zD4cZXrbFR04akiA1iGsbBcCls%2F4ra%2Bk0U8K8psOtZHCHGAFZwn%2FrY7o0GU77U8ahdmuDccUT1VwKFuDZ6hn69FKv7Gy4kGxrQ73Z4fe5cBC8xlcL233qajleGOykVsPeVZfpYwHb3IMy3Mmm6iqGjnbDFnOgWXo8ddssnEmxyvlo3OtgWh6XFZB58YYocyTOI6KZhMTtDQ5MhZtAGuBts%2F7sl5tzerteDeEvDazRn3hseIjQmZrvjRxhJRTIJ1vbqipccI1bYMBJ1P5Kf4W4dzK6FLcKx8K%2B988yggKT2FZTaM%2BZOkxOTBDZJcqlnIAWqna7PHFCTBNzertxW%2Fdfisvh53tONxRJE%2BzThcbd5U1tsN3yNWRLNfT3KRSLgXMCkU9j3rnYTXeLowipj9p0sTCW5nBQLxdmOHpHnDYAHBqCBqdByFUBejlFrSHchRVBTswH1mGsDzEUBxIJfZpwf5hoXSBkSgN%2FHH60hTmh7Tnqd%2FpXff7HS8iTAeLkwN%2FAvOF6rzuMfCKSHaXRwfeJPTjdD0E6H2xlcDijLtzMc5OzQFpSB9icwrj5xuEvb4mr5azqAplUO5FzTCkquzDBjqkAZJuceMHmT02NDlfztSUl1gUE%2F0ietNMnwKej%2FT%2FZnVwFyb0xI2UzJMKOuq2xERzdmOylNmpWiD%2FlXRqkq92Lz84hAF3XVl%2BABWCWuCKy61Nnq%2FInhfncTrPl%2FyemgPwzDR9aWITc8ABN30U4DCKT2%2Bddxsxx83lE63%2BEnolGe9svEmQYPBUY%2Fnuih5La%2B25bgc4VS2sDfKH92iso28xNsRfdi1A&X-Amz-Signature=42a09c379e23ab4a3b9bd0701e23d3dca6838159bdc60a432068895048d87ff2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+  ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/736adce6-a3a4-4a64-9f74-d9aa055c96d2/a2731e04-9370-4e48-ae23-82b0ede5dd02/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665QJ6WAOJ%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T042542Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCOC%2BXNDxi6EWuKdVrv9EiQ1yk6QR1bKJWodf2hAd%2BBoQIhAN%2Bqltclq3zItS9tEomYv%2B5CO6Lbtl1ONzjlnw7I4D0jKogECJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igxv70PtqVCICKXdZdAq3AOXAGXkfKcjCNIsmHyTBY6WyexWSSRxDZvP7FzD10YjctW4zD4cZXrbFR04akiA1iGsbBcCls%2F4ra%2Bk0U8K8psOtZHCHGAFZwn%2FrY7o0GU77U8ahdmuDccUT1VwKFuDZ6hn69FKv7Gy4kGxrQ73Z4fe5cBC8xlcL233qajleGOykVsPeVZfpYwHb3IMy3Mmm6iqGjnbDFnOgWXo8ddssnEmxyvlo3OtgWh6XFZB58YYocyTOI6KZhMTtDQ5MhZtAGuBts%2F7sl5tzerteDeEvDazRn3hseIjQmZrvjRxhJRTIJ1vbqipccI1bYMBJ1P5Kf4W4dzK6FLcKx8K%2B988yggKT2FZTaM%2BZOkxOTBDZJcqlnIAWqna7PHFCTBNzertxW%2Fdfisvh53tONxRJE%2BzThcbd5U1tsN3yNWRLNfT3KRSLgXMCkU9j3rnYTXeLowipj9p0sTCW5nBQLxdmOHpHnDYAHBqCBqdByFUBejlFrSHchRVBTswH1mGsDzEUBxIJfZpwf5hoXSBkSgN%2FHH60hTmh7Tnqd%2FpXff7HS8iTAeLkwN%2FAvOF6rzuMfCKSHaXRwfeJPTjdD0E6H2xlcDijLtzMc5OzQFpSB9icwrj5xuEvb4mr5azqAplUO5FzTCkquzDBjqkAZJuceMHmT02NDlfztSUl1gUE%2F0ietNMnwKej%2FT%2FZnVwFyb0xI2UzJMKOuq2xERzdmOylNmpWiD%2FlXRqkq92Lz84hAF3XVl%2BABWCWuCKy61Nnq%2FInhfncTrPl%2FyemgPwzDR9aWITc8ABN30U4DCKT2%2Bddxsxx83lE63%2BEnolGe9svEmQYPBUY%2Fnuih5La%2B25bgc4VS2sDfKH92iso28xNsRfdi1A&X-Amz-Signature=38e781c8fd35ba5d96351345d45e9bfab8292da27bbef272bae90c13a2446f4e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+- 該当リンク
+---
+# 【ご回答記入欄】
+```plain text
+コメント欄
+```
+
+## タグ
+
+#その他 
+
+## 関連ドキュメント
+
+- [[../99_その他/リンク.md|リンク]]
+- [[../99_その他/Untitled.md|Untitled]]
+- [[../99_その他/タイトル.md|タイトル]]
+- [[../99_その他/テキスト.md|テキスト]]
+- [[../99_その他/x.md|x]]

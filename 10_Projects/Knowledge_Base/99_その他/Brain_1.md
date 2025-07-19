@@ -1,0 +1,20 @@
+---
+notion_id: 18eade4a-d294-80c2-82e8-c391ca70921f
+account: Main
+title: Brain
+url: https://www.notion.so/Brain-18eade4ad29480c282e8c391ca70921f
+created_time: 2025-02-02T07:28:00.000Z
+last_edited_time: 2025-02-02T07:39:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.008747
+---
+# Brain
+
+準備するもの（大まかでOK）
+- 文章作成
+  - Brain全体公開
+- コンテンツ作成
+  - コンセプト決め
+  - 
+- 口コミのための追加プレゼント
+  - 

@@ -1,13 +1,13 @@
 ---
 notion_id: 1a5ade4a-d294-8023-be94-e0520f5b4ac4
+account: Main
+title: まさた_Web制作を始めて消えていった人たち。
+url: https://www.notion.so/_Web-1a5ade4ad2948023be94e0520f5b4ac4
 created_time: 2025-02-25T14:36:00.000Z
 last_edited_time: 2025-03-17T01:32:00.000Z
-url: https://www.notion.so/_Web-1a5ade4ad2948023be94e0520f5b4ac4
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:38.273670
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.005637
 ---
-
 # まさた_Web制作を始めて消えていった人たち。
 
 こんにちは、まさたです。
@@ -202,13 +202,13 @@ Web制作の学習期間が
 そちらもぜひ楽しみにしててください。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -219,19 +219,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/FZ1g9OxnPl8j
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/FZ1g9OxnPl8j](https://utage-system.com/r/e1hijKCLRUJN/cancel/FZ1g9OxnPl8j)
 
-## 🏷️ タグ
-#教育_コーチング #営業_ビジネス #スキル_能力 #コミュニケーション #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, Web制作・技術 キーワード: 1人, 営業, Web
-- [[まさた_【企画案内あり】時給を50倍にするためにやったこと]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, Web制作・技術 キーワード: 営業, セミナー, Web
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, Web制作・技術 キーワード: 1人, 営業, Web
-- [[まさた_こんにちは！Web制作フリーランスのまさたです]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, Web制作・技術 キーワード: 1人, Web, 教育
-- [[なお_はじめまして、月収176万円を達成した”なお”です。]] - カテゴリ: スキル・能力, コミュニケーション, 教育・コーチング, 営業・ビジネス, Web制作・技術 キーワード: 営業, セミナー, サービス
+#プロジェクト 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/としさん無料プレゼント.md|としさん無料プレゼント]]
+- [[../01_よしなに対応/グッサポ動画文字起こしまとめ.md|グッサポ動画文字起こしまとめ]]
+- [[../01_よしなに対応/【無料プレゼント企画】高単価案件受注の提案文実例.md|【無料プレゼント企画】高単価案件受注の提案文実例]]
+- [[../01_よしなに対応/グルコン.md|グルコン]]
+- [[../01_よしなに対応/グルコン3回目.md|グルコン3回目]]

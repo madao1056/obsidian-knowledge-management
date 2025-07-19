@@ -1,13 +1,13 @@
 ---
 notion_id: 1a6ade4a-d294-8027-ab83-c0e12290a5ec
+account: Main
+title: まさた_なぜ他じゃなくWeb制作をゴリ押しするのか
+url: https://www.notion.so/_-Web-1a6ade4ad2948027ab83c0e12290a5ec
 created_time: 2025-02-26T15:27:00.000Z
 last_edited_time: 2025-03-17T01:32:00.000Z
-url: https://www.notion.so/_-Web-1a6ade4ad2948027ab83c0e12290a5ec
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:34.635317
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.005214
 ---
-
 # まさた_なぜ他じゃなくWeb制作をゴリ押しするのか
 
 どうも、まさたです。
@@ -174,7 +174,7 @@ SNSなどでちゃんと口コミを
 無料の講座も出しているので
 下にURLを貼っておきますね。
 【無料コーディング講座】
-https://masata-blog.com/excitecode/
+[https://masata-blog.com/excitecode/](https://masata-blog.com/excitecode/)
 この講座は
 ProgateなどでHTML・CSS（Sass）の
 基礎文法を勉強したあとに
@@ -258,36 +258,22 @@ Web制作に興味を持つきっかけや、
 次回のマガジンもお楽しみに。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
-━━━━━━━━━━━━━━━━━━━━
-このメールはコースへ登録された方、
-もしくはオプトインで許可を頂いた方のみに
-送信しています。
-【発行者情報】
-まさた
-【発行者住所】
-〒222-0033
-神奈川県横浜市港北区新横浜3-19-11
-【お問い合わせはこちらから】
-info@lifement-web.com
-【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
-【メルマガ解除はこちらから】
-※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/dYkdHKvRIUVa
+[https://masata-blog.com/](https://masata-blog.com/)
 
-## 🏷️ タグ
-#教育_コーチング #営業_ビジネス #AI_自動化 #マインドセット #スキル_能力 #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, 教育・コーチング, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 1人, 営業, Web
-- [[なお_ビジネスの一発屋にならずに、安定して稼ぐための着眼点]] - カテゴリ: スキル・能力, 教育・コーチング, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 10万
-- [[コミュニティ]] - カテゴリ: スキル・能力, 教育・コーチング, AI・自動化, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 3日, 1人, 営業
-- [[なお_はじめまして、月収176万円を達成した”なお”です。]] - カテゴリ: スキル・能力, 教育・コーチング, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 3日, 営業, 10万
-- [[Brainライティング]] - カテゴリ: スキル・能力, 教育・コーチング, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, サポート
+#プロジェクト 
+
+## 関連ドキュメント
+
+- [[../01_よしなに対応/ぐっさん_4月報告.md|ぐっさん_4月報告]]
+- [[../07_プロジェクト/まさた_Web制作を始めて消えていった人たち。.md|まさた_Web制作を始めて消えていった人たち。]]
+- [[../04_ビジネス/ゆうまさん無料プレ.md|ゆうまさん無料プレ]]
+- [[../01_よしなに対応/ディレクターで失敗する5つの落とし穴.md|ディレクターで失敗する5つの落とし穴]]
+- [[../01_よしなに対応/ワンダフルコード説明会申し込み.md|ワンダフルコード説明会申し込み]]

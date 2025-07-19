@@ -1,0 +1,28 @@
+---
+notion_id: 5dff7e54-7c5c-4b88-8829-d04505c06692
+account: Secondary
+title: F社
+url: https://www.notion.so/F-5dff7e547c5c4b888829d04505c06692
+created_time: 2023-07-25T01:19:00.000Z
+last_edited_time: 2023-07-29T03:09:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:47.432064
+---
+# F社
+
+見積もりでの違和感について
+先日返信内容についてご質問させて頂いた内容の続きです！
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/df90e0d4-0f48-41d3-b46d-244f012390d7/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-25_10.17.19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TEL6GF3K%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T060621Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC0jzvxnHl5V31vspypzCxmIxCgO2FoTEeOMEVwft%2BzjAIhAPVzCbuc0EC8y%2BjSo01iY1nBPa%2BdxYtb87mxgeQwzCw1KogECJ7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgyrQRqLwS3WZ93xt0Yq3AN3LmiNN7i2a7S3WmEDhhHlWI9W6J%2F%2BLb2rWj9LUbGWkXIohA7b%2B%2Fje0I8Tgp74HhmaoRpcktSuFmHDR1iO3Hnplk6o2iB18lkjkSoMUJ04BlURM2RpgDdPV78ebpiUcc1ZVsWujP6%2BJ%2BFMsLhi7V8OLE2OdUl9VaCeevrDc25u7giZLquliIPefT53C2n4JRvpo059DdXu%2FvvNB%2Bns2c8I92%2FODHh8wf6s7CoSiCN%2FvBzyFXlOnTZFa6YKuSRGJjH1ZupfBnpwH2Jex2J4yR99yId2PFChljtrMBZXY6Q9X5Mtkv%2F7Xi9g13ecmxkA8eSSHTaEiDR80UqWsHekwMyfF6gFfg1Fu3C6k6IA3chFSDafwxDBTF9WKaxUr%2Bq5KkTb58jfy%2Fdkg%2FcKRcN0V3Fgp%2BDL%2FRczV4oPxHAXHDvMkZTatxFNoWz9ALzBtioMl18kJn9sA%2Ba36w42zzJyUoaHOguNLChF7NUf7NvJXX5BwX2g19DUCsqV1YBsR9FefhePQ8FhGYV2zlGb9Yv4p%2BHS31kbReVCujHW1S2PEJuSRWDTDQ5KTDL51kq0LaoxO4hfZLVUQiWk7fHmGVj2cT3w0TBf%2BH3wq5jZTZ7kfcCQ72jk3%2BlyJlPZ0DgEKzCFxuzDBjqkAUMmodWk0MSS%2BSljH8rxvkJZX%2BGWr7JzqD2fG4hEwBIladaKazjmbhQZ1Abdjkz9dLs86ZcmGrmHGpFEfqNgX7rL0v0u8KWfviMZZg%2BMKZ3XOBupIqhtFlmxccC1vXmgvtfbG%2FUyLz0TSDODXu9d7jejKvJptL5BY1MRe7riuta9HTW%2FwTIP7wPOqfX7qIrlbaAE%2FeR2yYrAWvi8%2FNRTN1tZTyiP&X-Amz-Signature=9b57f50fa0394f73a54a93312c0dfbf72f37d6a4ae8d504d10cea282d8bffaa5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d58fe38c-a9d4-4466-aed9-85604b7b2c6d/8a0b7aaf-ecc4-49f8-8aa4-281738125c36/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-25_10.17.40.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TEL6GF3K%2F20250719%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250719T060621Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC0jzvxnHl5V31vspypzCxmIxCgO2FoTEeOMEVwft%2BzjAIhAPVzCbuc0EC8y%2BjSo01iY1nBPa%2BdxYtb87mxgeQwzCw1KogECJ7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgyrQRqLwS3WZ93xt0Yq3AN3LmiNN7i2a7S3WmEDhhHlWI9W6J%2F%2BLb2rWj9LUbGWkXIohA7b%2B%2Fje0I8Tgp74HhmaoRpcktSuFmHDR1iO3Hnplk6o2iB18lkjkSoMUJ04BlURM2RpgDdPV78ebpiUcc1ZVsWujP6%2BJ%2BFMsLhi7V8OLE2OdUl9VaCeevrDc25u7giZLquliIPefT53C2n4JRvpo059DdXu%2FvvNB%2Bns2c8I92%2FODHh8wf6s7CoSiCN%2FvBzyFXlOnTZFa6YKuSRGJjH1ZupfBnpwH2Jex2J4yR99yId2PFChljtrMBZXY6Q9X5Mtkv%2F7Xi9g13ecmxkA8eSSHTaEiDR80UqWsHekwMyfF6gFfg1Fu3C6k6IA3chFSDafwxDBTF9WKaxUr%2Bq5KkTb58jfy%2Fdkg%2FcKRcN0V3Fgp%2BDL%2FRczV4oPxHAXHDvMkZTatxFNoWz9ALzBtioMl18kJn9sA%2Ba36w42zzJyUoaHOguNLChF7NUf7NvJXX5BwX2g19DUCsqV1YBsR9FefhePQ8FhGYV2zlGb9Yv4p%2BHS31kbReVCujHW1S2PEJuSRWDTDQ5KTDL51kq0LaoxO4hfZLVUQiWk7fHmGVj2cT3w0TBf%2BH3wq5jZTZ7kfcCQ72jk3%2BlyJlPZ0DgEKzCFxuzDBjqkAUMmodWk0MSS%2BSljH8rxvkJZX%2BGWr7JzqD2fG4hEwBIladaKazjmbhQZ1Abdjkz9dLs86ZcmGrmHGpFEfqNgX7rL0v0u8KWfviMZZg%2BMKZ3XOBupIqhtFlmxccC1vXmgvtfbG%2FUyLz0TSDODXu9d7jejKvJptL5BY1MRe7riuta9HTW%2FwTIP7wPOqfX7qIrlbaAE%2FeR2yYrAWvi8%2FNRTN1tZTyiP&X-Amz-Signature=15a4f726da30adab74cf1a7ce0e0b5a6bda7be5ae693c5bf7a4b8fe0855d2f4d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+## タグ
+
+#その他 
+
+## 関連ドキュメント
+
+- [[../99_その他/x.md|x]]
+- [[../99_その他/F社_チャット内容&面談動画共有.md|F社_チャット内容&面談動画共有]]
+- [[../99_その他/y.md|y]]
+- [[../01_よしなに対応/舞たけさん.md|舞たけさん]]
+- [[../04_ビジネス/F社　入院、面談、案件ご相談.md|F社　入院、面談、案件ご相談]]
