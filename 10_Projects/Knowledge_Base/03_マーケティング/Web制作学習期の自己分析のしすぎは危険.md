@@ -1,13 +1,13 @@
 ---
 notion_id: 1b5ade4a-d294-8088-897b-e7ce72531544
+account: Main
+title: Web制作学習期の自己分析のしすぎは危険
+url: https://www.notion.so/Web-1b5ade4ad2948088897be7ce72531544
 created_time: 2025-03-13T17:42:00.000Z
 last_edited_time: 2025-03-17T01:33:00.000Z
-url: https://www.notion.so/Web-1b5ade4ad2948088897be7ce72531544
-parent_type: database_id
-archived: False
-sync_time: 2025-07-12T14:41:04.980313
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.003413
 ---
-
 # Web制作学習期の自己分析のしすぎは危険
 
 どうも、まさたです。
@@ -95,13 +95,13 @@ Web制作をやる目的も、
 今回は以上です。
 ━━━━━━━━━━━━━━━━━━━━
 ▼商品一覧
-https://masata-blog.com/web-production-materials/
+[https://masata-blog.com/web-production-materials/](https://masata-blog.com/web-production-materials/)
 ▼X
-https://x.com/Masa_nmFL
+[https://x.com/Masa_nmFL](https://x.com/Masa_nmFL)
 ▼YouTube
-https://www.youtube.com/@Masata_coding
+[https://www.youtube.com/@Masata_coding](https://www.youtube.com/@Masata_coding)
 ▼ブログ
-https://masata-blog.com/
+[https://masata-blog.com/](https://masata-blog.com/)
 ━━━━━━━━━━━━━━━━━━━━
 このメールはコースへ登録された方、
 もしくはオプトインで許可を頂いた方のみに
@@ -112,19 +112,21 @@ https://masata-blog.com/
 〒222-0033
 神奈川県横浜市港北区新横浜3-19-11
 【お問い合わせはこちらから】
-info@lifement-web.com
+[info@lifement-web.com](mailto:info@lifement-web.com)
 【受信メールアドレスの変更はこちらから】
-https://utage-system.com/r/e1hijKCLRUJN/change
+[https://utage-system.com/r/e1hijKCLRUJN/change](https://utage-system.com/r/e1hijKCLRUJN/change)
 【メルマガ解除はこちらから】
 ※一度解除すると二度と登録できません
-https://utage-system.com/r/e1hijKCLRUJN/cancel/GDVlsK6uRdS7
+[https://utage-system.com/r/e1hijKCLRUJN/cancel/GDVlsK6uRdS7](https://utage-system.com/r/e1hijKCLRUJN/cancel/GDVlsK6uRdS7)
 
-## 🏷️ タグ
-#営業_ビジネス #マインドセット #スキル_能力 #コミュニケーション #Web制作_技術
+## タグ
 
-## 🔗 関連ナレッジ
-- [[3ヶ月でWeb制作学習を終えるための思考]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 目標
-- [[大衆心理と広告技法]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 目標
-- [[コミュニティ]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, 目標
-- [[まさた_Web制作は自分には向いてないと諦めかけた過去]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: 営業, Web, コース
-- [[まさた_2児のママがたった3ヶ月でWeb制作者へ転身した話]] - カテゴリ: スキル・能力, コミュニケーション, 営業・ビジネス, マインドセット, Web制作・技術 キーワード: WordPress, 営業, Web
+#マーケティング 
+
+## 関連ドキュメント
+
+- [[../02_Web制作/まさた_【企画案内あり】時給を50倍にするためにやったこと.md|まさた_【企画案内あり】時給を50倍にするためにやったこと]]
+- [[../99_その他/お問い合わせ.md|お問い合わせ]]
+- [[../02_Web制作/3ヶ月でWeb制作学習を終えるための思考.md|3ヶ月でWeb制作学習を終えるための思考]]
+- [[../07_プロジェクト/まさた_Web制作を始めて消えていった人たち。.md|まさた_Web制作を始めて消えていった人たち。]]
+- [[../02_Web制作/制作実績一覧（公開OK）.md|制作実績一覧（公開OK）]]

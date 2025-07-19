@@ -16,3 +16,12 @@ sync_time: 2025-07-12T15:01:47.387444
 - display:none;なのに優先的に読み込むタグをつけるのはNG
 - Webフォントは２種２weightまで（結構差が出る）
 - get_theme_file_uri()とget_template_directory_uri()の違い→[参考サイト](https://glatchdesign.com/blog/wordpress-get-theme-file-uri/)
+
+## タグ
+
+#マーケティング 
+
+## 関連ドキュメント
+
+- [[../99_その他/フォント.md|フォント]]
+- [[../99_その他/y.md|y]]
