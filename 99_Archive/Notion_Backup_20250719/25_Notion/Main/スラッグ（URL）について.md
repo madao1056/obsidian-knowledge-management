@@ -1,0 +1,24 @@
+---
+notion_id: d6d21a6b-7fcf-403c-9f1b-1d01f13878b6
+account: Main
+title: スラッグ（URL）について
+url: https://www.notion.so/URL-d6d21a6b7fcf403c9f1b1d01f13878b6
+created_time: 2023-05-05T09:13:00.000Z
+last_edited_time: 2023-06-16T14:33:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.107673
+---
+# スラッグ（URL）について
+
+※**お願い：**下記をご確認いただき、ご回答記入欄（ページ下部）にコメントの記載をお願いします。
+# 【質問事項】
+- 仕様の中でスラッグ（URL）確認ができませんでしたが、補足の内容にて実装してもよろしいでしょうか
+  - お知らせ→news
+  - 制作実績→works
+  - お問い合わせ→contact
+  - よくある質問→faq
+---
+# 【ご回答記入欄】
+```plain text
+コメント欄
+```

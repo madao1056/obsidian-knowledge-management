@@ -1,0 +1,23 @@
+{
+  "total_pages": 5543,
+  "total_created": 3577,
+  "accounts": {
+    "Main": {
+      "account": "Main",
+      "total_pages": 2833,
+      "placeholders_created": 1890,
+      "skipped_existing": 943,
+      "sync_time": "2025-07-12T15:01:15.155810",
+      "status": "placeholders_created"
+    },
+    "Secondary": {
+      "account": "Secondary",
+      "total_pages": 2710,
+      "placeholders_created": 1687,
+      "skipped_existing": 1023,
+      "sync_time": "2025-07-12T15:01:47.546389",
+      "status": "placeholders_created"
+    }
+  },
+  "sync_time": "2025-07-12T15:01:47.551804"
+}

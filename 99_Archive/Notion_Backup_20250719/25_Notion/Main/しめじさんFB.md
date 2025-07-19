@@ -1,0 +1,23 @@
+---
+notion_id: 45e45d8c-1c0b-47f7-812f-9ff5e9ef3ca4
+account: Main
+title: しめじさんFB
+url: https://www.notion.so/FB-45e45d8c1c0b47f7812f9ff5e9ef3ca4
+created_time: 2023-04-04T13:18:00.000Z
+last_edited_time: 2024-01-21T08:09:00.000Z
+sync_status: placeholder
+sync_time: 2025-07-12T15:01:15.051128
+---
+# しめじさんFB
+
+# 告知文について
+  ## FB
+  [Bookmark](https://www.loom.com/share/68edacc400ce416bb66136f6836693ee?sid=c8ab8f54-1ef6-46f4-afe1-8259d4a4c0f7)
+  ## 重要
+  - ネタバレしすぎ（サービスの内容は言わない）
+  - 新サービス強調しすぎ
+  - 文章を被らせない
+  - 基本文章は読まれない！
+  - 自分の作った教材を出しすぎ（やっぱり動画では伝えきれないものがあった、とか）
+  - マーケティング（相手が目の前にいないからクライアントワークより難しい）
+  - 複数送る場合は同じ文章は絶対にNG、読まれないし、めんどくさがられる
